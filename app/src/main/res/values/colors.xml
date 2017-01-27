@@ -12,4 +12,6 @@
     <color name="category_item_4">#1084b6</color>
     <color name="category_item_5">#a412a2</color>
     <color name="category_item_6">#974a19</color>
+
+    <color name="mild_background">#e8eaf6</color>
 </resources>

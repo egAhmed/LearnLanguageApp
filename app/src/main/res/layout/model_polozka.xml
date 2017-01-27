@@ -1,12 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 
+
+<!-- todo tohle z nějakyho duvodu dělá, že nejde klikat na položky
+android:background="@color/mild_background" -->
+
+
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="horizontal"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:padding="16dp">
+    android:padding="16dp"
+    android:minHeight="@dimen/min_vyska_modelu_polozky">
 
 
     <ImageView
