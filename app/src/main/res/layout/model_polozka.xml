@@ -16,8 +16,8 @@ android:background="@color/mild_background" -->
 
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="@dimen/min_vyska_modelu_polozky"
+        android:layout_height="@dimen/min_vyska_modelu_polozky"
         android:layout_gravity="center"
         android:id="@+id/obrazek_polozky"
         android:src="@mipmap/ic_launcher"/>
@@ -26,19 +26,21 @@ android:background="@color/mild_background" -->
     <LinearLayout
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
     android:paddingLeft="16dp"
     android:layout_gravity="center">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_weight="1"
         android:id="@+id/horni_text_polozky"
         tools:text="horní"/>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_weight="1"
         android:id="@+id/dolni_text_polozky"
         tools:text="dolní"/>
 
