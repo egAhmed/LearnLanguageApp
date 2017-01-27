@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Placeholder</string>
+    <string name="menu_item_1">placeholder1</string>
+    <string name="menu_item_2">placeholder2</string>
+    <string name="menu_item_3">placeholder3</string>
+    <string name="menu_item_4">placeholder4</string>
+    <string name="menu_item_5">placeholder5</string>
+    <string name="menu_item_6">placeholder6</string>
+</resources>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cz.ejstn.learnlanguageapp">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".start.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+
+        <activity android:name=".kategorie.PrvniKategorie"
+            android:label="@string/menu_item_1"/>
+
+        <activity android:name=".kategorie.DruhaKategorie"
+            android:label="@string/menu_item_2"/>
+
+        <activity android:name=".kategorie.TretiKategorie"
+            android:label="@string/menu_item_3"/>
+
+        <activity android:name=".kategorie.CtvrtaKategorie"
+            android:label="@string/menu_item_4"/>
+
+        <activity android:name=".kategorie.PataKategorie"
+            android:label="@string/menu_item_5"/>
+
+        <activity android:name=".kategorie.SestaKategorie"
+            android:label="@string/menu_item_6"/>
+    </application>
+
+</manifest>
