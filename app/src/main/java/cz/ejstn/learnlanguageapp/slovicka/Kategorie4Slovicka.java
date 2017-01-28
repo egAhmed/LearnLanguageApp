@@ -23,16 +23,16 @@ public class Kategorie4Slovicka {
 
     // čísla
     private static ArrayList<Slovicko> vytvorSlovicka (ArrayList<Slovicko> slovicka) {
-        slovicka.add(new Slovicko("one", "jedna", R.drawable.smajlik));
-        slovicka.add(new Slovicko("two", "dva",R.drawable.smajlik));
-        slovicka.add(new Slovicko("three", "tři", R.drawable.smajlik));
-        slovicka.add(new Slovicko("four", "čtyři", R.drawable.smajlik));
-        slovicka.add(new Slovicko("five", "pět", R.drawable.smajlik));
-        slovicka.add(new Slovicko("six", "šest", R.drawable.smajlik));
-        slovicka.add(new Slovicko("seven", "sedm", R.drawable.smajlik));
-        slovicka.add(new Slovicko("eight", "osm", R.drawable.smajlik));
-        slovicka.add(new Slovicko("nine", "devět", R.drawable.smajlik));
-        slovicka.add(new Slovicko("ten", "deset", R.drawable.smajlik));
+        slovicka.add(new Slovicko("one", "jedna", R.drawable.smajlik, R.raw.song));
+        slovicka.add(new Slovicko("two", "dva",R.drawable.smajlik, R.raw.song));
+        slovicka.add(new Slovicko("three", "tři", R.drawable.smajlik, R.raw.song));
+        slovicka.add(new Slovicko("four", "čtyři", R.drawable.smajlik, R.raw.song));
+        slovicka.add(new Slovicko("five", "pět", R.drawable.smajlik, R.raw.song));
+        slovicka.add(new Slovicko("six", "šest", R.drawable.smajlik, R.raw.song));
+        slovicka.add(new Slovicko("seven", "sedm", R.drawable.smajlik, R.raw.song));
+        slovicka.add(new Slovicko("eight", "osm", R.drawable.smajlik, R.raw.song));
+        slovicka.add(new Slovicko("nine", "devět", R.drawable.smajlik, R.raw.song));
+        slovicka.add(new Slovicko("ten", "deset", R.drawable.smajlik, R.raw.song));
 
 
         return slovicka;

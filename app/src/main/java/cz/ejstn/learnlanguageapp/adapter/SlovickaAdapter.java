@@ -36,25 +36,25 @@ public class SlovickaAdapter extends ArrayAdapter<Slovicko> {
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
 
-        Slovicko slovicko = getItem(position);
+        final Slovicko slovicko = getItem(position);
 
-        View listItemView = convertView;
-        if(listItemView == null) {
-            listItemView = LayoutInflater.from(getContext()).inflate(
+        View jednaPolozka = convertView;
+        if(jednaPolozka == null) {
+            jednaPolozka = LayoutInflater.from(getContext()).inflate(
                     R.layout.model_polozka, parent, false);
         }
 
-        LinearLayout layoutObouPrekladu = (LinearLayout) listItemView.findViewById(R.id.linear_layout_obou_prekladu);
+        LinearLayout layoutObouPrekladu = (LinearLayout) jednaPolozka.findViewById(R.id.linear_layout_obou_prekladu);
         layoutObouPrekladu.setBackgroundResource(barvaPozadi);
 
 
-        TextView horniText = (TextView) listItemView.findViewById(R.id.horni_text_polozky);
+        TextView horniText = (TextView) jednaPolozka.findViewById(R.id.horni_text_polozky);
         horniText.setText(slovicko.getAnglictina());
 
-        TextView spodniText = (TextView) listItemView.findViewById(R.id.dolni_text_polozky);
+        TextView spodniText = (TextView) jednaPolozka.findViewById(R.id.dolni_text_polozky);
         spodniText.setText(slovicko.getCestina());
 
-        ImageView obrazek = (ImageView) listItemView.findViewById(R.id.obrazek_polozky);
+        ImageView obrazek = (ImageView) jednaPolozka.findViewById(R.id.obrazek_polozky);
 
         if (slovicko.maObrazek()) {
             obrazek.setImageResource(slovicko.getIdObrazku());
@@ -63,6 +63,7 @@ public class SlovickaAdapter extends ArrayAdapter<Slovicko> {
             obrazek.setVisibility(View.GONE);
         }
 
-        return listItemView;
+
+        return jednaPolozka;
     }
 }

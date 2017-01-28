@@ -9,19 +9,22 @@ public class Slovicko {
     private String cestina;
     private String anglictina;
     private int idObrazku;
+    private int idZvuku;
 
     private static final int nemaObrazek = -1;
 
-    public Slovicko (String anglictina, String cestina) {
+    public Slovicko (String anglictina, String cestina, int idZvuku) {
         this.cestina = cestina;
         this.anglictina = anglictina;
         this.idObrazku = nemaObrazek;
+        this.idZvuku = idZvuku;
     }
 
-    public Slovicko (String anglictina, String cestina, int idObrazku) {
+    public Slovicko (String anglictina, String cestina, int idObrazku, int idZvuku) {
         this.cestina = cestina;
         this.anglictina = anglictina;
         this.idObrazku = idObrazku;
+        this.idZvuku = idZvuku;
     }
 
     public String getAnglictina() {
@@ -34,6 +37,10 @@ public class Slovicko {
 
     public int getIdObrazku() {
         return idObrazku;
+    }
+
+    public int getIdZvuku() {
+        return idZvuku;
     }
 
     public boolean maObrazek() {

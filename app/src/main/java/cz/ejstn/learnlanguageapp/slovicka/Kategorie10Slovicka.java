@@ -24,16 +24,16 @@ public class Kategorie10Slovicka {
 
     // doprava
     private static ArrayList<Slovicko> vytvorSlovicka (ArrayList<Slovicko> slovicka) {
-        slovicka.add(new Slovicko("car", "auto", R.drawable.smajlik));
-        slovicka.add(new Slovicko("bus", "autobus",R.drawable.smajlik));
-        slovicka.add(new Slovicko("bicycle", "kolo", R.drawable.smajlik));
-        slovicka.add(new Slovicko("tram", "tramvaj", R.drawable.smajlik));
-        slovicka.add(new Slovicko("subway", "metro", R.drawable.smajlik));
-        slovicka.add(new Slovicko("taxi", "taxi", R.drawable.smajlik));
-        slovicka.add(new Slovicko("ship", "loď", R.drawable.smajlik));
-        slovicka.add(new Slovicko("aircraft", "letadlo", R.drawable.smajlik));
-        slovicka.add(new Slovicko("train", "vlak", R.drawable.smajlik));
-        slovicka.add(new Slovicko("motorcycle", "motorka", R.drawable.smajlik));
+        slovicka.add(new Slovicko("car", "auto", R.drawable.smajlik, R.raw.song));
+        slovicka.add(new Slovicko("bus", "autobus",R.drawable.smajlik, R.raw.song));
+        slovicka.add(new Slovicko("bicycle", "kolo", R.drawable.smajlik, R.raw.song));
+        slovicka.add(new Slovicko("tram", "tramvaj", R.drawable.smajlik, R.raw.song));
+        slovicka.add(new Slovicko("subway", "metro", R.drawable.smajlik, R.raw.song));
+        slovicka.add(new Slovicko("taxi", "taxi", R.drawable.smajlik, R.raw.song));
+        slovicka.add(new Slovicko("ship", "loď", R.drawable.smajlik, R.raw.song));
+        slovicka.add(new Slovicko("aircraft", "letadlo", R.drawable.smajlik, R.raw.song));
+        slovicka.add(new Slovicko("train", "vlak", R.drawable.smajlik, R.raw.song));
+        slovicka.add(new Slovicko("motorcycle", "motorka", R.drawable.smajlik, R.raw.song));
 
 
         return slovicka;
