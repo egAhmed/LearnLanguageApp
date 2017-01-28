@@ -2,6 +2,8 @@
 
 
 <!-- todo tohle z nějakyho duvodu dělá, že nejde klikat na položky
+ je to pokud vlastně už máme nějaký pozadí pro celou aplikaci
+ a pak tam dáme ještě jedno navíc, tak se to asi posere, nevim
 android:background="@color/mild_background" -->
 
 
@@ -11,7 +13,6 @@ android:background="@color/mild_background" -->
     android:orientation="horizontal"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:padding="16dp"
     android:minHeight="@dimen/min_vyska_modelu_polozky">
 
 
@@ -19,6 +20,7 @@ android:background="@color/mild_background" -->
         android:layout_width="@dimen/min_vyska_modelu_polozky"
         android:layout_height="@dimen/min_vyska_modelu_polozky"
         android:layout_gravity="center"
+        android:padding="6dp"
         android:id="@+id/obrazek_polozky"
         android:src="@mipmap/ic_launcher"/>
 
@@ -28,22 +30,33 @@ android:background="@color/mild_background" -->
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingLeft="16dp"
-    android:layout_gravity="center">
+    android:paddingStart="16dp"
+        android:paddingLeft="16dp">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:id="@+id/horni_text_polozky"
-        tools:text="horní"/>
+        tools:text="horní"
+        android:gravity="bottom"
+        android:textAppearance="@android:style/TextAppearance.Medium"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        tools:textColor="@android:color/black"
+        />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:id="@+id/dolni_text_polozky"
-        tools:text="dolní"/>
+        tools:text="dolní"
+        android:gravity="top"
+        android:textAppearance="@android:style/TextAppearance.Medium"
+        android:textColor="@android:color/white"
+        tools:textColor="@android:color/black"
+        />
 
 </LinearLayout>
 

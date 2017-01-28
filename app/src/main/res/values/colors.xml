@@ -1,21 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
+
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
+
+    <!-- nešahat na tenhle šit-->
     <color name="colorAccent">#FF4081</color>
 
-    <color name="menu_item_text_color">#efeded</color>
+    <color name="menu_item_text_color">#eeeeee</color>
 
-    <color name="category_item_1">#38930e</color>
-    <color name="category_item_2">#b99618</color>
-    <color name="category_item_3">#8f1212</color>
-    <color name="category_item_4">#1084b6</color>
-    <color name="category_item_5">#a412a2</color>
-    <color name="category_item_6">#974a19</color>
-    <color name="category_item_7">#1084b6</color>
-    <color name="category_item_8">#a412a2</color>
-    <color name="category_item_9">#974a19</color>
-    <color name="category_item_10">#38930e</color>
+    <color name="category_item_1">#fd8e09</color>
+    <color name="category_item_2">#379237</color>
+    <color name="category_item_3">#8800A0</color>
+    <color name="category_item_4">#16AFCA</color>
+
+    <color name="category_item_5">#fd8e09</color>
+    <color name="category_item_6">#379237</color>
+    <color name="category_item_7">#8800A0</color>
+    <color name="category_item_8">#16AFCA</color>
+
+    <color name="category_item_9">#fd8e09</color>
+    <color name="category_item_10">#379237</color>
 
     <color name="mild_background">#ffffff</color>
 </resources>
