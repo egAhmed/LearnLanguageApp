@@ -8,6 +8,7 @@ import android.widget.TextView;
 
 import cz.ejstn.learnlanguageapp.R;
 import cz.ejstn.learnlanguageapp.kategorie.Kategorie1;
+import cz.ejstn.learnlanguageapp.kategorie.Kategorie10;
 import cz.ejstn.learnlanguageapp.kategorie.Kategorie2;
 import cz.ejstn.learnlanguageapp.kategorie.Kategorie3;
 import cz.ejstn.learnlanguageapp.kategorie.Kategorie4;
@@ -41,6 +42,7 @@ public class MainActivity extends AppCompatActivity {
         TextView sedmaKategorie = (TextView) findViewById(R.id.menu_category_7);
         TextView osmaKategorie = (TextView) findViewById(R.id.menu_category_8);
         TextView devataKategorie = (TextView) findViewById(R.id.menu_category_9);
+        TextView desataKategorie = (TextView) findViewById(R.id.menu_category_10);
 
         prvniKategorie.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -114,6 +116,15 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(i);
             }
         });
+
+        desataKategorie.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(v.getContext(), Kategorie10.class);
+                startActivity(i);
+            }
+        });
+
 
 
 

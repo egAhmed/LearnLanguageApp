@@ -9,14 +9,16 @@
     </style>
 
     <style name="MenuCategoryStyle">
-        <item name="android:padding">25dp</item>
+
+        <item name="android:paddingBottom">20dp</item>
+        <item name="android:paddingTop">20dp</item>
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:gravity">center</item>
-        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+        <item name="android:textAppearance">?android:textAppearanceLarge</item>
         <item name="android:textStyle">bold</item>
         <item name="android:textColor">@color/menu_item_text_color</item>
-        <item name="android:layout_margin">7dp</item>
+
     </style>
 
 </resources>

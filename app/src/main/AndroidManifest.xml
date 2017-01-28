@@ -35,7 +35,8 @@
             android:label="@string/menu_item_6" />
         <activity android:name=".kategorie.Kategorie7" />
         <activity android:name=".kategorie.Kategorie8" />
-        <activity android:name=".kategorie.Kategorie9"></activity>
+        <activity android:name=".kategorie.Kategorie9" />
+        <activity android:name=".kategorie.Kategorie10"></activity>
     </application>
 
 </manifest>
