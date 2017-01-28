@@ -8,15 +8,16 @@ import java.util.ArrayList;
 
 import cz.ejstn.learnlanguageapp.R;
 import cz.ejstn.learnlanguageapp.adapter.SlovickaAdapter;
-import cz.ejstn.learnlanguageapp.lib.DruhaKategorieSlovicka;
 import cz.ejstn.learnlanguageapp.model.Slovicko;
+import cz.ejstn.learnlanguageapp.slovicka.Kategorie8Slovicka;
 
-public class DruhaKategorie extends AppCompatActivity {
+public class Kategorie8 extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_kategorie);
+
         vsechnoPriprav();
 
 
@@ -27,7 +28,7 @@ public class DruhaKategorie extends AppCompatActivity {
 
     private void vsechnoPriprav() {
 
-        ArrayList<Slovicko> slovicka = DruhaKategorieSlovicka.pripravKategorii();
+        ArrayList<Slovicko> slovicka = Kategorie8Slovicka.pripravKategorii();
         SlovickaAdapter adapter = new SlovickaAdapter(this, slovicka);
 
         ListView listSlovicek = (ListView) findViewById(R.id.listView_kategorie);
@@ -36,3 +37,4 @@ public class DruhaKategorie extends AppCompatActivity {
 
     }
 }
+

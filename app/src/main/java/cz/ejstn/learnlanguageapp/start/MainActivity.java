@@ -7,12 +7,15 @@ import android.view.View;
 import android.widget.TextView;
 
 import cz.ejstn.learnlanguageapp.R;
-import cz.ejstn.learnlanguageapp.kategorie.CtvrtaKategorie;
-import cz.ejstn.learnlanguageapp.kategorie.DruhaKategorie;
-import cz.ejstn.learnlanguageapp.kategorie.PataKategorie;
-import cz.ejstn.learnlanguageapp.kategorie.PrvniKategorie;
-import cz.ejstn.learnlanguageapp.kategorie.SestaKategorie;
-import cz.ejstn.learnlanguageapp.kategorie.TretiKategorie;
+import cz.ejstn.learnlanguageapp.kategorie.Kategorie1;
+import cz.ejstn.learnlanguageapp.kategorie.Kategorie2;
+import cz.ejstn.learnlanguageapp.kategorie.Kategorie3;
+import cz.ejstn.learnlanguageapp.kategorie.Kategorie4;
+import cz.ejstn.learnlanguageapp.kategorie.Kategorie5;
+import cz.ejstn.learnlanguageapp.kategorie.Kategorie6;
+import cz.ejstn.learnlanguageapp.kategorie.Kategorie7;
+import cz.ejstn.learnlanguageapp.kategorie.Kategorie8;
+import cz.ejstn.learnlanguageapp.kategorie.Kategorie9;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -26,6 +29,8 @@ public class MainActivity extends AppCompatActivity {
         pripravMenu();
     }
 
+
+    // připravuje všechny onClickListenery
     private void pripravMenu() {
         TextView prvniKategorie = (TextView) findViewById(R.id.menu_category_1);
         TextView druhaKategorie = (TextView) findViewById(R.id.menu_category_2);
@@ -33,11 +38,14 @@ public class MainActivity extends AppCompatActivity {
         TextView ctvrtaKategorie = (TextView) findViewById(R.id.menu_category_4);
         TextView pataKategorie = (TextView) findViewById(R.id.menu_category_5);
         TextView sestaKategorie = (TextView) findViewById(R.id.menu_category_6);
+        TextView sedmaKategorie = (TextView) findViewById(R.id.menu_category_7);
+        TextView osmaKategorie = (TextView) findViewById(R.id.menu_category_8);
+        TextView devataKategorie = (TextView) findViewById(R.id.menu_category_9);
 
         prvniKategorie.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(v.getContext(), PrvniKategorie.class);
+                Intent i = new Intent(v.getContext(), Kategorie1.class);
                 startActivity(i);
             }
         });
@@ -45,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
         druhaKategorie.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(v.getContext(), DruhaKategorie.class);
+                Intent i = new Intent(v.getContext(), Kategorie2.class);
                 startActivity(i);
             }
         });
@@ -53,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
         tretiKategorie.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(v.getContext(), TretiKategorie.class);
+                Intent i = new Intent(v.getContext(), Kategorie3.class);
                 startActivity(i);
             }
         });
@@ -61,7 +69,7 @@ public class MainActivity extends AppCompatActivity {
         ctvrtaKategorie.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(v.getContext(), CtvrtaKategorie.class);
+                Intent i = new Intent(v.getContext(), Kategorie4.class);
                 startActivity(i);
             }
         });
@@ -69,7 +77,7 @@ public class MainActivity extends AppCompatActivity {
         pataKategorie.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(v.getContext(), PataKategorie.class);
+                Intent i = new Intent(v.getContext(), Kategorie5.class);
                 startActivity(i);
             }
         });
@@ -77,7 +85,32 @@ public class MainActivity extends AppCompatActivity {
         sestaKategorie.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(v.getContext(), SestaKategorie.class);
+                Intent i = new Intent(v.getContext(), Kategorie6.class);
+                startActivity(i);
+            }
+        });
+
+        sedmaKategorie.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(v.getContext(), Kategorie7.class);
+                startActivity(i);
+            }
+        });
+
+        osmaKategorie.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(v.getContext(), Kategorie8.class);
+                startActivity(i);
+            }
+        });
+
+
+        devataKategorie.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(v.getContext(), Kategorie9.class);
                 startActivity(i);
             }
         });

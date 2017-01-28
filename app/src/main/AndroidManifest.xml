@@ -15,26 +15,27 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-
-
-        <activity android:name=".kategorie.PrvniKategorie"
-            android:label="@string/menu_item_1"/>
-
-        <activity android:name=".kategorie.DruhaKategorie"
-            android:label="@string/menu_item_2"/>
-
-        <activity android:name=".kategorie.TretiKategorie"
-            android:label="@string/menu_item_3"/>
-
-        <activity android:name=".kategorie.CtvrtaKategorie"
-            android:label="@string/menu_item_4"/>
-
-        <activity android:name=".kategorie.PataKategorie"
-            android:label="@string/menu_item_5"/>
-
-        <activity android:name=".kategorie.SestaKategorie"
-            android:label="@string/menu_item_6"/>
+        <activity
+            android:name=".kategorie.Kategorie1"
+            android:label="@string/menu_item_1" />
+        <activity
+            android:name=".kategorie.Kategorie2"
+            android:label="@string/menu_item_2" />
+        <activity
+            android:name=".kategorie.Kategorie3"
+            android:label="@string/menu_item_3" />
+        <activity
+            android:name=".kategorie.Kategorie4"
+            android:label="@string/menu_item_4" />
+        <activity
+            android:name=".kategorie.Kategorie5"
+            android:label="@string/menu_item_5" />
+        <activity
+            android:name=".kategorie.Kategorie6"
+            android:label="@string/menu_item_6" />
+        <activity android:name=".kategorie.Kategorie7" />
+        <activity android:name=".kategorie.Kategorie8" />
+        <activity android:name=".kategorie.Kategorie9"></activity>
     </application>
 
 </manifest>

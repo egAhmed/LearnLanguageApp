@@ -1,4 +1,4 @@
-package cz.ejstn.learnlanguageapp.lib;
+package cz.ejstn.learnlanguageapp.slovicka;
 
 import java.util.ArrayList;
 
@@ -9,7 +9,7 @@ import cz.ejstn.learnlanguageapp.model.Slovicko;
  * Created by Martin Soukup on 27.1.2017.
  */
 
-public class TretiKategorieSlovicka {
+public class Kategorie3Slovicka {
 
     public static ArrayList<Slovicko> pripravKategorii() {
         ArrayList<Slovicko> slovicka = new ArrayList<>();

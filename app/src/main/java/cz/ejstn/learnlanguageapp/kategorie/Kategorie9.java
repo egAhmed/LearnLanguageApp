@@ -8,10 +8,10 @@ import java.util.ArrayList;
 
 import cz.ejstn.learnlanguageapp.R;
 import cz.ejstn.learnlanguageapp.adapter.SlovickaAdapter;
-import cz.ejstn.learnlanguageapp.lib.PataKategorieSlovicka;
 import cz.ejstn.learnlanguageapp.model.Slovicko;
+import cz.ejstn.learnlanguageapp.slovicka.Kategorie9Slovicka;
 
-public class PataKategorie extends AppCompatActivity {
+public class Kategorie9 extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,7 +28,7 @@ public class PataKategorie extends AppCompatActivity {
 
     private void vsechnoPriprav() {
 
-        ArrayList<Slovicko> slovicka = PataKategorieSlovicka.pripravKategorii();
+        ArrayList<Slovicko> slovicka = Kategorie9Slovicka.pripravKategorii();
         SlovickaAdapter adapter = new SlovickaAdapter(this, slovicka);
 
         ListView listSlovicek = (ListView) findViewById(R.id.listView_kategorie);
@@ -37,3 +37,4 @@ public class PataKategorie extends AppCompatActivity {
 
     }
 }
+
