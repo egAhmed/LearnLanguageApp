@@ -7,6 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -20,12 +21,15 @@ import cz.ejstn.learnlanguageapp.model.Slovicko;
 
 public class SlovickaAdapter extends ArrayAdapter<Slovicko> {
 
+    private int barvaPozadi;
 
 
-    public SlovickaAdapter(Context context, ArrayList<Slovicko> slovicka) {
 
-
+    public SlovickaAdapter(Context context, ArrayList<Slovicko> slovicka, int  barvaPozadi) {
         super(context, 0, slovicka);
+
+        this.barvaPozadi = barvaPozadi;
+
     }
 
     @NonNull
@@ -39,6 +43,9 @@ public class SlovickaAdapter extends ArrayAdapter<Slovicko> {
             listItemView = LayoutInflater.from(getContext()).inflate(
                     R.layout.model_polozka, parent, false);
         }
+
+        LinearLayout layoutObouPrekladu = (LinearLayout) listItemView.findViewById(R.id.linear_layout_obou_prekladu);
+        layoutObouPrekladu.setBackgroundResource(barvaPozadi);
 
 
         TextView horniText = (TextView) listItemView.findViewById(R.id.horni_text_polozky);

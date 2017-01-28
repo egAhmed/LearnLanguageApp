@@ -28,7 +28,7 @@ public class Kategorie3 extends AppCompatActivity {
     private void vsechnoPriprav() {
 
         ArrayList<Slovicko> slovicka = Kategorie3Slovicka.pripravKategorii();
-        SlovickaAdapter adapter = new SlovickaAdapter(this, slovicka);
+        SlovickaAdapter adapter = new SlovickaAdapter(this, slovicka, R.color.category_item_3);
 
         ListView listSlovicek = (ListView) findViewById(R.id.listView_kategorie);
         listSlovicek.setAdapter(adapter);

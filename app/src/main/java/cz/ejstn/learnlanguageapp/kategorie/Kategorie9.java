@@ -29,7 +29,7 @@ public class Kategorie9 extends AppCompatActivity {
     private void vsechnoPriprav() {
 
         ArrayList<Slovicko> slovicka = Kategorie9Slovicka.pripravKategorii();
-        SlovickaAdapter adapter = new SlovickaAdapter(this, slovicka);
+        SlovickaAdapter adapter = new SlovickaAdapter(this, slovicka, R.color.category_item_9);
 
         ListView listSlovicek = (ListView) findViewById(R.id.listView_kategorie);
         listSlovicek.setAdapter(adapter);
