@@ -1,7 +1,10 @@
 package cz.ejstn.learnlanguageapp.kategorie;
 
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 
 import java.util.ArrayList;
@@ -12,6 +15,8 @@ import cz.ejstn.learnlanguageapp.slovicka.Kategorie4Slovicka;
 import cz.ejstn.learnlanguageapp.model.Slovicko;
 
 public class Kategorie4 extends AppCompatActivity {
+
+    private MediaPlayer prehravac;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,12 +35,19 @@ public class Kategorie4 extends AppCompatActivity {
 
     private void vsechnoPriprav() {
 
-        ArrayList<Slovicko> slovicka = Kategorie4Slovicka.pripravKategorii();
+        final ArrayList<Slovicko> slovicka = Kategorie4Slovicka.pripravKategorii();
         SlovickaAdapter adapter = new SlovickaAdapter(this, slovicka, R.color.category_item_4);
 
         ListView listSlovicek = (ListView) findViewById(R.id.listView_kategorie);
         listSlovicek.setAdapter(adapter);
 
 
+        listSlovicek.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                prehravac = MediaPlayer.create(Kategorie4.this, slovicka.get(position).getIdZvuku());
+                prehravac.start();
+            }
+        });
     }
 }
