@@ -20,17 +20,19 @@ public class Kategorie4Slovicka {
         return slovicka;
     }
 
+
+    // čísla
     private static ArrayList<Slovicko> vytvorSlovicka (ArrayList<Slovicko> slovicka) {
-        slovicka.add(new Slovicko("dobrý den", "hello", R.drawable.smajlik));
-        slovicka.add(new Slovicko("jak se máš", "how are you",R.drawable.smajlik));
-        slovicka.add(new Slovicko("mám se dobře", "i am fine", R.drawable.smajlik));
-        slovicka.add(new Slovicko("děkuji", "thank you", R.drawable.smajlik));
-        slovicka.add(new Slovicko("prosím", "please", R.drawable.smajlik));
-        slovicka.add(new Slovicko("nashledanou", "goodbye", R.drawable.smajlik));
-        slovicka.add(new Slovicko("těší mě", "nice to meet you", R.drawable.smajlik));
-        slovicka.add(new Slovicko("jmenuji se", "my name is", R.drawable.smajlik));
-        slovicka.add(new Slovicko("ahoj", "hi", R.drawable.smajlik));
-        slovicka.add(new Slovicko("měj se dobře", "take care", R.drawable.smajlik));
+        slovicka.add(new Slovicko("one", "jedna", R.drawable.smajlik));
+        slovicka.add(new Slovicko("two", "dva",R.drawable.smajlik));
+        slovicka.add(new Slovicko("three", "tři", R.drawable.smajlik));
+        slovicka.add(new Slovicko("four", "čtyři", R.drawable.smajlik));
+        slovicka.add(new Slovicko("five", "pět", R.drawable.smajlik));
+        slovicka.add(new Slovicko("six", "šest", R.drawable.smajlik));
+        slovicka.add(new Slovicko("seven", "sedm", R.drawable.smajlik));
+        slovicka.add(new Slovicko("eight", "osm", R.drawable.smajlik));
+        slovicka.add(new Slovicko("nine", "devět", R.drawable.smajlik));
+        slovicka.add(new Slovicko("ten", "deset", R.drawable.smajlik));
 
 
         return slovicka;

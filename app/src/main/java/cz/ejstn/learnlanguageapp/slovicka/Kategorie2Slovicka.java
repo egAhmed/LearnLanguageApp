@@ -20,17 +20,19 @@ public class Kategorie2Slovicka {
         return slovicka;
     }
 
+
+    // rodina
     private static ArrayList<Slovicko> vytvorSlovicka (ArrayList<Slovicko> slovicka) {
-        slovicka.add(new Slovicko("dobrý den", "hello", R.drawable.smajlik));
-        slovicka.add(new Slovicko("jak se máš", "how are you",R.drawable.smajlik));
-        slovicka.add(new Slovicko("mám se dobře", "i am fine", R.drawable.smajlik));
-        slovicka.add(new Slovicko("děkuji", "thank you", R.drawable.smajlik));
-        slovicka.add(new Slovicko("prosím", "please", R.drawable.smajlik));
-        slovicka.add(new Slovicko("nashledanou", "goodbye", R.drawable.smajlik));
-        slovicka.add(new Slovicko("těší mě", "nice to meet you", R.drawable.smajlik));
-        slovicka.add(new Slovicko("jmenuji se", "my name is", R.drawable.smajlik));
-        slovicka.add(new Slovicko("ahoj", "hi", R.drawable.smajlik));
-        slovicka.add(new Slovicko("měj se dobře", "take care", R.drawable.smajlik));
+        slovicka.add(new Slovicko("dad", "táta", R.drawable.smajlik));
+        slovicka.add(new Slovicko("mom", "máma",R.drawable.smajlik));
+        slovicka.add(new Slovicko("sister", "sestra", R.drawable.smajlik));
+        slovicka.add(new Slovicko("brother", "bratr", R.drawable.smajlik));
+        slovicka.add(new Slovicko("grandma", "babička", R.drawable.smajlik));
+        slovicka.add(new Slovicko("grandad", "dědeček", R.drawable.smajlik));
+        slovicka.add(new Slovicko("uncle", "strýc", R.drawable.smajlik));
+        slovicka.add(new Slovicko("aunt", "teta", R.drawable.smajlik));
+        slovicka.add(new Slovicko("cousin", "bratranec", R.drawable.smajlik));
+        slovicka.add(new Slovicko("cousin", "sestřenice", R.drawable.smajlik));
 
 
         return slovicka;

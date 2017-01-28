@@ -21,17 +21,18 @@ public class Kategorie9Slovicka {
         return slovicka;
     }
 
+    // bydlení
     private static ArrayList<Slovicko> vytvorSlovicka (ArrayList<Slovicko> slovicka) {
-        slovicka.add(new Slovicko("dobrý den", "hello", R.drawable.smajlik));
-        slovicka.add(new Slovicko("jak se máš", "how are you",R.drawable.smajlik));
-        slovicka.add(new Slovicko("mám se dobře", "i am fine", R.drawable.smajlik));
-        slovicka.add(new Slovicko("děkuji", "thank you", R.drawable.smajlik));
-        slovicka.add(new Slovicko("prosím", "please", R.drawable.smajlik));
-        slovicka.add(new Slovicko("nashledanou", "goodbye", R.drawable.smajlik));
-        slovicka.add(new Slovicko("těší mě", "nice to meet you", R.drawable.smajlik));
-        slovicka.add(new Slovicko("jmenuji se", "my name is", R.drawable.smajlik));
-        slovicka.add(new Slovicko("ahoj", "hi", R.drawable.smajlik));
-        slovicka.add(new Slovicko("měj se dobře", "take care", R.drawable.smajlik));
+        slovicka.add(new Slovicko("house", "dům", R.drawable.smajlik));
+        slovicka.add(new Slovicko("flat", "byt",R.drawable.smajlik));
+        slovicka.add(new Slovicko("block of flats", "panelák", R.drawable.smajlik));
+        slovicka.add(new Slovicko("cottage", "chata", R.drawable.smajlik));
+        slovicka.add(new Slovicko("castle", "zámek", R.drawable.smajlik));
+        slovicka.add(new Slovicko("stairs", "schody", R.drawable.smajlik));
+        slovicka.add(new Slovicko("ground floor", "přízemí", R.drawable.smajlik));
+        slovicka.add(new Slovicko("elevator", "výtah", R.drawable.smajlik));
+        slovicka.add(new Slovicko("roof", "střecha", R.drawable.smajlik));
+        slovicka.add(new Slovicko("room", "pokoj", R.drawable.smajlik));
 
 
         return slovicka;

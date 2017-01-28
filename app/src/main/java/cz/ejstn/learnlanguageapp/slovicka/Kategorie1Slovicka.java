@@ -20,17 +20,18 @@ public class Kategorie1Slovicka {
         return slovicka;
     }
 
+    // zvířata
     private static ArrayList<Slovicko> vytvorSlovicka (ArrayList<Slovicko> slovicka) {
-        slovicka.add(new Slovicko("dobrý den", "hello", R.drawable.smajlik));
-        slovicka.add(new Slovicko("jak se máš", "how are you",R.drawable.smajlik));
-        slovicka.add(new Slovicko("mám se dobře", "i am fine", R.drawable.smajlik));
-        slovicka.add(new Slovicko("děkuji", "thank you", R.drawable.smajlik));
-        slovicka.add(new Slovicko("prosím", "please", R.drawable.smajlik));
-        slovicka.add(new Slovicko("nashledanou", "goodbye", R.drawable.smajlik));
-        slovicka.add(new Slovicko("těší mě", "nice to meet you", R.drawable.smajlik));
-        slovicka.add(new Slovicko("jmenuji se", "my name is", R.drawable.smajlik));
-        slovicka.add(new Slovicko("ahoj", "hi", R.drawable.smajlik));
-        slovicka.add(new Slovicko("měj se dobře", "take care", R.drawable.smajlik));
+        slovicka.add(new Slovicko("dog", "pes", R.drawable.smajlik));
+        slovicka.add(new Slovicko("cat", "kočka",R.drawable.smajlik));
+        slovicka.add(new Slovicko("mouse", "myš", R.drawable.smajlik));
+        slovicka.add(new Slovicko("horse", "kůň", R.drawable.smajlik));
+        slovicka.add(new Slovicko("giraffe", "žirafa", R.drawable.smajlik));
+        slovicka.add(new Slovicko("turtle", "želva", R.drawable.smajlik));
+        slovicka.add(new Slovicko("fish", "ryba", R.drawable.smajlik));
+        slovicka.add(new Slovicko("snake", "had", R.drawable.smajlik));
+        slovicka.add(new Slovicko("elephant", "slon", R.drawable.smajlik));
+        slovicka.add(new Slovicko("lion", "lev", R.drawable.smajlik));
 
 
         return slovicka;

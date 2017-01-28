@@ -20,17 +20,19 @@ public class Kategorie3Slovicka {
         return slovicka;
     }
 
+
+    // jídlo
     private static ArrayList<Slovicko> vytvorSlovicka (ArrayList<Slovicko> slovicka) {
-        slovicka.add(new Slovicko("dobrý den", "hello", R.drawable.smajlik));
-        slovicka.add(new Slovicko("jak se máš", "how are you",R.drawable.smajlik));
-        slovicka.add(new Slovicko("mám se dobře", "i am fine", R.drawable.smajlik));
-        slovicka.add(new Slovicko("děkuji", "thank you", R.drawable.smajlik));
-        slovicka.add(new Slovicko("prosím", "please", R.drawable.smajlik));
-        slovicka.add(new Slovicko("nashledanou", "goodbye", R.drawable.smajlik));
-        slovicka.add(new Slovicko("těší mě", "nice to meet you", R.drawable.smajlik));
-        slovicka.add(new Slovicko("jmenuji se", "my name is", R.drawable.smajlik));
-        slovicka.add(new Slovicko("ahoj", "hi", R.drawable.smajlik));
-        slovicka.add(new Slovicko("měj se dobře", "take care", R.drawable.smajlik));
+        slovicka.add(new Slovicko("bread", "chleba", R.drawable.smajlik));
+        slovicka.add(new Slovicko("butter", "máslo",R.drawable.smajlik));
+        slovicka.add(new Slovicko("meat", "maso", R.drawable.smajlik));
+        slovicka.add(new Slovicko("potato", "brambora", R.drawable.smajlik));
+        slovicka.add(new Slovicko("rice", "rýže", R.drawable.smajlik));
+        slovicka.add(new Slovicko("pasta", "těstoviny", R.drawable.smajlik));
+        slovicka.add(new Slovicko("apple", "jablko", R.drawable.smajlik));
+        slovicka.add(new Slovicko("cereal", "cereálie", R.drawable.smajlik));
+        slovicka.add(new Slovicko("yogurt", "jogurt", R.drawable.smajlik));
+        slovicka.add(new Slovicko("donut", "kobliha", R.drawable.smajlik));
 
 
         return slovicka;

@@ -20,17 +20,18 @@ public class Kategorie6Slovicka {
         return slovicka;
     }
 
+    // volný čas
     private static ArrayList<Slovicko> vytvorSlovicka (ArrayList<Slovicko> slovicka) {
-        slovicka.add(new Slovicko("dobrý den", "hello", R.drawable.smajlik));
-        slovicka.add(new Slovicko("jak se máš", "how are you",R.drawable.smajlik));
-        slovicka.add(new Slovicko("mám se dobře", "i am fine", R.drawable.smajlik));
-        slovicka.add(new Slovicko("děkuji", "thank you", R.drawable.smajlik));
-        slovicka.add(new Slovicko("prosím", "please", R.drawable.smajlik));
-        slovicka.add(new Slovicko("nashledanou", "goodbye", R.drawable.smajlik));
-        slovicka.add(new Slovicko("těší mě", "nice to meet you", R.drawable.smajlik));
-        slovicka.add(new Slovicko("jmenuji se", "my name is", R.drawable.smajlik));
-        slovicka.add(new Slovicko("ahoj", "hi", R.drawable.smajlik));
-        slovicka.add(new Slovicko("měj se dobře", "take care", R.drawable.smajlik));
+        slovicka.add(new Slovicko("reading", "čtení", R.drawable.smajlik));
+        slovicka.add(new Slovicko("listen to music", "poslouchat hudbu",R.drawable.smajlik));
+        slovicka.add(new Slovicko("watch tv", "sledovat televizi", R.drawable.smajlik));
+        slovicka.add(new Slovicko("go for a walk", "jít na procházku", R.drawable.smajlik));
+        slovicka.add(new Slovicko("play video games", "hrát videohry", R.drawable.smajlik));
+        slovicka.add(new Slovicko("gardening", "zahradničení", R.drawable.smajlik));
+        slovicka.add(new Slovicko("excercising", "cvičení", R.drawable.smajlik));
+        slovicka.add(new Slovicko("cooking", "vaření", R.drawable.smajlik));
+        slovicka.add(new Slovicko("shopping", "nakupování", R.drawable.smajlik));
+        slovicka.add(new Slovicko("surf the internet", "brouzdat na internetu", R.drawable.smajlik));
 
 
         return slovicka;

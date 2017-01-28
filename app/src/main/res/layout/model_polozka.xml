@@ -7,57 +7,56 @@
 android:background="@color/mild_background" -->
 
 
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="horizontal"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:minHeight="@dimen/min_vyska_modelu_polozky">
+    android:minHeight="@dimen/min_vyska_modelu_polozky"
+    android:orientation="horizontal">
+
 
 
     <ImageView
+        android:id="@+id/obrazek_polozky"
         android:layout_width="@dimen/min_vyska_modelu_polozky"
         android:layout_height="@dimen/min_vyska_modelu_polozky"
         android:layout_gravity="center"
         android:padding="6dp"
-        android:id="@+id/obrazek_polozky"
-        android:src="@mipmap/ic_launcher"/>
+        tools:src="@mipmap/ic_launcher" />
 
 
     <LinearLayout
         android:id="@+id/linear_layout_obou_prekladu"
-    android:orientation="vertical"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:paddingStart="16dp"
-        android:paddingLeft="16dp">
-
-    <TextView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:id="@+id/horni_text_polozky"
-        tools:text="horní"
-        android:gravity="bottom"
-        android:textAppearance="@android:style/TextAppearance.Medium"
-        android:textColor="@android:color/white"
-        android:textStyle="bold"
-        tools:textColor="@android:color/black"
-        />
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingStart="16dp">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:id="@+id/dolni_text_polozky"
-        tools:text="dolní"
-        android:gravity="top"
-        android:textAppearance="@android:style/TextAppearance.Medium"
-        android:textColor="@android:color/white"
-        tools:textColor="@android:color/black"
-        />
+        <TextView
+            android:id="@+id/horni_text_polozky"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="bottom"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            tools:text="horní"
+            tools:textColor="@android:color/black" />
 
-</LinearLayout>
+        <TextView
+            android:id="@+id/dolni_text_polozky"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="top"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textColor="@android:color/white"
+            tools:text="dolní"
+            tools:textColor="@android:color/black" />
+
+
+    </LinearLayout>
 
 </LinearLayout>
