@@ -35,6 +35,7 @@ public class Kategorie1Zvirata {
         slovicka.add(new Slovicko("snake", "had", R.drawable.zvirata_had, R.raw.song));
         slovicka.add(new Slovicko("elephant", "slon", R.drawable.zvirata_slon, R.raw.song));
         slovicka.add(new Slovicko("lion", "lev", R.drawable.zvirata_lev, R.raw.song));
+
         slovicka.add(new Slovicko("fox", "liška", R.drawable.zvirata_liska, R.raw.song));
         slovicka.add(new Slovicko("rhino", "nosorožec", R.drawable.zvirata_nosorozec, R.raw.song));
         slovicka.add(new Slovicko("sheep", "ovce", R.drawable.zvirata_ovce, R.raw.song));
@@ -45,6 +46,18 @@ public class Kategorie1Zvirata {
         slovicka.add(new Slovicko("camel", "velbloud", R.drawable.zvirata_velbloud, R.raw.song));
         slovicka.add(new Slovicko("bull", "býk", R.drawable.zvirata_byk, R.raw.song));
         slovicka.add(new Slovicko("rabbit", "králík", R.drawable.zvirata_kralik, R.raw.song));
+
+        slovicka.add(new Slovicko("cow", "kráva", R.drawable.zvirata_krava, R.raw.song));
+        slovicka.add(new Slovicko("goat", "koza", R.drawable.zvirata_koza, R.raw.song));
+        slovicka.add(new Slovicko("bat", "netopýr", R.drawable.zvirata_netopyr, R.raw.song));
+        slovicka.add(new Slovicko("squirrel", "veverka", R.drawable.zvirata_veverka, R.raw.song));
+        slovicka.add(new Slovicko("penguin", "tučňák", R.drawable.zvirata_tucnak, R.raw.song));
+        slovicka.add(new Slovicko("dolphin", "delfín", R.drawable.zvirata_delfin, R.raw.song));
+        slovicka.add(new Slovicko("eagle", "orel", R.drawable.zvirata_orel, R.raw.song));
+        slovicka.add(new Slovicko("duck", "kachna", R.drawable.zvirata_kachna, R.raw.song));
+        slovicka.add(new Slovicko("shark", "žralok", R.drawable.zvirata_zralok, R.raw.song));
+        slovicka.add(new Slovicko("spider", "pavouk", R.drawable.zvirata_pavouk, R.raw.song));
+        slovicka.add(new Slovicko("frog", "žába", R.drawable.zvirata_zaba, R.raw.song));
 
 
 
