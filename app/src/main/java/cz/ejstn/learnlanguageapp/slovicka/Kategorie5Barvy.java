@@ -9,9 +9,9 @@ import cz.ejstn.learnlanguageapp.model.Slovicko;
  * Created by Martin Soukup on 27.1.2017.
  */
 
-public class Kategorie5Slovicka {
+public class Kategorie5Barvy {
 
-    private Kategorie5Slovicka() {
+    private Kategorie5Barvy() {
     }
 
     public static ArrayList<Slovicko> pripravKategorii() {

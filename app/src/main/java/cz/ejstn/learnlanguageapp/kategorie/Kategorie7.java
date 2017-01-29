@@ -12,7 +12,7 @@ import java.util.ArrayList;
 import cz.ejstn.learnlanguageapp.R;
 import cz.ejstn.learnlanguageapp.adapter.SlovickaAdapter;
 import cz.ejstn.learnlanguageapp.model.Slovicko;
-import cz.ejstn.learnlanguageapp.slovicka.Kategorie7Slovicka;
+import cz.ejstn.learnlanguageapp.slovicka.Kategorie7Sport;
 
 public class Kategorie7 extends AppCompatActivity {
 
@@ -51,7 +51,7 @@ public class Kategorie7 extends AppCompatActivity {
 
     private void vsechnoPriprav() {
 
-        final ArrayList<Slovicko> slovicka = Kategorie7Slovicka.pripravKategorii();
+        final ArrayList<Slovicko> slovicka = Kategorie7Sport.pripravKategorii();
         SlovickaAdapter adapter = new SlovickaAdapter(this, slovicka, R.color.category_item_7);
 
         ListView listSlovicek = (ListView) findViewById(R.id.listView_kategorie);

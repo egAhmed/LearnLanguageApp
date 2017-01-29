@@ -9,9 +9,9 @@ import cz.ejstn.learnlanguageapp.model.Slovicko;
  * Created by Martin Soukup on 28.1.2017.
  */
 
-public class Kategorie7Slovicka {
+public class Kategorie7Sport {
 
-    private Kategorie7Slovicka() {
+    private Kategorie7Sport() {
     }
 
 

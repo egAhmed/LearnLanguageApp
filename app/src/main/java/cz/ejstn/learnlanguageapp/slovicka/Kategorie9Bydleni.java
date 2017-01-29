@@ -9,9 +9,9 @@ import cz.ejstn.learnlanguageapp.model.Slovicko;
  * Created by Martin Soukup on 28.1.2017.
  */
 
-public class Kategorie9Slovicka {
+public class Kategorie9Bydleni {
 
-    private Kategorie9Slovicka() {
+    private Kategorie9Bydleni() {
     }
 
 
@@ -36,6 +36,10 @@ public class Kategorie9Slovicka {
         slovicka.add(new Slovicko("elevator", "výtah", R.drawable.smajlik, R.raw.song));
         slovicka.add(new Slovicko("roof", "střecha", R.drawable.smajlik, R.raw.song));
         slovicka.add(new Slovicko("room", "pokoj", R.drawable.smajlik, R.raw.song));
+
+
+
+
 
 
         return slovicka;
