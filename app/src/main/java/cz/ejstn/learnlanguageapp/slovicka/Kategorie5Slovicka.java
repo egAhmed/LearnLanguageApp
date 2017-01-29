@@ -26,16 +26,16 @@ public class Kategorie5Slovicka {
 
     // barvy
     private static ArrayList<Slovicko> vytvorSlovicka (ArrayList<Slovicko> slovicka) {
-        slovicka.add(new Slovicko("green", "zelená", R.drawable.smajlik, R.raw.song));
-        slovicka.add(new Slovicko("blue", "modrá",R.drawable.smajlik, R.raw.song));
-        slovicka.add(new Slovicko("purple", "fialová", R.drawable.smajlik, R.raw.song));
-        slovicka.add(new Slovicko("pink", "růžová", R.drawable.smajlik, R.raw.song));
-        slovicka.add(new Slovicko("red", "červená", R.drawable.smajlik, R.raw.song));
-        slovicka.add(new Slovicko("orange", "oranžová", R.drawable.smajlik, R.raw.song));
-        slovicka.add(new Slovicko("yellow", "žlutá", R.drawable.smajlik, R.raw.song));
-        slovicka.add(new Slovicko("white", "bílá", R.drawable.smajlik, R.raw.song));
-        slovicka.add(new Slovicko("brown", "hnědá", R.drawable.smajlik, R.raw.song));
-        slovicka.add(new Slovicko("black", "černá", R.drawable.smajlik, R.raw.song));
+        slovicka.add(new Slovicko("green", "zelená", R.drawable.barvy_zelena, R.raw.song));
+        slovicka.add(new Slovicko("blue", "modrá",R.drawable.barvy_modra, R.raw.song));
+        slovicka.add(new Slovicko("purple", "fialová", R.drawable.barvy_fialova, R.raw.song));
+        slovicka.add(new Slovicko("pink", "růžová", R.drawable.barvy_ruzova, R.raw.song));
+        slovicka.add(new Slovicko("red", "červená", R.drawable.barvy_cervena, R.raw.song));
+        slovicka.add(new Slovicko("orange", "oranžová", R.drawable.barvy_oranzova, R.raw.song));
+        slovicka.add(new Slovicko("yellow", "žlutá", R.drawable.barvy_zluta, R.raw.song));
+        slovicka.add(new Slovicko("white", "bílá", R.drawable.barvy_bila, R.raw.song));
+        slovicka.add(new Slovicko("brown", "hnědá", R.drawable.barvy_hneda, R.raw.song));
+        slovicka.add(new Slovicko("black", "černá", R.drawable.barvy_cerna, R.raw.song));
 
         return slovicka;
     }

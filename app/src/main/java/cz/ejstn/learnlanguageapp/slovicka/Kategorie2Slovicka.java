@@ -27,16 +27,16 @@ public class Kategorie2Slovicka {
 
     // rodina
     private static ArrayList<Slovicko> vytvorSlovicka (ArrayList<Slovicko> slovicka) {
-        slovicka.add(new Slovicko("dad", "táta", R.drawable.smajlik, R.raw.song));
-        slovicka.add(new Slovicko("mom", "máma",R.drawable.smajlik, R.raw.song));
-        slovicka.add(new Slovicko("sister", "sestra", R.drawable.smajlik, R.raw.song));
-        slovicka.add(new Slovicko("brother", "bratr", R.drawable.smajlik, R.raw.song));
-        slovicka.add(new Slovicko("grandma", "babička", R.drawable.smajlik, R.raw.song));
-        slovicka.add(new Slovicko("grandad", "dědeček", R.drawable.smajlik, R.raw.song));
-        slovicka.add(new Slovicko("uncle", "strýc", R.drawable.smajlik, R.raw.song));
-        slovicka.add(new Slovicko("aunt", "teta", R.drawable.smajlik, R.raw.song));
-        slovicka.add(new Slovicko("cousin", "bratranec", R.drawable.smajlik, R.raw.song));
-        slovicka.add(new Slovicko("cousin", "sestřenice", R.drawable.smajlik, R.raw.song));
+        slovicka.add(new Slovicko("dad", "táta", R.drawable.rodina_tata, R.raw.song));
+        slovicka.add(new Slovicko("mom", "máma",R.drawable.rodina_mama, R.raw.song));
+        slovicka.add(new Slovicko("sister", "sestra", R.drawable.rodina_sestra, R.raw.song));
+        slovicka.add(new Slovicko("brother", "bratr", R.drawable.rodina_bratr, R.raw.song));
+        slovicka.add(new Slovicko("grandma", "babička", R.drawable.rodina_babicka, R.raw.song));
+        slovicka.add(new Slovicko("grandad", "dědeček", R.drawable.rodina_deda, R.raw.song));
+        slovicka.add(new Slovicko("uncle", "strýc", R.drawable.rodina_stryc, R.raw.song));
+        slovicka.add(new Slovicko("aunt", "teta", R.drawable.rodina_teta, R.raw.song));
+        slovicka.add(new Slovicko("cousin", "bratranec", R.drawable.rodina_bratranec, R.raw.song));
+        slovicka.add(new Slovicko("cousin", "sestřenice", R.drawable.rodina_sestrenice, R.raw.song));
 
 
         return slovicka;

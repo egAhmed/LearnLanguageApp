@@ -25,16 +25,16 @@ public class Kategorie6Slovicka {
 
     // volný čas
     private static ArrayList<Slovicko> vytvorSlovicka (ArrayList<Slovicko> slovicka) {
-        slovicka.add(new Slovicko("reading", "čtení", R.drawable.smajlik, R.raw.song));
-        slovicka.add(new Slovicko("listen to music", "poslouchat hudbu",R.drawable.smajlik, R.raw.song));
-        slovicka.add(new Slovicko("watch tv", "sledovat televizi", R.drawable.smajlik, R.raw.song));
-        slovicka.add(new Slovicko("go for a walk", "jít na procházku", R.drawable.smajlik, R.raw.song));
-        slovicka.add(new Slovicko("play video games", "hrát videohry", R.drawable.smajlik, R.raw.song));
-        slovicka.add(new Slovicko("gardening", "zahradničení", R.drawable.smajlik, R.raw.song));
-        slovicka.add(new Slovicko("excercising", "cvičení", R.drawable.smajlik, R.raw.song));
-        slovicka.add(new Slovicko("cooking", "vaření", R.drawable.smajlik, R.raw.song));
-        slovicka.add(new Slovicko("shopping", "nakupování", R.drawable.smajlik, R.raw.song));
-        slovicka.add(new Slovicko("surf the internet", "brouzdat na internetu", R.drawable.smajlik, R.raw.song));
+        slovicka.add(new Slovicko("reading", "čtení", R.drawable.volnycas_cteni, R.raw.song));
+        slovicka.add(new Slovicko("listen to music", "poslouchat hudbu",R.drawable.volnycas_poslouchani_muziky, R.raw.song));
+        slovicka.add(new Slovicko("watch tv", "sledovat televizi", R.drawable.volnycas_sledovat_tv, R.raw.song));
+        slovicka.add(new Slovicko("go for a walk", "jít na procházku", R.drawable.volnycas_jit_na_prochazku, R.raw.song));
+        slovicka.add(new Slovicko("play video games", "hrát videohry", R.drawable.volnycas_hrat_videohry, R.raw.song));
+        slovicka.add(new Slovicko("gardening", "zahradničení", R.drawable.volnycas_zahradniceni, R.raw.song));
+        slovicka.add(new Slovicko("excercising", "cvičení", R.drawable.volnycas_cviceni, R.raw.song));
+        slovicka.add(new Slovicko("cooking", "vaření", R.drawable.volnycas_vareni, R.raw.song));
+        slovicka.add(new Slovicko("shopping", "nakupování", R.drawable.volnycas_nakupovat, R.raw.song));
+        slovicka.add(new Slovicko("surf the internet", "brouzdat na internetu", R.drawable.volnycas_brouzdani, R.raw.song));
 
 
         return slovicka;

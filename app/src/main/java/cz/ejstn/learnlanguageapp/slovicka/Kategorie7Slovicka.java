@@ -26,16 +26,16 @@ public class Kategorie7Slovicka {
 
     // sport
     private static ArrayList<Slovicko> vytvorSlovicka (ArrayList<Slovicko> slovicka) {
-        slovicka.add(new Slovicko("football", "fotbal", R.drawable.smajlik, R.raw.song));
-        slovicka.add(new Slovicko("ice hockey", "hokej",R.drawable.smajlik, R.raw.song));
-        slovicka.add(new Slovicko("track and field", "atletika", R.drawable.smajlik, R.raw.song));
-        slovicka.add(new Slovicko("basketball", "basketbal", R.drawable.smajlik, R.raw.song));
-        slovicka.add(new Slovicko("baseball", "baseball", R.drawable.smajlik, R.raw.song));
-        slovicka.add(new Slovicko("floorball", "florbal", R.drawable.smajlik, R.raw.song));
-        slovicka.add(new Slovicko("jogging", "běhání", R.drawable.smajlik, R.raw.song));
-        slovicka.add(new Slovicko("bodybuilding", "posilování", R.drawable.smajlik, R.raw.song));
-        slovicka.add(new Slovicko("skiing", "lyžování", R.drawable.smajlik, R.raw.song));
-        slovicka.add(new Slovicko("swimming", "plavání", R.drawable.smajlik, R.raw.song));
+        slovicka.add(new Slovicko("football", "fotbal", R.drawable.sport_fotbal, R.raw.song));
+        slovicka.add(new Slovicko("ice hockey", "hokej",R.drawable.sport_hokej, R.raw.song));
+        slovicka.add(new Slovicko("track and field", "atletika", R.drawable.sport_atletika, R.raw.song));
+        slovicka.add(new Slovicko("basketball", "basketbal", R.drawable.sport_basket, R.raw.song));
+        slovicka.add(new Slovicko("bicycle", "kolo", R.drawable.sport_kolo, R.raw.song));
+        slovicka.add(new Slovicko("archery", "lukostřelba", R.drawable.sport_lukostrelba, R.raw.song));
+        slovicka.add(new Slovicko("jogging", "běhání", R.drawable.sport_behani, R.raw.song));
+        slovicka.add(new Slovicko("bodybuilding", "posilování", R.drawable.sport_posilovani, R.raw.song));
+        slovicka.add(new Slovicko("skiing", "lyžování", R.drawable.sport_lyzovani, R.raw.song));
+        slovicka.add(new Slovicko("swimming", "plavání", R.drawable.sport_plavani, R.raw.song));
 
 
         return slovicka;
