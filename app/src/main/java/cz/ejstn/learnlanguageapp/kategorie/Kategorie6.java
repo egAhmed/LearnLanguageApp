@@ -20,7 +20,7 @@ public class Kategorie6 extends AppCompatActivity {
     private MediaPlayer.OnCompletionListener listenerKonecZvuku = new MediaPlayer.OnCompletionListener() {
         @Override
         public void onCompletion(MediaPlayer mp) {
-            mp.release();
+            releasniPrehravac();
         }
     };
 
