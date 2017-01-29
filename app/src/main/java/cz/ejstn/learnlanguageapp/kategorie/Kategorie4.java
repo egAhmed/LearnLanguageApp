@@ -11,13 +11,18 @@ import java.util.ArrayList;
 
 import cz.ejstn.learnlanguageapp.R;
 import cz.ejstn.learnlanguageapp.adapter.SlovickaAdapter;
-import cz.ejstn.learnlanguageapp.helper.PrehravacHelper;
-import cz.ejstn.learnlanguageapp.slovicka.Kategorie4Slovicka;
 import cz.ejstn.learnlanguageapp.model.Slovicko;
+import cz.ejstn.learnlanguageapp.slovicka.Kategorie4Slovicka;
 
 public class Kategorie4 extends AppCompatActivity {
 
     private MediaPlayer prehravac;
+    private MediaPlayer.OnCompletionListener listenerKonecZvuku = new MediaPlayer.OnCompletionListener() {
+        @Override
+        public void onCompletion(MediaPlayer mp) {
+            mp.release();
+        }
+    };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,9 +34,19 @@ public class Kategorie4 extends AppCompatActivity {
 
 
 
+    }
 
+    @Override
+    protected void onPause() {
+        super.onPause();
+        releasniPrehravac();
 
+    }
 
+    @Override
+    protected void onStop() {
+        super.onStop();
+        releasniPrehravac();
     }
 
     private void vsechnoPriprav() {
@@ -46,15 +61,21 @@ public class Kategorie4 extends AppCompatActivity {
         listSlovicek.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                PrehravacHelper.releasniPrehravac(prehravac);
-                prehravac = null;
-
+                releasniPrehravac();
 
                 prehravac = MediaPlayer.create(Kategorie4.this, slovicka.get(position).getIdZvuku());
                 prehravac.start();
 
-                PrehravacHelper.pripojOnCompletionListener(prehravac);
+                prehravac.setOnCompletionListener(listenerKonecZvuku);
+
             }
         });
+    }
+
+    private void releasniPrehravac () {
+        if (prehravac != null) {
+            prehravac.release();
+            prehravac = null;
+        }
     }
 }
