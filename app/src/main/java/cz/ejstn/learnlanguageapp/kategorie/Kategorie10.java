@@ -8,6 +8,7 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 import cz.ejstn.learnlanguageapp.R;
 import cz.ejstn.learnlanguageapp.adapter.SlovickaAdapter;
@@ -49,6 +50,8 @@ public class Kategorie10 extends AppCompatActivity {
     private void vsechnoPriprav() {
 
         final ArrayList<Slovicko> slovicka = Kategorie10Doprava.pripravKategorii();
+        Collections.shuffle(slovicka);
+
         SlovickaAdapter adapter = new SlovickaAdapter(this, slovicka, R.color.category_item_10);
 
         ListView listSlovicek = (ListView) findViewById(R.id.listView_kategorie);

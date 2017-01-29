@@ -45,9 +45,6 @@ public class Kategorie9Emoce {
 
 
 
-
-
-
         return slovicka;
     }
 }
