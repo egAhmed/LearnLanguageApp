@@ -35,6 +35,17 @@ public class Kategorie1Zvirata {
         slovicka.add(new Slovicko("snake", "had", R.drawable.zvirata_had, R.raw.song));
         slovicka.add(new Slovicko("elephant", "slon", R.drawable.zvirata_slon, R.raw.song));
         slovicka.add(new Slovicko("lion", "lev", R.drawable.zvirata_lev, R.raw.song));
+        slovicka.add(new Slovicko("fox", "liška", R.drawable.zvirata_liska, R.raw.song));
+        slovicka.add(new Slovicko("rhino", "nosorožec", R.drawable.zvirata_nosorozec, R.raw.song));
+        slovicka.add(new Slovicko("sheep", "ovce", R.drawable.zvirata_ovce, R.raw.song));
+        slovicka.add(new Slovicko("monkey", "opice", R.drawable.zvirata_opice, R.raw.song));
+        slovicka.add(new Slovicko("deer", "jelen", R.drawable.zvirata_jelen, R.raw.song));
+        slovicka.add(new Slovicko("koala", "koala", R.drawable.zvirata_koala, R.raw.song));
+        slovicka.add(new Slovicko("panda", "panda", R.drawable.zvirata_panda, R.raw.song));
+        slovicka.add(new Slovicko("camel", "velbloud", R.drawable.zvirata_velbloud, R.raw.song));
+        slovicka.add(new Slovicko("bull", "býk", R.drawable.zvirata_byk, R.raw.song));
+        slovicka.add(new Slovicko("rabbit", "králík", R.drawable.zvirata_kralik, R.raw.song));
+
 
 
         return slovicka;

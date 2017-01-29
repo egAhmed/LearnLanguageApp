@@ -2,12 +2,12 @@
     <string name="app_name">Anglická Slovíčka</string>
     <string name="menu_item_1">Zvířata</string>
     <string name="menu_item_2">Rodina</string>
-    <string name="menu_item_3">Jídlo</string>
-    <string name="menu_item_4">Čísla</string>
+    <string name="menu_item_3">Jídlo a pití</string>
+    <string name="menu_item_4">Emoce</string>
     <string name="menu_item_5">Barvy</string>
     <string name="menu_item_6">Volný čas</string>
     <string name="menu_item_7">Sport</string>
     <string name="menu_item_8">Příroda</string>
-    <string name="menu_item_9">Bydlení</string>
+    <string name="menu_item_9">Čísla</string>
     <string name="menu_item_10">Doprava</string>
 </resources>

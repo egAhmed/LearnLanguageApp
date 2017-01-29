@@ -9,9 +9,9 @@ import cz.ejstn.learnlanguageapp.model.Slovicko;
  * Created by Martin Soukup on 28.1.2017.
  */
 
-public class Kategorie9Bydleni {
+public class Kategorie11Bydleni {
 
-    private Kategorie9Bydleni() {
+    private Kategorie11Bydleni() {
     }
 
 
