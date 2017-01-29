@@ -11,6 +11,7 @@ import java.util.ArrayList;
 
 import cz.ejstn.learnlanguageapp.R;
 import cz.ejstn.learnlanguageapp.adapter.SlovickaAdapter;
+import cz.ejstn.learnlanguageapp.helper.PrehravacHelper;
 import cz.ejstn.learnlanguageapp.model.Slovicko;
 import cz.ejstn.learnlanguageapp.slovicka.Kategorie10Slovicka;
 
@@ -42,8 +43,14 @@ public class Kategorie10 extends AppCompatActivity {
         listSlovicek.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+
+                PrehravacHelper.releasniPrehravac(prehravac);
+                prehravac = null;
+
                 prehravac = MediaPlayer.create(Kategorie10.this, slovicka.get(position).getIdZvuku());
                 prehravac.start();
+
+                PrehravacHelper.pripojOnCompletionListener(prehravac);
             }
         });
 

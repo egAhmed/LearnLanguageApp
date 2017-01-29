@@ -46,4 +46,14 @@ public class Slovicko {
     public boolean maObrazek() {
         return idObrazku != nemaObrazek;
     }
+
+    @Override
+    public String toString() {
+        return "Slovicko{" +
+                "anglictina='" + anglictina + '\'' +
+                ", cestina='" + cestina + '\'' +
+                ", idObrazku=" + idObrazku +
+                ", idZvuku=" + idZvuku +
+                '}';
+    }
 }

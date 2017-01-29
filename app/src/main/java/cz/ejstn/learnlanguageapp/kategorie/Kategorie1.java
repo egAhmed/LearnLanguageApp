@@ -3,6 +3,7 @@ package cz.ejstn.learnlanguageapp.kategorie;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
@@ -11,6 +12,7 @@ import java.util.ArrayList;
 
 import cz.ejstn.learnlanguageapp.R;
 import cz.ejstn.learnlanguageapp.adapter.SlovickaAdapter;
+import cz.ejstn.learnlanguageapp.helper.PrehravacHelper;
 import cz.ejstn.learnlanguageapp.model.Slovicko;
 import cz.ejstn.learnlanguageapp.slovicka.Kategorie1Slovicka;
 
@@ -45,8 +47,18 @@ public class Kategorie1 extends AppCompatActivity {
         listSlovicek.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+
+                PrehravacHelper.releasniPrehravac(prehravac);
+                prehravac = null;
+
+
+
                 prehravac = MediaPlayer.create(Kategorie1.this, slovicka.get(position).getIdZvuku());
                 prehravac.start();
+
+                PrehravacHelper.pripojOnCompletionListener(prehravac);
+
+                Log.d("zakliknute slovicko:", slovicka.get(position).toString());
             }
         });
 

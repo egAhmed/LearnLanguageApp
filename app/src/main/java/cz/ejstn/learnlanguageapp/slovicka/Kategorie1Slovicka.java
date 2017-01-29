@@ -11,6 +11,9 @@ import cz.ejstn.learnlanguageapp.model.Slovicko;
 
 public class Kategorie1Slovicka {
 
+    private Kategorie1Slovicka() {
+    }
+
     public static ArrayList<Slovicko> pripravKategorii() {
         ArrayList<Slovicko> slovicka = new ArrayList<>();
 
