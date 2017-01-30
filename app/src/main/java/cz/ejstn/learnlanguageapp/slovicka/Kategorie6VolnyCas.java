@@ -36,6 +36,19 @@ public class Kategorie6VolnyCas {
         slovicka.add(new Slovicko("shopping", "nakupování", R.drawable.volnycas_nakupovat, R.raw.song));
         slovicka.add(new Slovicko("surf the internet", "brouzdat na internetu", R.drawable.volnycas_brouzdani, R.raw.song));
 
+        slovicka.add(new Slovicko("fishing", "rybaření", R.drawable.volnycas_rybareni, R.raw.song));
+        slovicka.add(new Slovicko("singing", "zpívání", R.drawable.volnycas_zpivani, R.raw.song));
+        slovicka.add(new Slovicko("board games", "deskové hry", R.drawable.volnycas_deskove_hry, R.raw.song));
+        slovicka.add(new Slovicko("painting", "malování", R.drawable.volnycas_malovani, R.raw.song));
+        slovicka.add(new Slovicko("traveling", "cestování", R.drawable.volnycas_cestovani, R.raw.song));
+        slovicka.add(new Slovicko("photography", "focení", R.drawable.volnycas_foceni, R.raw.song));
+        slovicka.add(new Slovicko("writing", "psaní", R.drawable.volnycas_psani, R.raw.song));
+        slovicka.add(new Slovicko("photography", "focení", R.drawable.volnycas_foceni, R.raw.song));
+        slovicka.add(new Slovicko("sleeping", "spaní", R.drawable.volnycas_spani, R.raw.song));
+
+        slovicka.add(new Slovicko("juggling", "žonglování", R.drawable.volnycas_zonglovani, R.raw.song));
+        slovicka.add(new Slovicko("taking selfies", "focení selfies", R.drawable.volnycas_foceni_selfies, R.raw.song));
+        slovicka.add(new Slovicko("dancing", "tanec", R.drawable.volnycas_tanec, R.raw.song));
 
         return slovicka;
     }

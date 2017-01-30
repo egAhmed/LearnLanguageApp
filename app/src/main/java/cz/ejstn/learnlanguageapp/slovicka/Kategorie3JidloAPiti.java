@@ -65,6 +65,9 @@ public class Kategorie3JidloAPiti {
         slovicka.add(new Slovicko("candy", "bonbón", R.drawable.jidlo_bonbon, R.raw.song));
         slovicka.add(new Slovicko("birthday cake", "narozeninový dort", R.drawable.jidlo_narozeninovy_dort, R.raw.song));
         slovicka.add(new Slovicko("corn", "kukuřice", R.drawable.jidlo_kukurice, R.raw.song));
+        slovicka.add(new Slovicko("grapes", "hroznové víno", R.drawable.jidlo_hroznove_vino, R.raw.song));
+        slovicka.add(new Slovicko("lemon", "citron", R.drawable.jidlo_citron, R.raw.song));
+        slovicka.add(new Slovicko("peach", "broskev", R.drawable.jidlo_broskev, R.raw.song));
 
         return slovicka;
     }

@@ -38,6 +38,21 @@ public class Kategorie10Doprava {
         slovicka.add(new Slovicko("train", "vlak", R.drawable.doprava_vlak, R.raw.song));
         slovicka.add(new Slovicko("motorcycle", "motorka", R.drawable.doprava_motorka, R.raw.song));
 
+        slovicka.add(new Slovicko("trolleybus", "trolejbus", R.drawable.doprava_trolejbus, R.raw.song));
+        slovicka.add(new Slovicko("tractor", "traktor",R.drawable.doprava_traktor, R.raw.song));
+        slovicka.add(new Slovicko("tram", "tramvaj", R.drawable.doprava_tramvaj, R.raw.song));
+        slovicka.add(new Slovicko("steam locomotive", "parní lokomotiva", R.drawable.doprava_parni_lokomotiva, R.raw.song));
+        slovicka.add(new Slovicko("lorry", "kamion", R.drawable.doprava_kamion, R.raw.song));
+        slovicka.add(new Slovicko("ambulance", "sanitka", R.drawable.doprava_sanitka, R.raw.song));
+        slovicka.add(new Slovicko("bus stop", "zastávka", R.drawable.doprava_zastavka, R.raw.song));
+        slovicka.add(new Slovicko("canoe", "kánoj", R.drawable.doprava_kanoj, R.raw.song));
+        slovicka.add(new Slovicko("motorway", "dálnice", R.drawable.doprava_dalnice, R.raw.song));
+        slovicka.add(new Slovicko("seat", "sedačka", R.drawable.doprava_sedacka, R.raw.song));
+
+        slovicka.add(new Slovicko("traffic light", "semafor", R.drawable.doprava_semafor, R.raw.song));
+        slovicka.add(new Slovicko("gas station", "benzínka", R.drawable.doprava_benzinka, R.raw.song));
+        slovicka.add(new Slovicko("anchor", "kotva", R.drawable.doprava_kotva, R.raw.song));
+
 
         return slovicka;
     }
