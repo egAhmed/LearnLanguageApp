@@ -13,7 +13,7 @@ import java.util.Collections;
 import cz.ejstn.learnlanguageapp.R;
 import cz.ejstn.learnlanguageapp.adapter.SlovickaAdapter;
 import cz.ejstn.learnlanguageapp.model.Slovicko;
-import cz.ejstn.learnlanguageapp.slovicka.Kategorie9Emoce;
+import cz.ejstn.learnlanguageapp.slovicka.Kategorie9Osobnost;
 
 public class Kategorie4 extends AppCompatActivity {
 
@@ -52,7 +52,7 @@ public class Kategorie4 extends AppCompatActivity {
 
     private void vsechnoPriprav() {
 
-        final ArrayList<Slovicko> slovicka = Kategorie9Emoce.pripravKategorii();
+        final ArrayList<Slovicko> slovicka = Kategorie9Osobnost.pripravKategorii();
         Collections.shuffle(slovicka);
 
         SlovickaAdapter adapter = new SlovickaAdapter(this, slovicka, R.color.category_item_4);
