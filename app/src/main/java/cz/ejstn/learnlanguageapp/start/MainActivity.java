@@ -20,6 +20,23 @@ import cz.ejstn.learnlanguageapp.kategorie.Kategorie9;
 
 public class MainActivity extends AppCompatActivity {
 
+    // TODO: 31.1.2017 dokončit naplnění kategorií překlady a obrázky 
+    // TODO: 31.1.2017 dodat výslovnost ke všemu 
+    // TODO: 31.1.2017 poladit apptheme 
+    // TODO: 31.1.2017 doladit design mainactivity 
+    // TODO: 31.1.2017 domontovat play ikonu k jednotlivým položkám
+    // TODO: 31.1.2017 předělat všechno v barvách na materiální barvy a dodat jich tam pár navíc
+    // TODO: 31.1.2017 vyřešit ten audio fokus u všeho
+
+    // TODO: 31.1.2017 vyřadit přírodu a hodit tam něco jinýho místo toho - asi státy třeba
+    // TODO: 31.1.2017 přeškálovat všechny obrázky
+
+    // TODO: 30.1.2017 emoji art chtějí na ně odkaz viz http://emojione.com/licensing/
+    // TODO: 31.1.2017 udělat právě nějakou info aktivitu, kde bude ten emoji odkaz a třeba
+    // TODO: 31.1.2017 třeba tlačítko na poslání feedbacku
+
+    // TODO: 31.1.2017 layout a úpravy pro tablety - tam je to hlavně malý, takže udělat verzi layoutů pro tablety
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
