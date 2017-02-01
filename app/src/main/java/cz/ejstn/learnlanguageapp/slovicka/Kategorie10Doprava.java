@@ -33,7 +33,7 @@ public class Kategorie10Doprava {
         slovicka.add(new Slovicko("space ship", "vesmírná loď", R.drawable.doprava_vesmirna_lod, R.raw.song));
         slovicka.add(new Slovicko("subway", "metro", R.drawable.doprava_metro, R.raw.song));
         slovicka.add(new Slovicko("taxi", "taxi", R.drawable.doprava_taxi, R.raw.song));
-        slovicka.add(new Slovicko("ship", "loď", R.drawable.doprava_lod, R.raw.song));
+        slovicka.add(new Slovicko("motorboat", "motorová loď", R.drawable.doprava_motorova_lod, R.raw.song));
         slovicka.add(new Slovicko("aircraft", "letadlo", R.drawable.doprava_letadlo, R.raw.song));
         slovicka.add(new Slovicko("train", "vlak", R.drawable.doprava_vlak, R.raw.song));
         slovicka.add(new Slovicko("motorcycle", "motorka", R.drawable.doprava_motorka, R.raw.song));
@@ -52,6 +52,13 @@ public class Kategorie10Doprava {
         slovicka.add(new Slovicko("traffic light", "semafor", R.drawable.doprava_semafor, R.raw.song));
         slovicka.add(new Slovicko("gas station", "benzínka", R.drawable.doprava_benzinka, R.raw.song));
         slovicka.add(new Slovicko("anchor", "kotva", R.drawable.doprava_kotva, R.raw.song));
+        slovicka.add(new Slovicko("sailboat", "plachetnice", R.drawable.doprava_plachetnice, R.raw.song));
+        slovicka.add(new Slovicko("police car", "policejní auto", R.drawable.doprava_policejni_auto, R.raw.song));
+        slovicka.add(new Slovicko("ship", "loď", R.drawable.doprava_lod, R.raw.song));
+        slovicka.add(new Slovicko("ferry", "trajekt", R.drawable.doprava_trajekt, R.raw.song));
+        slovicka.add(new Slovicko("scooter", "koloběžka", R.drawable.doprava_kolobezka, R.raw.song));
+        slovicka.add(new Slovicko("railway track", "kolej", R.drawable.doprava_kolej, R.raw.song));
+
 
 
         return slovicka;

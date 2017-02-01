@@ -46,11 +46,10 @@ public class Kategorie7Sport {
         slovicka.add(new Slovicko("horse racing", "jízda na koni", R.drawable.sport_jizda_na_koni, R.raw.song));
         slovicka.add(new Slovicko("snowboarding", "jízda na snowboardu", R.drawable.sport_snowboard, R.raw.song));
         slovicka.add(new Slovicko("surfing", "serfování", R.drawable.sport_serfovani, R.raw.song));
-        slovicka.add(new Slovicko("rowing", "veslování", R.drawable.sport_veslovani, R.raw.song));
         slovicka.add(new Slovicko("field hockey", "pozemní hokej", R.drawable.sport_pozemni_hokej, R.raw.song));
         slovicka.add(new Slovicko("martial arts", "bojová umění", R.drawable.sport_bojova_umeni, R.raw.song));
-
         slovicka.add(new Slovicko("table tenis", "ping pong", R.drawable.sport_ping_pong, R.raw.song));
+
         slovicka.add(new Slovicko("trophy", "trofej", R.drawable.sport_trofej, R.raw.song));
         slovicka.add(new Slovicko("tenis", "tenis", R.drawable.sport_tenis, R.raw.song));
         slovicka.add(new Slovicko("rowing", "veslování", R.drawable.sport_veslovani, R.raw.song));
@@ -59,6 +58,9 @@ public class Kategorie7Sport {
         slovicka.add(new Slovicko("second place", "druhé místo", R.drawable.sport_druhe_misto, R.raw.song));
         slovicka.add(new Slovicko("third place", "třetí místo", R.drawable.sport_treti_misto, R.raw.song));
         slovicka.add(new Slovicko("water polo", "vodní pólo", R.drawable.sport_vodni_polo, R.raw.song));
+        slovicka.add(new Slovicko("american football", "americký fotbal", R.drawable.sport_americky_fotbal, R.raw.song));
+        slovicka.add(new Slovicko("badminton", "badminton", R.drawable.sport_badminton, R.raw.song));
+
 
         return slovicka;
     }

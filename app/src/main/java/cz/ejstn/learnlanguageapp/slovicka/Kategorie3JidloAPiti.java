@@ -37,7 +37,7 @@ public class Kategorie3JidloAPiti {
         slovicka.add(new Slovicko("salad", "salát", R.drawable.jidlo_salat, R.raw.song));
         slovicka.add(new Slovicko("donut", "kobliha", R.drawable.jidlo_kobliha, R.raw.song));
 
-        slovicka.add(new Slovicko("coffe", "káva", R.drawable.jidlo_kava, R.raw.song));
+        slovicka.add(new Slovicko("coffee", "káva", R.drawable.jidlo_kava, R.raw.song));
         slovicka.add(new Slovicko("ice cream", "zmrzlina",R.drawable.jidlo_zmrzlina, R.raw.song));
         slovicka.add(new Slovicko("french fries", "hranolky", R.drawable.jidlo_hranolky, R.raw.song));
         slovicka.add(new Slovicko("pizza", "pizza", R.drawable.jidlo_pizza, R.raw.song));
@@ -68,6 +68,12 @@ public class Kategorie3JidloAPiti {
         slovicka.add(new Slovicko("grapes", "hroznové víno", R.drawable.jidlo_hroznove_vino, R.raw.song));
         slovicka.add(new Slovicko("lemon", "citron", R.drawable.jidlo_citron, R.raw.song));
         slovicka.add(new Slovicko("peach", "broskev", R.drawable.jidlo_broskev, R.raw.song));
+        slovicka.add(new Slovicko("avocado", "avokádo", R.drawable.jidlo_avokado, R.raw.song));
+
+        slovicka.add(new Slovicko("honey", "med", R.drawable.jidlo_med, R.raw.song));
+        slovicka.add(new Slovicko("hot pepper", "chilli paprička", R.drawable.jidlo_chilli_papricka, R.raw.song));
+        slovicka.add(new Slovicko("sweet potato", "batát", R.drawable.jidlo_batat, R.raw.song));
+
 
         return slovicka;
     }
