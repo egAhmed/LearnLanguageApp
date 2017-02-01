@@ -26,7 +26,7 @@ public class Kategorie8Priroda {
 
     // příroda
     private static ArrayList<Slovicko> vytvorSlovicka (ArrayList<Slovicko> slovicka) {
-        slovicka.add(new Slovicko("mountaint", "hory", R.drawable.priroda_hory, R.raw.song));
+        slovicka.add(new Slovicko("mountains", "hory", R.drawable.priroda_hory, R.raw.song));
         slovicka.add(new Slovicko("valley", "údolí", R.drawable.smajlik, R.raw.song));
         slovicka.add(new Slovicko("forest", "les", R.drawable.smajlik, R.raw.song));
         slovicka.add(new Slovicko("river", "řeka", R.drawable.smajlik, R.raw.song));
