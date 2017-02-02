@@ -1,8 +1,11 @@
 package cz.ejstn.learnlanguageapp.kategorie;
 
+import android.content.Context;
+import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
@@ -17,11 +20,44 @@ import cz.ejstn.learnlanguageapp.slovicka.Kategorie1Zvirata;
 
 public class Kategorie1 extends AppCompatActivity {
 
+    private AudioManager am;
+
     private MediaPlayer prehravac;
+
     private MediaPlayer.OnCompletionListener listenerKonecZvuku = new MediaPlayer.OnCompletionListener() {
         @Override
         public void onCompletion(MediaPlayer mp) {
+
             releasniPrehravac();
+            am.abandonAudioFocus(listenerAudioFocus);
+            Log.i("am", "AUDIOFOCUS_ABANDONED");
+
+        }
+    };
+
+    private AudioManager.OnAudioFocusChangeListener listenerAudioFocus = new AudioManager.OnAudioFocusChangeListener() {
+        @Override
+        public void onAudioFocusChange(int focusChange) {
+            switch (focusChange) {
+                case AudioManager.AUDIOFOCUS_GAIN:
+                    Log.i("am", "AUDIOFOCUS_GAIN");
+                    prehravac.start();
+                    break;
+                case AudioManager.AUDIOFOCUS_LOSS:
+                    Log.i("am", "AUDIOFOCUS_LOSS - permanentně ztracen");
+                    releasniPrehravac();
+                    break;
+                case AudioManager.AUDIOFOCUS_LOSS_TRANSIENT:
+                    Log.i("am", "AUDIOFOCUS_LOSS_TRANSIENT");
+                    prehravac.pause();
+                    prehravac.seekTo(0);
+                    break;
+                case AudioManager.AUDIOFOCUS_LOSS_TRANSIENT_CAN_DUCK:
+                    Log.i("am", "AUDIOFOCUS_LOSS_TRANSIENT_CAN_DUCK");
+                    prehravac.pause();
+                    prehravac.seekTo(0);
+                    break;
+            }
         }
     };
 
@@ -30,6 +66,7 @@ public class Kategorie1 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_kategorie);
 
+        am = (AudioManager) getSystemService(Context.AUDIO_SERVICE);
 
         vsechnoPriprav();
 
@@ -51,16 +88,14 @@ public class Kategorie1 extends AppCompatActivity {
 
     private void vsechnoPriprav() {
 
-
-
         final ArrayList<Slovicko> slovicka = Kategorie1Zvirata.pripravKategorii();
         Collections.shuffle(slovicka);
 
 
         SlovickaAdapter adapter = new SlovickaAdapter(this, slovicka, R.color.category_item_1);
-
-        ListView listSlovicek = (ListView) findViewById(R.id.listView_kategorie);
+        final ListView listSlovicek = (ListView) findViewById(R.id.listView_kategorie);
         listSlovicek.setAdapter(adapter);
+
 
         listSlovicek.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -68,10 +103,19 @@ public class Kategorie1 extends AppCompatActivity {
                 releasniPrehravac();
 
 
-                prehravac = MediaPlayer.create(Kategorie1.this, slovicka.get(position).getIdZvuku());
-                prehravac.start();
+                int vysledekAudioRequestu = am.requestAudioFocus(listenerAudioFocus, AudioManager.STREAM_MUSIC, AudioManager.AUDIOFOCUS_GAIN_TRANSIENT);
 
-                prehravac.setOnCompletionListener(listenerKonecZvuku);
+                if (vysledekAudioRequestu == AudioManager.AUDIOFOCUS_REQUEST_GRANTED) {
+
+                    Log.i("am", "AUDIOFOCUS GRANTED");
+
+                    prehravac = MediaPlayer.create(Kategorie1.this, slovicka.get(position).getIdZvuku());
+
+                    prehravac.start();
+
+                    prehravac.setOnCompletionListener(listenerKonecZvuku);
+
+                }
 
             }
         });

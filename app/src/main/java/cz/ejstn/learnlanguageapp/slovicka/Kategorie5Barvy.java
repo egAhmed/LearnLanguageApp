@@ -23,7 +23,6 @@ public class Kategorie5Barvy {
         return slovicka;
     }
 
-    // TODO: 30.1.2017 materiální barvy by byly asi lepší
 
     // barvy
     private static ArrayList<Slovicko> vytvorSlovicka (ArrayList<Slovicko> slovicka) {

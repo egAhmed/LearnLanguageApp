@@ -20,18 +20,19 @@ import cz.ejstn.learnlanguageapp.kategorie.Kategorie9;
 
 public class MainActivity extends AppCompatActivity {
 
+
+    // TODO: 3.2.2017 menší velikost obrázků ?
+
+
     // TODO: 1.2.2017 nějaký rychlý tutoriál na github a git
 
-    // TODO: 31.1.2017 dokončit naplnění kategorií překlady a obrázky 
-    // TODO: 31.1.2017 dodat výslovnost ke všemu 
+    // TODO: 31.1.2017 dodat výslovnost ke všemu
     // TODO: 31.1.2017 poladit apptheme 
     // TODO: 31.1.2017 doladit design mainactivity 
     // TODO: 31.1.2017 domontovat play ikonu k jednotlivým položkám
     // TODO: 31.1.2017 předělat všechno v barvách na materiální barvy a dodat jich tam pár navíc
     // TODO: 31.1.2017 vyřešit ten audio fokus u všeho
 
-    // TODO: 31.1.2017 vyřadit přírodu a hodit tam něco jinýho místo toho - asi státy třeba
-    // TODO: 31.1.2017 přeškálovat všechny obrázky
 
     // TODO: 30.1.2017 emoji art chtějí na ně odkaz viz http://emojione.com/licensing/
     // TODO: 31.1.2017 udělat právě nějakou info aktivitu, kde bude ten emoji odkaz a třeba
@@ -47,13 +48,13 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
-
         pripravMenu();
     }
 
 
     // připravuje všechny onClickListenery
     private void pripravMenu() {
+
         TextView prvniKategorie = (TextView) findViewById(R.id.menu_category_1);
         TextView druhaKategorie = (TextView) findViewById(R.id.menu_category_2);
         TextView tretiKategorie = (TextView) findViewById(R.id.menu_category_3);
