@@ -17,6 +17,7 @@ android:background="@color/mild_background" -->
 
 
     <ImageView
+        android:background="@color/pozadi_obrazku"
         android:id="@+id/obrazek_polozky"
         android:layout_width="@dimen/min_vyska_modelu_polozky"
         android:layout_height="@dimen/min_vyska_modelu_polozky"

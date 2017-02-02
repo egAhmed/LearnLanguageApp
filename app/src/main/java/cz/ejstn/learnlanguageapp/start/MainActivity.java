@@ -20,6 +20,8 @@ import cz.ejstn.learnlanguageapp.kategorie.Kategorie9;
 
 public class MainActivity extends AppCompatActivity {
 
+    // TODO: 1.2.2017 nějaký rychlý tutoriál na github a git
+
     // TODO: 31.1.2017 dokončit naplnění kategorií překlady a obrázky 
     // TODO: 31.1.2017 dodat výslovnost ke všemu 
     // TODO: 31.1.2017 poladit apptheme 
