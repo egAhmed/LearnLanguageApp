@@ -23,14 +23,6 @@ public class Kategorie1 extends AppCompatActivity {
     private AudioManager am;
 
     private MediaPlayer prehravac;
-
-    private MediaPlayer.OnCompletionListener listenerKonecZvuku = new MediaPlayer.OnCompletionListener() {
-        @Override
-        public void onCompletion(MediaPlayer mp) {
-            releasniPrehravac();
-        }
-    };
-
     private AudioManager.OnAudioFocusChangeListener listenerZmenaAudioFocusu = new AudioManager.OnAudioFocusChangeListener() {
         @Override
         public void onAudioFocusChange(int focusChange) {
@@ -52,6 +44,12 @@ public class Kategorie1 extends AppCompatActivity {
                     releasniPrehravac();
                     break;
             }
+        }
+    };
+    private MediaPlayer.OnCompletionListener listenerKonecZvuku = new MediaPlayer.OnCompletionListener() {
+        @Override
+        public void onCompletion(MediaPlayer mp) {
+            releasniPrehravac();
         }
     };
 
@@ -118,7 +116,7 @@ public class Kategorie1 extends AppCompatActivity {
 
     }
 
-    private void releasniPrehravac () {
+    private void releasniPrehravac() {
         if (prehravac != null) {
             prehravac.release();
             prehravac = null;
