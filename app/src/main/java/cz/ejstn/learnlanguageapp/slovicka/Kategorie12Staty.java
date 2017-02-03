@@ -51,7 +51,6 @@ public class Kategorie12Staty {
 
         slovicka.add(new Slovicko("Switzerland", "Švýcarsko", R.drawable.staty_svycarsko, R.raw.song));
         slovicka.add(new Slovicko("Bulgaria", "Bulharsko", R.drawable.staty_bulharsko, R.raw.song));
-        slovicka.add(new Slovicko("Sweden", "Švédsko", R.drawable.staty_svedsko, R.raw.song));
 
         slovicka.add(new Slovicko("Norway", "Norsko", R.drawable.staty_norsko, R.raw.song));
         slovicka.add(new Slovicko("Denmark", "Dánsko", R.drawable.staty_dansko, R.raw.song));

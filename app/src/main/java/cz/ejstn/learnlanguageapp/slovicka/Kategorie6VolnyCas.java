@@ -41,7 +41,6 @@ public class Kategorie6VolnyCas {
         slovicka.add(new Slovicko("board games", "deskové hry", R.drawable.volnycas_deskove_hry, R.raw.song));
         slovicka.add(new Slovicko("painting", "malování", R.drawable.volnycas_malovani, R.raw.song));
         slovicka.add(new Slovicko("travelling", "cestování", R.drawable.volnycas_cestovani, R.raw.song));
-        slovicka.add(new Slovicko("photography", "focení", R.drawable.volnycas_foceni, R.raw.song));
         slovicka.add(new Slovicko("writing", "psaní", R.drawable.volnycas_psani, R.raw.song));
         slovicka.add(new Slovicko("photography", "focení", R.drawable.volnycas_foceni, R.raw.song));
         slovicka.add(new Slovicko("sleeping", "spaní", R.drawable.volnycas_spani, R.raw.song));

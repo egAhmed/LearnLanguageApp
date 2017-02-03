@@ -20,6 +20,7 @@ import cz.ejstn.learnlanguageapp.kategorie.Kategorie9;
 
 public class MainActivity extends AppCompatActivity {
 
+    // TODO: 3.2.2017 přidat vnuka a vnučku - obrázky - zase ty velikosti atd
 
     // TODO: 3.2.2017 menší velikost obrázků ?
 
@@ -30,6 +31,9 @@ public class MainActivity extends AppCompatActivity {
     // TODO: 31.1.2017 poladit apptheme 
     // TODO: 31.1.2017 doladit design mainactivity 
     // TODO: 31.1.2017 domontovat play ikonu k jednotlivým položkám
+
+    // TODO: 3.2.2017 když něco pustím - změní se ikona na play, když pauznu, změní se na play - odpovídá tomu i to přehrání
+
     // TODO: 31.1.2017 předělat všechno v barvách na materiální barvy a dodat jich tam pár navíc
     // TODO: 31.1.2017 vyřešit ten audio fokus u všeho
 

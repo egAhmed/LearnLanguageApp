@@ -47,6 +47,26 @@ public class Slovicko {
         return idObrazku != nemaObrazek;
     }
 
+
+    public boolean equals(Slovicko porovnavaneSlovicko) {
+        if (this.getAnglictina().equals(porovnavaneSlovicko.getAnglictina())) {
+            return true;
+        } else {
+            return false;
+        }
+
+
+    }
+
+    public boolean equalsPrisnejsi(Slovicko porovnavaneSlovicko) {
+        if (this.getAnglictina().equals(porovnavaneSlovicko.getAnglictina())
+                && this.getCestina().equals(porovnavaneSlovicko.getCestina())) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
     @Override
     public String toString() {
         return "Slovicko{" +

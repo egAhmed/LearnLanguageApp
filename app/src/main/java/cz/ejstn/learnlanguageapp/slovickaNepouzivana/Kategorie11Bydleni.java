@@ -14,7 +14,6 @@ public class Kategorie11Bydleni {
     private Kategorie11Bydleni() {
     }
 
-
     public static ArrayList<Slovicko> pripravKategorii() {
         ArrayList<Slovicko> slovicka = new ArrayList<>();
 

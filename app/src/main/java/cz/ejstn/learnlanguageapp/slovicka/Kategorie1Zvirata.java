@@ -26,6 +26,7 @@ public class Kategorie1Zvirata {
     // zvířata
     private static ArrayList<Slovicko> vytvorSlovicka (ArrayList<Slovicko> slovicka) {
         slovicka.add(new Slovicko("dog", "pes", R.drawable.zvirata_pes, R.raw.song));
+
         slovicka.add(new Slovicko("cat", "kočka",R.drawable.zvirata_kocka, R.raw.song));
         slovicka.add(new Slovicko("mouse", "myš", R.drawable.zvirata_mys, R.raw.song));
         slovicka.add(new Slovicko("horse", "kůň", R.drawable.zvirata_kun, R.raw.song));
