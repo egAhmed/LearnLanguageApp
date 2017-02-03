@@ -1,4 +1,4 @@
-package cz.ejstn.learnlanguageapp.slovickaNepouzivana;
+package cz.ejstn.learnlanguageapp.slovicka.slovickaNepouzivana;
 
 import java.util.ArrayList;
 

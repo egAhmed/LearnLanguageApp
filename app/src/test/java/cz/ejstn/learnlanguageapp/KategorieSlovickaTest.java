@@ -15,8 +15,8 @@ import cz.ejstn.learnlanguageapp.slovicka.Kategorie5Barvy;
 import cz.ejstn.learnlanguageapp.slovicka.Kategorie6VolnyCas;
 import cz.ejstn.learnlanguageapp.slovicka.Kategorie7Sport;
 import cz.ejstn.learnlanguageapp.slovicka.Kategorie9Osobnost;
-import cz.ejstn.learnlanguageapp.slovickaNepouzivana.Kategorie11Bydleni;
-import cz.ejstn.learnlanguageapp.slovickaNepouzivana.Kategorie8Priroda;
+import cz.ejstn.learnlanguageapp.slovicka.slovickaNepouzivana.Kategorie11Bydleni;
+import cz.ejstn.learnlanguageapp.slovicka.slovickaNepouzivana.Kategorie8Priroda;
 
 import static junit.framework.Assert.assertFalse;
 

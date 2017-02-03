@@ -27,15 +27,11 @@ public class Kategorie1 extends AppCompatActivity {
     private MediaPlayer.OnCompletionListener listenerKonecZvuku = new MediaPlayer.OnCompletionListener() {
         @Override
         public void onCompletion(MediaPlayer mp) {
-
             releasniPrehravac();
-            am.abandonAudioFocus(listenerAudioFocus);
-            Log.i("am", "AUDIOFOCUS_ABANDONED");
-
         }
     };
 
-    private AudioManager.OnAudioFocusChangeListener listenerAudioFocus = new AudioManager.OnAudioFocusChangeListener() {
+    private AudioManager.OnAudioFocusChangeListener listenerZmenaAudioFocusu = new AudioManager.OnAudioFocusChangeListener() {
         @Override
         public void onAudioFocusChange(int focusChange) {
             switch (focusChange) {
@@ -43,19 +39,17 @@ public class Kategorie1 extends AppCompatActivity {
                     Log.i("am", "AUDIOFOCUS_GAIN");
                     prehravac.start();
                     break;
+
+                case AudioManager.AUDIOFOCUS_LOSS_TRANSIENT:
+                case AudioManager.AUDIOFOCUS_LOSS_TRANSIENT_CAN_DUCK:
+                    Log.i("am", "AUDIOFOCUS_LOSS_TRANSIENT nebo TRANSIENT_CAN_DUCK");
+                    prehravac.pause();
+                    prehravac.seekTo(0);
+                    break;
+
                 case AudioManager.AUDIOFOCUS_LOSS:
                     Log.i("am", "AUDIOFOCUS_LOSS - permanentně ztracen");
                     releasniPrehravac();
-                    break;
-                case AudioManager.AUDIOFOCUS_LOSS_TRANSIENT:
-                    Log.i("am", "AUDIOFOCUS_LOSS_TRANSIENT");
-                    prehravac.pause();
-                    prehravac.seekTo(0);
-                    break;
-                case AudioManager.AUDIOFOCUS_LOSS_TRANSIENT_CAN_DUCK:
-                    Log.i("am", "AUDIOFOCUS_LOSS_TRANSIENT_CAN_DUCK");
-                    prehravac.pause();
-                    prehravac.seekTo(0);
                     break;
             }
         }
@@ -103,7 +97,8 @@ public class Kategorie1 extends AppCompatActivity {
                 releasniPrehravac();
 
 
-                int vysledekAudioRequestu = am.requestAudioFocus(listenerAudioFocus, AudioManager.STREAM_MUSIC, AudioManager.AUDIOFOCUS_GAIN_TRANSIENT);
+                int vysledekAudioRequestu = am.requestAudioFocus
+                        (listenerZmenaAudioFocusu, AudioManager.STREAM_MUSIC, AudioManager.AUDIOFOCUS_GAIN_TRANSIENT);
 
                 if (vysledekAudioRequestu == AudioManager.AUDIOFOCUS_REQUEST_GRANTED) {
 
@@ -127,6 +122,9 @@ public class Kategorie1 extends AppCompatActivity {
         if (prehravac != null) {
             prehravac.release();
             prehravac = null;
+
+            am.abandonAudioFocus(listenerZmenaAudioFocusu);
+            Log.i("am", "AUDIOFOCUS_ABANDONED");
         }
     }
 }

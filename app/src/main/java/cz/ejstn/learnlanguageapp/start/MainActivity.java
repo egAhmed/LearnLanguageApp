@@ -24,6 +24,8 @@ public class MainActivity extends AppCompatActivity {
 
     // TODO: 3.2.2017 menší velikost obrázků ?
 
+    // TODO: 3.2.2017 rozmyslet u toho volnýho času jestli tam dávat watching tv nebo watch tv
+
 
     // TODO: 1.2.2017 nějaký rychlý tutoriál na github a git
 
