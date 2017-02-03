@@ -18,6 +18,7 @@
         <item name="android:textAppearance">?android:textAppearanceMedium</item>
         <item name="android:textStyle">bold</item>
         <item name="android:textColor">@color/menu_item_text_color</item>
+        <item name="android:background">?android:attr/selectableItemBackground</item>
 
     </style>
 

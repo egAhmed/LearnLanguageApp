@@ -22,17 +22,15 @@ public class MainActivity extends AppCompatActivity {
 
     // TODO: 3.2.2017 přidat vnuka a vnučku - obrázky - zase ty velikosti atd
 
-    // TODO: 3.2.2017 menší velikost obrázků ?
+    // TODO: 3.2.2017 menší velikost obrázků - myšleno jako kilobajty, ne rozlišení?
 
     // TODO: 3.2.2017 rozmyslet u toho volnýho času jestli tam dávat watching tv nebo watch tv
 
 
-    // TODO: 1.2.2017 nějaký rychlý tutoriál na github a git
 
     // TODO: 31.1.2017 dodat výslovnost ke všemu
     // TODO: 31.1.2017 poladit apptheme 
     // TODO: 31.1.2017 doladit design mainactivity 
-    // TODO: 31.1.2017 domontovat play ikonu k jednotlivým položkám
 
     // TODO: 3.2.2017 když něco pustím - změní se ikona na play, když pauznu, změní se na play - odpovídá tomu i to přehrání
 
