@@ -1,5 +1,10 @@
 <resources>
+
+    <!-- label , nazev pro aplikaci -->
     <string name="app_name">Anglická Slovíčka</string>
+
+
+    <!-- stringy pro menu, nazvy kategorii, taby -->
     <string name="menu_item_1">Zvířata</string>
     <string name="menu_item_2">Rodina</string>
     <string name="menu_item_3">Jídlo a pití</string>
@@ -11,5 +16,5 @@
     <string name="menu_item_9">Čísla</string>
     <string name="menu_item_10">Doprava</string>
 
-    
+
 </resources>

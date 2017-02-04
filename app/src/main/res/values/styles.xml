@@ -9,33 +9,24 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
-    <style name="MenuCategoryStyle">
 
-        <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">@dimen/min_vyska_modelu_polozky</item>
-        <item name="android:gravity">center_vertical</item>
-        <item name="android:padding">16dp</item>
-
-        <item name="android:textAppearance">?android:textAppearanceMedium</item>
-        <item name="android:textStyle">bold</item>
-        <item name="android:textColor">@color/menu_item_text_color</item>
-        <item name="android:background">?android:attr/selectableItemBackground</item>
-
+    <!-- styl AppBaru - to je ten velkej šit nahoře s názvem aplikace, jak mi nešel dát pryč -->
+    <style name="AppBarStyle" parent="style/Widget.AppCompat.Light.ActionBar.Solid.Inverse">
+        <!-- pro vymazání takovýho stínu pod appbarem- mezi AppBarem a TabLayoutem -->
+        <item name="elevation">0dp</item>
     </style>
 
-    <style name="CategoryTab" parent="Widget.Design.TabLayout">
+
+    <!-- styl TabLayoutu -->
+    <style name="StylTabLayoutu" parent="Widget.Design.TabLayout">
         <item name="tabIndicatorColor">@android:color/white</item>
         <item name="tabSelectedTextColor">@android:color/white</item>
         <item name="tabTextAppearance">@style/CategoryTabTextAppearance</item>
     </style>
-
+    <!-- podstyl TabLayoutu pro vzhled textu tabů -->
     <style name="CategoryTabTextAppearance" parent="TextAppearance.Design.Tab">
-        <item name="android:textColor">#A8A19E</item>
+        <item name="android:textColor">@color/barva_textu_neaktivniho_tabu</item>
     </style>
 
-    <style name="AppBarStyle" parent="style/Widget.AppCompat.Light.ActionBar.Solid.Inverse">
-        <!-- Remove the shadow below the app bar -->
-        <item name="elevation">0dp</item>
-    </style>
 
 </resources>

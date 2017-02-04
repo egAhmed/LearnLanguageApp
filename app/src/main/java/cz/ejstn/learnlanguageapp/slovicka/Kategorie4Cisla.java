@@ -25,9 +25,9 @@ public class Kategorie4Cisla {
 
 
     // čísla
-    private static ArrayList<Slovicko> vytvorSlovicka (ArrayList<Slovicko> slovicka) {
+    private static ArrayList<Slovicko> vytvorSlovicka(ArrayList<Slovicko> slovicka) {
         slovicka.add(new Slovicko("one", "jedna", R.drawable.cisla_jedna, R.raw.song));
-        slovicka.add(new Slovicko("two", "dva",R.drawable.cisla_dva, R.raw.song));
+        slovicka.add(new Slovicko("two", "dva", R.drawable.cisla_dva, R.raw.song));
         slovicka.add(new Slovicko("three", "tři", R.drawable.cisla_tri, R.raw.song));
         slovicka.add(new Slovicko("four", "čtyři", R.drawable.cisla_ctyri, R.raw.song));
         slovicka.add(new Slovicko("five", "pět", R.drawable.cisla_pet, R.raw.song));

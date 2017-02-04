@@ -10,31 +10,32 @@ android:background="@color/mild_background" -->
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:minHeight="@dimen/min_vyska_modelu_polozky"
+    android:minHeight="@dimen/vyska_model_radek_listview"
     android:orientation="horizontal">
 
 
     <ImageView
-        android:background="@color/pozadi_obrazku"
         android:id="@+id/obrazek_polozky"
-        android:layout_width="@dimen/min_vyska_modelu_polozky"
-        android:layout_height="@dimen/min_vyska_modelu_polozky"
-        android:padding="6dp"
+        android:layout_width="@dimen/vyska_model_radek_listview"
+        android:layout_height="@dimen/vyska_model_radek_listview"
+        android:background="@color/model_radek_pozadi_obrazku"
+        android:padding="@dimen/model_radek_padding_obrazku"
         tools:src="@mipmap/ic_launcher" />
 
 
-    <!-- pokud chceme, aby to zabíralo prostě zbytek, tak musíme layout_weight,
-    jinak to vytlačí to za tím ( vpravo ) úplně z obrazu -->
     <LinearLayout
         android:id="@+id/linear_layout_obou_prekladu"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
 
+        android:baselineAligned="false"
         android:orientation="horizontal"
         android:paddingLeft="16dp"
-        android:paddingStart="16dp"
-        android:baselineAligned="false">
+        android:paddingStart="16dp">
 
+
+        <!-- pokud chceme, aby to zabíralo prostě zbytek, tak musíme layout_weight,
+                jinak to vytlačí to za tím ( vpravo ) úplně z obrazu -->
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -66,21 +67,22 @@ android:background="@color/mild_background" -->
 
         </LinearLayout>
 
+
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:orientation="vertical"
             android:gravity="center"
-            android:paddingRight="16dp"
+            android:orientation="vertical"
             android:paddingEnd="16dp"
+            android:paddingRight="16dp"
             tools:background="@android:color/black">
 
             <ImageView
                 android:id="@+id/play_ikonka"
                 android:layout_width="36dp"
                 android:layout_height="36dp"
-                android:src="@drawable/ic_play_arrow_white_36dp"
-                android:padding="6dp" />
+                android:padding="6dp"
+                android:src="@drawable/ic_play_arrow_white_36dp" />
 
 
         </LinearLayout>

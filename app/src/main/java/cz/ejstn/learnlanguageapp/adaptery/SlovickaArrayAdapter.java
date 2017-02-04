@@ -1,4 +1,4 @@
-package cz.ejstn.learnlanguageapp.adapter;
+package cz.ejstn.learnlanguageapp.adaptery;
 
 import android.content.Context;
 import android.support.annotation.NonNull;
@@ -24,8 +24,7 @@ public class SlovickaArrayAdapter extends ArrayAdapter<Slovicko> {
     private int barvaPozadi;
 
 
-
-    public SlovickaArrayAdapter(Context context, ArrayList<Slovicko> slovicka, int  barvaPozadi) {
+    public SlovickaArrayAdapter(Context context, ArrayList<Slovicko> slovicka, int barvaPozadi) {
         super(context, 0, slovicka);
 
         this.barvaPozadi = barvaPozadi;
@@ -39,9 +38,9 @@ public class SlovickaArrayAdapter extends ArrayAdapter<Slovicko> {
         final Slovicko slovicko = getItem(position);
 
         View jednaPolozka = convertView;
-        if(jednaPolozka == null) {
+        if (jednaPolozka == null) {
             jednaPolozka = LayoutInflater.from(getContext()).inflate(
-                    R.layout.model_polozka, parent, false);
+                    R.layout.model_radek_listview, parent, false);
         }
 
         LinearLayout layoutObouPrekladu = (LinearLayout) jednaPolozka.findViewById(R.id.linear_layout_obou_prekladu);

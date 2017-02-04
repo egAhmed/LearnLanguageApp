@@ -25,9 +25,9 @@ public class Kategorie7Sport {
     }
 
     // sport
-    private static ArrayList<Slovicko> vytvorSlovicka (ArrayList<Slovicko> slovicka) {
+    private static ArrayList<Slovicko> vytvorSlovicka(ArrayList<Slovicko> slovicka) {
         slovicka.add(new Slovicko("football", "fotbal", R.drawable.sport_fotbal, R.raw.song));
-        slovicka.add(new Slovicko("ice hockey", "hokej",R.drawable.sport_hokej, R.raw.song));
+        slovicka.add(new Slovicko("ice hockey", "hokej", R.drawable.sport_hokej, R.raw.song));
         slovicka.add(new Slovicko("track and field", "atletika", R.drawable.sport_atletika, R.raw.song));
         slovicka.add(new Slovicko("basketball", "basketbal", R.drawable.sport_basket, R.raw.song));
         slovicka.add(new Slovicko("bicycle", "kolo", R.drawable.sport_kolo, R.raw.song));

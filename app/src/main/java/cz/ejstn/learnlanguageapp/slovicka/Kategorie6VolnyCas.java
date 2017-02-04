@@ -24,9 +24,9 @@ public class Kategorie6VolnyCas {
     }
 
     // volný čas
-    private static ArrayList<Slovicko> vytvorSlovicka (ArrayList<Slovicko> slovicka) {
+    private static ArrayList<Slovicko> vytvorSlovicka(ArrayList<Slovicko> slovicka) {
         slovicka.add(new Slovicko("reading", "čtení", R.drawable.volnycas_cteni, R.raw.song));
-        slovicka.add(new Slovicko("listen to music", "poslouchat hudbu",R.drawable.volnycas_poslouchani_muziky, R.raw.song));
+        slovicka.add(new Slovicko("listen to music", "poslouchat hudbu", R.drawable.volnycas_poslouchani_muziky, R.raw.song));
         slovicka.add(new Slovicko("watching tv", "sledování televize", R.drawable.volnycas_sledovat_tv, R.raw.song));
         slovicka.add(new Slovicko("go for a walk", "jít na procházku", R.drawable.volnycas_jit_na_prochazku, R.raw.song));
         slovicka.add(new Slovicko("play video games", "hrát videohry", R.drawable.volnycas_hrat_videohry, R.raw.song));
@@ -54,8 +54,8 @@ public class Kategorie6VolnyCas {
         slovicka.add(new Slovicko("listen to radio", "poslouchat rádio", R.drawable.volnycas_poslouchat_radio, R.raw.song));
 
         slovicka.add(new Slovicko("play cards", "hrát karty", R.drawable.volnycas_hrat_karty, R.raw.song));
-      //slovicka.add(new Slovicko("taking selfies", "focení selfies", R.drawable.volnycas_foceni_selfies, R.raw.song));
-      //slovicka.add(new Slovicko("dancing", "tanec", R.drawable.volnycas_tanec, R.raw.song));
+        //slovicka.add(new Slovicko("taking selfies", "focení selfies", R.drawable.volnycas_foceni_selfies, R.raw.song));
+        //slovicka.add(new Slovicko("dancing", "tanec", R.drawable.volnycas_tanec, R.raw.song));
 
 
         return slovicka;

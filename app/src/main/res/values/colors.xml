@@ -2,28 +2,32 @@
 <resources>
 
 
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
-
+    <!-- hlavní barvy Tématu aplikace -->
+    <color name="colorPrimary">#379237</color>
+    <color name="colorPrimaryDark">#2e7d32</color>
     <!-- nešahat na tenhle šit-->
-    <color name="colorAccent">#FF4081</color>
+    <color name="colorAccent">#379237</color>
 
-    <color name="menu_item_text_color">#eeeeee</color>
 
+    <!-- barvy pro jednu položku slovíčka - ten jeden řádek -->
+    <color name="model_radek_pozadi_textu">#379237</color>
+    <color name="model_radek_pozadi_obrazku">#ffffff</color>
+
+
+    <!-- barvy pro TabLayout - pro ty taby nahoře pod appbarem -->
+    <color name="barva_textu_neaktivniho_tabu">#dedede</color>
+    <color name="barva_pozadi_tab_layoutu">#379237</color>
+
+
+    <!-- starý barvy kategorií -->
     <color name="category_item_1">#fd8e09</color>
     <color name="category_item_2">#379237</color>
     <color name="category_item_3">#8800A0</color>
     <color name="category_item_4">#16AFCA</color>
-
     <color name="category_item_5">#fd8e09</color>
     <color name="category_item_6">#379237</color>
     <color name="category_item_7">#8800A0</color>
     <color name="category_item_8">#16AFCA</color>
-
     <color name="category_item_9">#fd8e09</color>
     <color name="category_item_10">#379237</color>
-
-    <color name="mild_background">#ffffff</color>
-
-    <color name="pozadi_obrazku">#ffffff</color>
 </resources>

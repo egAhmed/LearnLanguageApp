@@ -3,7 +3,7 @@
     android:id="@+id/listView_kategorie"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/mild_background"
     android:drawSelectorOnTop="true">
+<!-- aby fungovala ta klikací animace, je tam ten drawSelectorOnTop -->
 
 </ListView>

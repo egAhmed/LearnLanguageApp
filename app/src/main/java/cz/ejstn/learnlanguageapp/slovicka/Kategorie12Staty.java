@@ -27,7 +27,7 @@ public class Kategorie12Staty {
 
 
     // státy
-    private static ArrayList<Slovicko> vytvorSlovicka (ArrayList<Slovicko> slovicka) {
+    private static ArrayList<Slovicko> vytvorSlovicka(ArrayList<Slovicko> slovicka) {
 
 
         // EVROPA

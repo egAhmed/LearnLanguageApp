@@ -26,9 +26,9 @@ public class Kategorie2Rodina {
 
 
     // rodina
-    private static ArrayList<Slovicko> vytvorSlovicka (ArrayList<Slovicko> slovicka) {
+    private static ArrayList<Slovicko> vytvorSlovicka(ArrayList<Slovicko> slovicka) {
         slovicka.add(new Slovicko("dad", "táta", R.drawable.rodina_tata, R.raw.song));
-        slovicka.add(new Slovicko("mom", "máma",R.drawable.rodina_mama, R.raw.song));
+        slovicka.add(new Slovicko("mom", "máma", R.drawable.rodina_mama, R.raw.song));
         slovicka.add(new Slovicko("sister", "sestra", R.drawable.rodina_sestra, R.raw.song));
         slovicka.add(new Slovicko("brother", "bratr", R.drawable.rodina_bratr, R.raw.song));
         slovicka.add(new Slovicko("grandma", "babička", R.drawable.rodina_babicka, R.raw.song));

@@ -13,14 +13,14 @@ public class Slovicko {
 
     private static final int nemaObrazek = -1;
 
-    public Slovicko (String anglictina, String cestina, int idZvuku) {
+    public Slovicko(String anglictina, String cestina, int idZvuku) {
         this.cestina = cestina;
         this.anglictina = anglictina;
         this.idObrazku = nemaObrazek;
         this.idZvuku = idZvuku;
     }
 
-    public Slovicko (String anglictina, String cestina, int idObrazku, int idZvuku) {
+    public Slovicko(String anglictina, String cestina, int idObrazku, int idZvuku) {
         this.cestina = cestina;
         this.anglictina = anglictina;
         this.idObrazku = idObrazku;

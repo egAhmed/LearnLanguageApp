@@ -17,7 +17,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 import cz.ejstn.learnlanguageapp.R;
-import cz.ejstn.learnlanguageapp.adapter.SlovickaArrayAdapter;
+import cz.ejstn.learnlanguageapp.adaptery.SlovickaArrayAdapter;
 import cz.ejstn.learnlanguageapp.model.Slovicko;
 import cz.ejstn.learnlanguageapp.slovicka.Kategorie1Zvirata;
 
@@ -69,7 +69,7 @@ public class Kategorie1Fragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        View rootView = inflater.inflate(R.layout.activity_kategorie, container, false);
+        View rootView = inflater.inflate(R.layout.kategorie, container, false);
 
 
         am = (AudioManager) getActivity().getSystemService(Context.AUDIO_SERVICE);
@@ -96,14 +96,13 @@ public class Kategorie1Fragment extends Fragment {
     }
 
 
-
     private void vsechnoPriprav(View rootView) {
 
         final ArrayList<Slovicko> slovicka = Kategorie1Zvirata.pripravKategorii();
         Collections.shuffle(slovicka);
 
 
-        SlovickaArrayAdapter adapter = new SlovickaArrayAdapter(getActivity(), slovicka, R.color.category_item_1);
+        SlovickaArrayAdapter adapter = new SlovickaArrayAdapter(getActivity(), slovicka, R.color.model_radek_pozadi_textu);
         final ListView listSlovicek = (ListView) rootView.findViewById(R.id.listView_kategorie);
         listSlovicek.setAdapter(adapter);
 
@@ -134,7 +133,6 @@ public class Kategorie1Fragment extends Fragment {
 
 
     }
-
 
 
     private void releasniPrehravac() {

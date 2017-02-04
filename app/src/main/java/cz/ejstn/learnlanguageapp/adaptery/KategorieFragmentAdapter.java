@@ -1,4 +1,4 @@
-package cz.ejstn.learnlanguageapp.adapter;
+package cz.ejstn.learnlanguageapp.adaptery;
 
 import android.content.Context;
 import android.support.v4.app.Fragment;
@@ -24,8 +24,6 @@ import cz.ejstn.learnlanguageapp.fragmenty.Kategorie9Fragment;
 public class KategorieFragmentAdapter extends FragmentPagerAdapter {
 
     private Context mContext;
-
-
 
 
     public KategorieFragmentAdapter(FragmentManager fm, Context mContext) {
@@ -99,7 +97,6 @@ public class KategorieFragmentAdapter extends FragmentPagerAdapter {
     public int getCount() {
         return 10;
     }
-
 
 
 }
