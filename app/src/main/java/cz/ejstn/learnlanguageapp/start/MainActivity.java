@@ -26,16 +26,20 @@ public class MainActivity extends AppCompatActivity {
 
     // TODO: 3.2.2017 rozmyslet u toho volnýho času jestli tam dávat watching tv nebo watch tv
 
+    // TODO: 4.2.2017 překopat to na fragmenty
+    // TODO: 4.2.2017 vytvořit viewpager v mainactivity
+    // TODO: 4.2.2017 vytvořit adaptér pro fragmenty
+    // TODO: 4.2.2017 vytvořit tab layout
+
 
 
     // TODO: 31.1.2017 dodat výslovnost ke všemu
-    // TODO: 31.1.2017 poladit apptheme 
+    // TODO: 31.1.2017 poladit apptheme
     // TODO: 31.1.2017 doladit design mainactivity 
 
     // TODO: 3.2.2017 když něco pustím - změní se ikona na play, když pauznu, změní se na play - odpovídá tomu i to přehrání
 
-    // TODO: 31.1.2017 předělat všechno v barvách na materiální barvy a dodat jich tam pár navíc
-    // TODO: 31.1.2017 vyřešit ten audio fokus u všeho
+    // TODO: 31.1.2017 předělat všechno v kategorii barvy na materiální barvy a dodat jich tam pár navíc
 
 
     // TODO: 30.1.2017 emoji art chtějí na ně odkaz viz http://emojione.com/licensing/
