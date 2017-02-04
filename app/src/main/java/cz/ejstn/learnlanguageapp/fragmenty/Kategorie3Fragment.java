@@ -17,7 +17,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 import cz.ejstn.learnlanguageapp.R;
-import cz.ejstn.learnlanguageapp.adapter.SlovickaAdapter;
+import cz.ejstn.learnlanguageapp.adapter.SlovickaArrayAdapter;
 import cz.ejstn.learnlanguageapp.model.Slovicko;
 import cz.ejstn.learnlanguageapp.slovicka.Kategorie3JidloAPiti;
 
@@ -98,7 +98,7 @@ public class Kategorie3Fragment extends Fragment {
         Collections.shuffle(slovicka);
 
 
-        SlovickaAdapter adapter = new SlovickaAdapter(getActivity(), slovicka, R.color.category_item_3);
+        SlovickaArrayAdapter adapter = new SlovickaArrayAdapter(getActivity(), slovicka, R.color.category_item_3);
         final ListView listSlovicek = (ListView) rootView.findViewById(R.id.listView_kategorie);
         listSlovicek.setAdapter(adapter);
 

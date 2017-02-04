@@ -19,13 +19,13 @@ import cz.ejstn.learnlanguageapp.model.Slovicko;
  * Created by Martin Soukup on 27.1.2017.
  */
 
-public class SlovickaAdapter extends ArrayAdapter<Slovicko> {
+public class SlovickaArrayAdapter extends ArrayAdapter<Slovicko> {
 
     private int barvaPozadi;
 
 
 
-    public SlovickaAdapter(Context context, ArrayList<Slovicko> slovicka, int  barvaPozadi) {
+    public SlovickaArrayAdapter(Context context, ArrayList<Slovicko> slovicka, int  barvaPozadi) {
         super(context, 0, slovicka);
 
         this.barvaPozadi = barvaPozadi;
