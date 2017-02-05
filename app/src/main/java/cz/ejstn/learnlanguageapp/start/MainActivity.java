@@ -48,7 +48,6 @@ public class MainActivity extends AppCompatActivity {
 
     // TODO: 5.2.2017 šli by udělat ty scrollbary bílý místo černý?
 
-    // TODO: 31.1.2017 dodat výslovnost ke všemu
     // TODO: 31.1.2017 poladit apptheme
 
 
@@ -64,7 +63,6 @@ public class MainActivity extends AppCompatActivity {
 
     // TODO: 1.2.2017 upravit si nějak vnitřne ty slovíčka - rozdělit jídlo třeba na jídlo a pití, sladké slané atd
 
-    // TODO: 4.2.2017 launcher icon
 
     // TODO: 4.2.2017 nějakej rozsáhlejší refaktoring celý aplikace - styly, barvy, layouty, názvy, metody, uhlazení, komentáře
 
