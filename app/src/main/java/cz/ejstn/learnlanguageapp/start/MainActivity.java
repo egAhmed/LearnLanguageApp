@@ -10,9 +10,13 @@ import cz.ejstn.learnlanguageapp.adaptery.KategorieFragmentAdapter;
 
 public class MainActivity extends AppCompatActivity {
 
+    // TODO: 5.2.2017 bug s tou play ikonkou - asi to způsobuje ten listview, nevím proč
+
     // TODO: 4.2.2017 zkusit vymyslet ještě nějaký testíky, co by ulehčili život :D
 
-    // TODO: 4.2.2017 regnout se na feeriu
+
+    // TODO: 5.2.2017 udělat tu změnu ikony novým vláknem a délkou songu ???
+
 
     // TODO: 4.2.2017 přidat funkci sdílení aplikace
     // TODO: 4.2.2017 přidat funkci hodnocení aplikace
@@ -44,6 +48,7 @@ public class MainActivity extends AppCompatActivity {
 
     // TODO: 31.1.2017 dodat výslovnost ke všemu
     // TODO: 31.1.2017 poladit apptheme
+
 
 
     // TODO: 31.1.2017 předělat všechno v kategorii barvy na materiální barvy a dodat jich tam pár navíc

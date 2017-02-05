@@ -29,10 +29,20 @@ public class Kategorie12Staty {
     // státy
     private static ArrayList<Slovicko> vytvorSlovicka(ArrayList<Slovicko> slovicka) {
 
+        // není obrázek
+        //  slovicka.add(new Slovicko("Cuba", "Kuba", R.drawable.staty_kuba, R.raw.song));
+        //  slovicka.add(new Slovicko("the Dominican Republic", "Dominikánská republika", R.drawable.staty_dominikanska_republika, R.raw.song));
+        //   slovicka.add(new Slovicko("Belize", "Belize", R.drawable.staty_belize, R.raw.song));
+        //  slovicka.add(new Slovicko("Costa Rica", "Kostarika", R.drawable.staty_kostarika, R.raw.song));
+        //  slovicka.add(new Slovicko("Angola", "Angola", R.drawable.staty_angola, R.raw.song));
+        //   slovicka.add(new Slovicko("Cameroon", "Kamerun", R.drawable.staty_kamerun, R.raw.song));
+        //  slovicka.add(new Slovicko("Ethiopia", "Etiopie", R.drawable.staty_etiopie, R.raw.song));
+        //   slovicka.add(new Slovicko("Botswana", "Botswana", R.drawable.staty_botswana, R.raw.song));
+        // slovicka.add(new Slovicko("South Korea", "Jižní Korea",R.drawable.staty_jizni_korea, R.raw.song));
 
         // EVROPA
 
-        slovicka.add(new Slovicko("the Czech Republic", "Česká republika", R.drawable.staty_ceska_republika, R.raw.song));
+        slovicka.add(new Slovicko("Czech Republic", "Česká republika", R.drawable.staty_ceska_republika, R.raw.song));
         slovicka.add(new Slovicko("Slovakia", "Slovensko", R.drawable.staty_slovensko, R.raw.song));
         slovicka.add(new Slovicko("Poland", "Polsko", R.drawable.staty_polsko, R.raw.song));
         slovicka.add(new Slovicko("Austria", "Rakousko", R.drawable.staty_rakousko, R.raw.song));
@@ -68,7 +78,6 @@ public class Kategorie12Staty {
         slovicka.add(new Slovicko("India", "Indie", R.drawable.staty_indie, R.raw.song));
 
         slovicka.add(new Slovicko("North Korea", "Severní Korea", R.drawable.staty_severni_korea, R.raw.song));
-        // slovicka.add(new Slovicko("South Korea", "Jižní Korea",R.drawable.staty_jizni_korea, R.raw.song));
         slovicka.add(new Slovicko("Thailand", "Thajsko", R.drawable.staty_thajsko, R.raw.song));
         slovicka.add(new Slovicko("Vietnam", "Vietnam", R.drawable.staty_vietnam, R.raw.song));
 
@@ -98,19 +107,15 @@ public class Kategorie12Staty {
         slovicka.add(new Slovicko("Chad", "Čad", R.drawable.staty_cad, R.raw.song));
         slovicka.add(new Slovicko("Niger", "Niger", R.drawable.staty_niger, R.raw.song));
         slovicka.add(new Slovicko("Sudan", "Súdán", R.drawable.staty_sudan, R.raw.song));
-        //  slovicka.add(new Slovicko("Ethiopia", "Etiopie", R.drawable.staty_etiopie, R.raw.song));
 
         slovicka.add(new Slovicko("Kenya", "Keňa", R.drawable.staty_kena, R.raw.song));
         slovicka.add(new Slovicko("Somalia", "Somálsko", R.drawable.staty_somalsko, R.raw.song));
-        //   slovicka.add(new Slovicko("Cameroon", "Kamerun", R.drawable.staty_kamerun, R.raw.song));
         slovicka.add(new Slovicko("Nigeria", "Nigérie", R.drawable.staty_nigerie, R.raw.song));
 
         slovicka.add(new Slovicko("Zambia", "Zambie", R.drawable.staty_zambie, R.raw.song));
         slovicka.add(new Slovicko("Mozambique", "Mosambik", R.drawable.staty_mozambik, R.raw.song));
         slovicka.add(new Slovicko("Zimbabwe", "Zimbabwe", R.drawable.staty_zimbabwe, R.raw.song));
-        //   slovicka.add(new Slovicko("Botswana", "Botswana", R.drawable.staty_botswana, R.raw.song));
 
-        //  slovicka.add(new Slovicko("Angola", "Angola", R.drawable.staty_angola, R.raw.song));
         slovicka.add(new Slovicko("Namibia", "Namibie", R.drawable.staty_namibie, R.raw.song));
         slovicka.add(new Slovicko("Swaziland", "Svazijsko", R.drawable.staty_svazijsko, R.raw.song));
         slovicka.add(new Slovicko("South Africa", "Jižní Afrika", R.drawable.staty_jizni_afrika, R.raw.song));
@@ -119,7 +124,6 @@ public class Kategorie12Staty {
         // SEVERNÍ AMERIKA
         slovicka.add(new Slovicko("Mexico", "Mexiko", R.drawable.staty_mexiko, R.raw.song));
         slovicka.add(new Slovicko("USA", "Spojené Státy Americké", R.drawable.staty_spojene_staty_americke, R.raw.song));
-        //  slovicka.add(new Slovicko("Cuba", "Kuba", R.drawable.staty_kuba, R.raw.song));
         slovicka.add(new Slovicko("Canada", "Kanada", R.drawable.staty_kanada, R.raw.song));
 
 
@@ -135,10 +139,7 @@ public class Kategorie12Staty {
         slovicka.add(new Slovicko("Paraguay", "Paraguaj", R.drawable.staty_paraguay, R.raw.song));
         slovicka.add(new Slovicko("Argentina", "Argentina", R.drawable.staty_argentina, R.raw.song));
 
-        //  slovicka.add(new Slovicko("Costa Rica", "Kostarika", R.drawable.staty_kostarika, R.raw.song));
         slovicka.add(new Slovicko("Guatemala", "Guatemala", R.drawable.staty_guatemala, R.raw.song));
-        //   slovicka.add(new Slovicko("Belize", "Belize", R.drawable.staty_belize, R.raw.song));
-        //  slovicka.add(new Slovicko("the Dominican Republic", "Dominikánská republika", R.drawable.staty_dominikanska_republika, R.raw.song));
 
         // AUSTRÁLIE A OCEÁNIE
 

@@ -67,6 +67,16 @@ public class Slovicko {
         }
     }
 
+    public boolean equalsJestePrisnejsi(Slovicko porovnavaneSlovicko) {
+        if (this.getAnglictina().equals(porovnavaneSlovicko.getCestina())
+                && this.getCestina().equals(porovnavaneSlovicko.getCestina())
+                && this.getIdZvuku() == porovnavaneSlovicko.getIdZvuku()) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
     @Override
     public String toString() {
         return "Slovicko{" +

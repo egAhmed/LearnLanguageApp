@@ -27,16 +27,16 @@ public class Kategorie2Rodina {
 
     // rodina
     private static ArrayList<Slovicko> vytvorSlovicka(ArrayList<Slovicko> slovicka) {
-        slovicka.add(new Slovicko("dad", "táta", R.drawable.rodina_tata, R.raw.song));
-        slovicka.add(new Slovicko("mom", "máma", R.drawable.rodina_mama, R.raw.song));
-        slovicka.add(new Slovicko("sister", "sestra", R.drawable.rodina_sestra, R.raw.song));
-        slovicka.add(new Slovicko("brother", "bratr", R.drawable.rodina_bratr, R.raw.song));
-        slovicka.add(new Slovicko("grandma", "babička", R.drawable.rodina_babicka, R.raw.song));
-        slovicka.add(new Slovicko("grandad", "dědeček", R.drawable.rodina_deda, R.raw.song));
-        slovicka.add(new Slovicko("uncle", "strýc", R.drawable.rodina_stryc, R.raw.song));
-        slovicka.add(new Slovicko("aunt", "teta", R.drawable.rodina_teta, R.raw.song));
-        slovicka.add(new Slovicko("cousin", "bratranec", R.drawable.rodina_bratranec, R.raw.song));
-        slovicka.add(new Slovicko("cousin", "sestřenice", R.drawable.rodina_sestrenice, R.raw.song));
+        slovicka.add(new Slovicko("dad", "táta", R.drawable.rodina_tata, R.raw.dad));
+        slovicka.add(new Slovicko("mom", "máma", R.drawable.rodina_mama, R.raw.mom));
+        slovicka.add(new Slovicko("sister", "sestra", R.drawable.rodina_sestra, R.raw.sister));
+        slovicka.add(new Slovicko("brother", "bratr", R.drawable.rodina_bratr, R.raw.brother));
+        slovicka.add(new Slovicko("grandma", "babička", R.drawable.rodina_babicka, R.raw.grandma));
+        slovicka.add(new Slovicko("grandad", "dědeček", R.drawable.rodina_deda, R.raw.grandad));
+        slovicka.add(new Slovicko("uncle", "strýc", R.drawable.rodina_stryc, R.raw.uncle));
+        slovicka.add(new Slovicko("aunt", "teta", R.drawable.rodina_teta, R.raw.aunt));
+        slovicka.add(new Slovicko("cousin", "bratranec", R.drawable.rodina_bratranec, R.raw.cousin));
+        slovicka.add(new Slovicko("cousin", "sestřenice", R.drawable.rodina_sestrenice, R.raw.cousin));
 
 
         return slovicka;
