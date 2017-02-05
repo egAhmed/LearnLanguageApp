@@ -20,7 +20,7 @@ import java.util.Collections;
 import cz.ejstn.learnlanguageapp.R;
 import cz.ejstn.learnlanguageapp.adaptery.SlovickaArrayAdapter;
 import cz.ejstn.learnlanguageapp.model.Slovicko;
-import cz.ejstn.learnlanguageapp.slovicka.Kategorie12Staty;
+import cz.ejstn.learnlanguageapp.slovicka.Kategorie8Priroda;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -97,7 +97,7 @@ public class Kategorie8Fragment extends Fragment {
 
     private void vsechnoPriprav(View rootView) {
 
-        final ArrayList<Slovicko> slovicka = Kategorie12Staty.pripravKategorii();
+        final ArrayList<Slovicko> slovicka = Kategorie8Priroda.pripravKategorii();
         Collections.shuffle(slovicka);
 
 

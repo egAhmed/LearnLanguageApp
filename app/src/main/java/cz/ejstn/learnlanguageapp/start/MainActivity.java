@@ -12,6 +12,8 @@ public class MainActivity extends AppCompatActivity {
 
     // TODO: 5.2.2017 bug s tou play ikonkou - asi to způsobuje ten listview, nevím proč
 
+    // TODO: 5.2.2017 znovu přegenerovat přidané obrázky v kat. Příroda - filtr v průzkumníku podle data
+
     // TODO: 4.2.2017 zkusit vymyslet ještě nějaký testíky, co by ulehčili život :D
 
 

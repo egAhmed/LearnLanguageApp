@@ -6,7 +6,6 @@ import java.util.ArrayList;
 
 import cz.ejstn.learnlanguageapp.model.Slovicko;
 import cz.ejstn.learnlanguageapp.slovicka.Kategorie10Doprava;
-import cz.ejstn.learnlanguageapp.slovicka.Kategorie12Staty;
 import cz.ejstn.learnlanguageapp.slovicka.Kategorie1Zvirata;
 import cz.ejstn.learnlanguageapp.slovicka.Kategorie2Rodina;
 import cz.ejstn.learnlanguageapp.slovicka.Kategorie3JidloAPiti;
@@ -14,9 +13,10 @@ import cz.ejstn.learnlanguageapp.slovicka.Kategorie4Cisla;
 import cz.ejstn.learnlanguageapp.slovicka.Kategorie5Barvy;
 import cz.ejstn.learnlanguageapp.slovicka.Kategorie6VolnyCas;
 import cz.ejstn.learnlanguageapp.slovicka.Kategorie7Sport;
+import cz.ejstn.learnlanguageapp.slovicka.Kategorie8Priroda;
 import cz.ejstn.learnlanguageapp.slovicka.Kategorie9Osobnost;
 import cz.ejstn.learnlanguageapp.slovicka.slovickaNepouzivana.Kategorie11Bydleni;
-import cz.ejstn.learnlanguageapp.slovicka.slovickaNepouzivana.Kategorie8Priroda;
+import cz.ejstn.learnlanguageapp.slovicka.slovickaNepouzivana.Kategorie12Staty;
 
 import static junit.framework.Assert.assertFalse;
 
