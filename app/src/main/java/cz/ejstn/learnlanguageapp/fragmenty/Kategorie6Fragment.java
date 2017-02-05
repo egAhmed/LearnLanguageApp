@@ -11,6 +11,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
+import android.widget.ImageView;
 import android.widget.ListView;
 
 import java.util.ArrayList;
@@ -29,6 +30,7 @@ public class Kategorie6Fragment extends Fragment {
     private AudioManager am;
 
     private MediaPlayer prehravac;
+    private ImageView playIkonka;
     private AudioManager.OnAudioFocusChangeListener listenerZmenaAudioFocusu = new AudioManager.OnAudioFocusChangeListener() {
         @Override
         public void onAudioFocusChange(int focusChange) {
@@ -55,6 +57,7 @@ public class Kategorie6Fragment extends Fragment {
     private MediaPlayer.OnCompletionListener listenerKonecZvuku = new MediaPlayer.OnCompletionListener() {
         @Override
         public void onCompletion(MediaPlayer mp) {
+            playIkonka.setImageResource(R.drawable.ic_play_arrow_white_36dp);
             releasniPrehravac();
         }
     };
@@ -108,6 +111,8 @@ public class Kategorie6Fragment extends Fragment {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 releasniPrehravac();
 
+                playIkonka = (ImageView) view.findViewById(R.id.play_ikonka);
+                playIkonka.setImageResource(R.drawable.ic_pause_white_36dp);
 
                 int vysledekAudioRequestu = am.requestAudioFocus
                         (listenerZmenaAudioFocusu, AudioManager.STREAM_MUSIC, AudioManager.AUDIOFOCUS_GAIN_TRANSIENT);

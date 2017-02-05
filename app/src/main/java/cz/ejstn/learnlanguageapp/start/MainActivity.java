@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
     // TODO: 4.2.2017 přidat funkci poslání feedbacku
     // TODO: 5.2.2017 přidat aktivitu s infem do navigation draweru
 
-    // TODO: 4.2.2017 trošku si uspořádat ty poznámky, ať to není takovej šit
+    // TODO: 4.2.2017 trošku si uspořádat ty poznámky - word, ať to není takovej šit
 
     // TODO: 4.2.2017 rychleji vypnout zvuk při přesvajpnutí fragmentu - asi to bude nějaký onCallback ve fragmentu
 
@@ -36,7 +36,6 @@ public class MainActivity extends AppCompatActivity {
     // TODO: 4.2.2017 udělat nejdřív sample aplikaci s tím navigation drawer
 
 
-    // TODO: 4.2.2017 nějak potunit ty barvy v pozadí toho překladu - jak tam jsou ty čtyři, chtělo by jich to víc, nebo třeba randomizovaný - udělat na to lib třídu a pokaždý to randomizovat
 
 
     // TODO: 4.2.2017 slovíčka se šuflujou vždycky když dojde pamět - možná by se měli šuflovat jen jednou při spuštění aplikace
@@ -46,7 +45,6 @@ public class MainActivity extends AppCompatActivity {
     // TODO: 31.1.2017 dodat výslovnost ke všemu
     // TODO: 31.1.2017 poladit apptheme
 
-    // TODO: 3.2.2017 když něco pustím - změní se ikona na play, když pauznu, změní se na play - odpovídá tomu i to přehrání
 
     // TODO: 31.1.2017 předělat všechno v kategorii barvy na materiální barvy a dodat jich tam pár navíc
 
