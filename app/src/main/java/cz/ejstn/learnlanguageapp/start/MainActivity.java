@@ -1,14 +1,39 @@
 package cz.ejstn.learnlanguageapp.start;
 
 import android.os.Bundle;
+import android.support.design.widget.NavigationView;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
+import android.support.v4.widget.DrawerLayout;
+import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.MenuItem;
 
 import cz.ejstn.learnlanguageapp.R;
 import cz.ejstn.learnlanguageapp.adaptery.KategorieFragmentAdapter;
 
 public class MainActivity extends AppCompatActivity {
+
+    private DrawerLayout mDrawerLayout;
+    private ActionBarDrawerToggle mActonBarDrawerToggle;
+
+    private NavigationView.OnNavigationItemSelectedListener listenerNavigationItemSelected = new NavigationView.OnNavigationItemSelectedListener() {
+        @Override
+        public boolean onNavigationItemSelected(MenuItem item) {
+            switch (item.getItemId()) {
+                case R.id.sdiletAplikaci:
+                    return true;
+                case R.id.hodnotitaplikaci :
+                    return true;
+                case R.id.poslatfeedback :
+                    return true;
+                case R.id.zobrazitinfo:
+                    return true;
+                default:
+                    return true;
+            }
+        }
+    };
 
     // TODO: 5.2.2017 bug s tou play ikonkou - asi to způsobuje ten listview, nevím proč
 
@@ -73,17 +98,38 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
+        mDrawerLayout = (DrawerLayout) findViewById(R.id.drawerLayout);
+        mActonBarDrawerToggle = new ActionBarDrawerToggle(this, mDrawerLayout, R.string.otevrit, R.string.zavrit);
+        mDrawerLayout.addDrawerListener(mActonBarDrawerToggle);
+        mActonBarDrawerToggle.syncState();
+
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+        NavigationView navigationView = (NavigationView) findViewById(R.id.navigationView);
+
+        navigationView.setNavigationItemSelectedListener(listenerNavigationItemSelected);
+
+
+
         ViewPager viewPager = (ViewPager) findViewById(R.id.viewPager);
-
         KategorieFragmentAdapter adapter = new KategorieFragmentAdapter(getSupportFragmentManager(), this);
-
         viewPager.setAdapter(adapter);
-
-
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tabLayout);
         tabLayout.setupWithViewPager(viewPager);
 
 
+    }
+
+
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        if(mActonBarDrawerToggle.onOptionsItemSelected(item)) {
+            return true;
+        }
+
+        return super.onOptionsItemSelected(item);
     }
 
 

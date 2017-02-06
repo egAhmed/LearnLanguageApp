@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/sdiletAplikaci" android:title="@string/sdiletAplikaci" android:icon="@drawable/smajlik"/>
+    <item android:id="@+id/hodnotitaplikaci" android:title="@string/hodnotitAplikaci" android:icon="@drawable/smajlik" />
+    <item android:id="@+id/poslatfeedback" android:title="@string/poslatFeedback" android:icon="@drawable/smajlik"/>
+    <item android:id="@+id/zobrazitinfo" android:title="@string/zobrazitInfo" android:icon="@drawable/smajlik"/>
+
+</menu>

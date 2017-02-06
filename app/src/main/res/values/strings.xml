@@ -3,6 +3,16 @@
     <!-- label , nazev pro aplikaci -->
     <string name="app_name">Anglická Slovíčka</string>
 
+    <!-- stringy pro navigation drawer menu -->
+    <string name="sdiletAplikaci">Sdílet aplikaci</string>
+    <string name="hodnotitAplikaci">Hodnotit aplikaci</string>
+    <string name="poslatFeedback">Poslat připomínku</string>
+    <string name="zobrazitInfo">Informace o aplikaci</string>
+
+    <!-- string pro ActionBarDrawerToggle, nevím proč to potřebuje -->
+    <string name="otevrit">Otevřít</string>
+    <string name="zavrit">Zavřít</string>
+
 
     <!-- stringy pro menu, nazvy kategorii, taby -->
     <string name="menu_item_1">Zvířata</string>
