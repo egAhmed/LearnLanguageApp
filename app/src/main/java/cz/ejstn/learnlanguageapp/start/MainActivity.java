@@ -1,16 +1,21 @@
 package cz.ejstn.learnlanguageapp.start;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.design.widget.TabLayout;
+import android.support.v4.view.GravityCompat;
 import android.support.v4.view.ViewPager;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 import cz.ejstn.learnlanguageapp.R;
 import cz.ejstn.learnlanguageapp.adaptery.KategorieFragmentAdapter;
+import cz.ejstn.learnlanguageapp.aktivity.InfoActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -22,18 +27,40 @@ public class MainActivity extends AppCompatActivity {
         public boolean onNavigationItemSelected(MenuItem item) {
             switch (item.getItemId()) {
                 case R.id.sdiletAplikaci:
+                    Log.i("drawermenu", "vybrano sdilet");
+                    Intent i = new Intent(Intent.ACTION_SEND);
+                    i.setType("text/plain");
+                    i.putExtra(Intent.EXTRA_SUBJECT, "Anglická slovíčka - aplikace na Google Play");
+                    String obsahZpravy = "Vyzkoušej tuto aplikaci na výuku anglických slovíček pro začátečníky: "
+                            + "https://play.google.com/store/apps/details?id=" + getApplicationContext().getPackageName();
+                    Log.i("drawermenu", obsahZpravy);
+                    i.putExtra(Intent.EXTRA_TEXT, obsahZpravy);
+                    if (i.resolveActivity(getPackageManager()) != null) {
+                        startActivity(Intent.createChooser(i, "Sdílet"));
+                    } else {
+                        Toast.makeText(MainActivity.this, "chyba, aplikace nejde sdílet", Toast.LENGTH_SHORT).show();
+                    }
                     return true;
+
                 case R.id.hodnotitaplikaci :
+                    // TODO: 6.2.2017 dodělat
                     return true;
                 case R.id.poslatfeedback :
+                    // TODO: 6.2.2017 dodělat
                     return true;
+
                 case R.id.zobrazitinfo:
+                    Intent in = new Intent(MainActivity.this, InfoActivity.class);
+                    startActivity(in);
                     return true;
+
                 default:
                     return true;
             }
         }
     };
+
+    // TODO: 6.2.2017 nezavírat úplně aplikaci, když je otevřenej drawer
 
     // TODO: 5.2.2017 bug s tou play ikonkou - asi to způsobuje ten listview, nevím proč
 
@@ -66,17 +93,11 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-
     // TODO: 4.2.2017 slovíčka se šuflujou vždycky když dojde pamět - možná by se měli šuflovat jen jednou při spuštění aplikace
 
     // TODO: 5.2.2017 šli by udělat ty scrollbary bílý místo černý?
 
-    // TODO: 31.1.2017 poladit apptheme
-
-
-
     // TODO: 31.1.2017 předělat všechno v kategorii barvy na materiální barvy a dodat jich tam pár navíc
-
 
     // TODO: 30.1.2017 emoji art chtějí na ně odkaz viz http://emojione.com/licensing/
     // TODO: 31.1.2017 udělat právě nějakou info aktivitu, kde bude ten emoji odkaz a třeba
@@ -85,7 +106,6 @@ public class MainActivity extends AppCompatActivity {
     // TODO: 31.1.2017 layout a úpravy pro tablety - tam je to hlavně malý, takže udělat verzi layoutů pro tablety
 
     // TODO: 1.2.2017 upravit si nějak vnitřne ty slovíčka - rozdělit jídlo třeba na jídlo a pití, sladké slané atd
-
 
     // TODO: 4.2.2017 nějakej rozsáhlejší refaktoring celý aplikace - styly, barvy, layouty, názvy, metody, uhlazení, komentáře
 
@@ -98,29 +118,33 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        pripravNavigationDrawer();
+
+        pripravTabLayout();
+
+    }
+
+    private void pripravTabLayout() {
+        ViewPager viewPager = (ViewPager) findViewById(R.id.viewPager);
+        KategorieFragmentAdapter adapter = new KategorieFragmentAdapter(getSupportFragmentManager(), this);
+        viewPager.setAdapter(adapter);
+        TabLayout tabLayout = (TabLayout) findViewById(R.id.tabLayout);
+        tabLayout.setupWithViewPager(viewPager);
+    }
+
+    private void pripravNavigationDrawer() {
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         mDrawerLayout = (DrawerLayout) findViewById(R.id.drawerLayout);
         mActonBarDrawerToggle = new ActionBarDrawerToggle(this, mDrawerLayout, R.string.otevrit, R.string.zavrit);
         mDrawerLayout.addDrawerListener(mActonBarDrawerToggle);
         mActonBarDrawerToggle.syncState();
 
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.navigationView);
 
         navigationView.setNavigationItemSelectedListener(listenerNavigationItemSelected);
-
-
-
-        ViewPager viewPager = (ViewPager) findViewById(R.id.viewPager);
-        KategorieFragmentAdapter adapter = new KategorieFragmentAdapter(getSupportFragmentManager(), this);
-        viewPager.setAdapter(adapter);
-        TabLayout tabLayout = (TabLayout) findViewById(R.id.tabLayout);
-        tabLayout.setupWithViewPager(viewPager);
-
-
     }
-
 
 
     @Override
@@ -132,6 +156,13 @@ public class MainActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-
-
+    @Override
+    public void onBackPressed() {
+        assert mDrawerLayout != null;
+        if (mDrawerLayout.isDrawerOpen(GravityCompat.START)) {
+            mDrawerLayout.closeDrawer(GravityCompat.START);
+        } else {
+            super.onBackPressed();
+        }
+    }
 }

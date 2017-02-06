@@ -1,7 +1,7 @@
 <resources>
 
     <!-- label , nazev pro aplikaci -->
-    <string name="app_name">Anglická Slovíčka</string>
+    <string name="app_name">Anglická slovíčka</string>
 
     <!-- stringy pro navigation drawer menu -->
     <string name="sdiletAplikaci">Sdílet aplikaci</string>
@@ -13,6 +13,8 @@
     <string name="otevrit">Otevřít</string>
     <string name="zavrit">Zavřít</string>
 
+    <!-- labely pro aktivity -->
+    <string name="infoAktivitaLabel">Informace o aplikaci</string>
 
     <!-- stringy pro menu, nazvy kategorii, taby -->
     <string name="menu_item_1">Zvířata</string>
