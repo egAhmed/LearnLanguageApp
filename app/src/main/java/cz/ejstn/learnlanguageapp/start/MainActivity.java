@@ -35,8 +35,6 @@ public class MainActivity extends AppCompatActivity {
 
     // TODO: 3.2.2017 menší velikost obrázků - myšleno jako kilobajty, ne rozlišení?
 
-    // TODO: 3.2.2017 rozmyslet u toho volnýho času jestli tam dávat watching tv nebo watch tv
-
     // TODO: 4.2.2017 přidat takový to velký menu, který se rozvine z tlačítka vlevo nahoře - navigation drawer
 
     // TODO: 4.2.2017 udělat nejdřív sample aplikaci s tím navigation drawer
@@ -66,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
 
     // TODO: 4.2.2017 nějakej rozsáhlejší refaktoring celý aplikace - styly, barvy, layouty, názvy, metody, uhlazení, komentáře
 
-    // TODO: 4.2.2017 přidat funkci testování
+    // TODO: 4.2.2017 přidat funkci testování - kvíz slovíček
 
     // TODO: 4.2.2017 přidat fuknci změna barevného tématu aplikace
 
