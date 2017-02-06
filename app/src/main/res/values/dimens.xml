@@ -1,13 +1,13 @@
 <resources>
-<!-- defaultní šity, asi je nikde nepoužívám, nevim -->
-<dimen name="activity_horizontal_margin">0dp</dimen>
-<dimen name="activity_vertical_margin">0dp</dimen>
+    <!-- defaultní šity, asi je nikde nepoužívám, nevim -->
+    <dimen name="activity_horizontal_margin">0dp</dimen>
+    <dimen name="activity_vertical_margin">0dp</dimen>
 
 
-<!-- hodnoty pro řádek listview -->
-<dimen name="vyska_model_radek_listview">88dp</dimen>
-<!-- padding obrázku v řádku -->
-<dimen name="model_radek_padding_obrazku">6dp</dimen>
+    <!-- hodnoty pro řádek listview -->
+    <dimen name="vyska_model_radek_listview">88dp</dimen>
+    <!-- padding obrázku v řádku -->
+    <dimen name="model_radek_padding_obrazku">6dp</dimen>
 
 
 </resources>
