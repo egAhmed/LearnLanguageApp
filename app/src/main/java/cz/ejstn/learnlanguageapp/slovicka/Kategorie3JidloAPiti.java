@@ -46,7 +46,7 @@ public class Kategorie3JidloAPiti {
         slovicka.add(new Slovicko("honey", "med", R.drawable.jidlo_med, R.raw.honey));
         // není výslovnost
         //slovicka.add(new Slovicko("birthday cake", "narozeninový dort", R.drawable.jidlo_narozeninovy_dort, R.raw.birthday_cake));
-        slovicka.add(new Slovicko("pancake", "palacinka", R.drawable.jidlo_palacinka, R.raw.pancake));
+        slovicka.add(new Slovicko("pancake", "palačinka", R.drawable.jidlo_palacinka, R.raw.pancake));
 
         //OVOCE A ZELENINA
         slovicka.add(new Slovicko("potato", "brambora", R.drawable.jidlo_brambora, R.raw.potato));
