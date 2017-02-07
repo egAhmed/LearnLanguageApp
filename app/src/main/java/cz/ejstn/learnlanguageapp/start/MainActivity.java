@@ -109,10 +109,6 @@ public class MainActivity extends AppCompatActivity {
 
     // TODO: 7.2.2017 přegenerovat ikony - jsou 8 bitů - tak je taky generovat do 8bitů
 
-    // TODO: 4.2.2017 přidat funkci sdílení aplikace
-    // TODO: 4.2.2017 přidat funkci hodnocení aplikace
-    // TODO: 4.2.2017 přidat funkci poslání feedbacku
-    // TODO: 5.2.2017 přidat aktivitu s infem do navigation draweru
 
     // TODO: 4.2.2017 trošku si uspořádat ty poznámky - word, ať to není takovej šit
 
@@ -121,13 +117,6 @@ public class MainActivity extends AppCompatActivity {
     // TODO: 4.2.2017 feature - že ty fragmenty budou po každém spustění aplikace v různém pořadí
 
     // TODO: 3.2.2017 přidat vnuka a vnučku - obrázky - zase ty velikosti atd
-
-
-    // TODO: 4.2.2017 přidat takový to velký menu, který se rozvine z tlačítka vlevo nahoře - navigation drawer
-
-    // TODO: 4.2.2017 udělat nejdřív sample aplikaci s tím navigation drawer
-
-
 
     // TODO: 4.2.2017 slovíčka se šuflujou vždycky když dojde pamět - možná by se měli šuflovat jen jednou při spuštění aplikace
 

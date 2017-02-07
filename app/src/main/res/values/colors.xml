@@ -13,6 +13,10 @@
     <color name="model_radek_pozadi_textu">#379237</color>
     <color name="model_radek_pozadi_obrazku">#ffffff</color>
 
+    <!-- barvy pro navigaton view - text a ikony v tom menu -->
+    <color name="barva_textu_navigation_view">#1b5e20</color>
+    <color name="barva_ikon_navigation_view">#1b5e20</color>
+
 
     <!-- barvy pro TabLayout - pro ty taby nahoře pod appbarem -->
     <color name="barva_textu_neaktivniho_tabu">#dedede</color>

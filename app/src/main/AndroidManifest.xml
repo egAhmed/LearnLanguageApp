@@ -20,7 +20,8 @@
         <activity
             android:name=".aktivity.InfoActivity"
             android:label="@string/infoAktivitaLabel"
-            android:parentActivityName=".start.MainActivity">
+            android:parentActivityName=".start.MainActivity"
+            android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".start.MainActivity" />

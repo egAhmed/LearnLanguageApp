@@ -1,11 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_info"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="cz.ejstn.learnlanguageapp.aktivity.InfoActivity">
+    tools:context="cz.ejstn.learnlanguageapp.aktivity.InfoActivity"
+    android:background="@color/colorPrimary">
 
-    <!-- todo dodělat nějaký hezký layout -->
+    <!-- todo responzivita , zatím je to nastavené jan na portrét -->
+
+    <ImageView
+        android:id="@+id/info_obrazek"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/info_obrazek"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        style="@style/StylTextuInfoActivity"
+        android:id="@+id/info_text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/info_obrazek"
+        android:text="@string/textInfo1" />
+
+    <TextView
+        style="@style/StylTextuInfoActivity"
+        android:id="@+id/info_text2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/info_text1"
+        android:text="@string/textInfo2" />
+
+    <TextView
+        style="@style/StylTextuInfoActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/info_text2"
+        android:text="@string/textInfo3" />
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/zvirata_panda"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:rotation="-45"/>
+
 
 </RelativeLayout>

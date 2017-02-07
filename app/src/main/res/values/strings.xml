@@ -16,6 +16,14 @@
     <!-- labely pro aktivity -->
     <string name="infoAktivitaLabel">Informace o aplikaci</string>
 
+
+    <!-- text pro aktivitu info o aplikaci -->
+    <string name="textInfo1">Pokud jste se dostali až sem, znamená to,
+        že vás asi zajímá něco o této aplikaci.
+        Aplikaci jsem vytvořil, abych se naučil aplikace vytvářet.</string>
+    <string name="textInfo2">Verze aplikace: 1.0.50</string>
+    <string name="textInfo3">Aplikace obsahuje celkem 323 slovíček</string>
+
     <!-- stringy pro menu, nazvy kategorii, taby -->
     <string name="menu_item_1">Zvířata</string>
     <string name="menu_item_2">Rodina</string>

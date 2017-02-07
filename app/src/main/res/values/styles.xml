@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
 
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
@@ -26,6 +26,16 @@
     <!-- podstyl TabLayoutu pro vzhled textu tabů -->
     <style name="CategoryTabTextAppearance" parent="TextAppearance.Design.Tab">
         <item name="android:textColor">@color/barva_textu_neaktivniho_tabu</item>
+    </style>
+
+    <!-- styl textu v info aktivitě -->
+    <style name="StylTextuInfoActivity">
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:layout_marginRight">16dp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+        <item name="android:textAlignment" tools:targetApi="jelly_bean_mr1">center</item>
+        <item name="android:layout_marginTop">16dp</item>
     </style>
 
 
