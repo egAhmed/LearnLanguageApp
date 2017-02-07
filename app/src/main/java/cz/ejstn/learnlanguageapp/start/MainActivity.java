@@ -1,6 +1,8 @@
 package cz.ejstn.learnlanguageapp.start;
 
+import android.content.ActivityNotFoundException;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.design.widget.TabLayout;
@@ -28,30 +30,64 @@ public class MainActivity extends AppCompatActivity {
             switch (item.getItemId()) {
                 case R.id.sdiletAplikaci:
                     Log.i("drawermenu", "vybrano sdilet");
-                    Intent i = new Intent(Intent.ACTION_SEND);
-                    i.setType("text/plain");
-                    i.putExtra(Intent.EXTRA_SUBJECT, "Anglická slovíčka - aplikace na Google Play");
+                    Intent sdiletAplikaci = new Intent(Intent.ACTION_SEND);
+                    sdiletAplikaci.setType("text/plain");
+                    sdiletAplikaci.putExtra(Intent.EXTRA_SUBJECT, "Anglická slovíčka - aplikace na Google Play");
                     String obsahZpravy = "Vyzkoušej tuto aplikaci na výuku anglických slovíček pro začátečníky: "
                             + "https://play.google.com/store/apps/details?id=" + getApplicationContext().getPackageName();
                     Log.i("drawermenu", obsahZpravy);
-                    i.putExtra(Intent.EXTRA_TEXT, obsahZpravy);
-                    if (i.resolveActivity(getPackageManager()) != null) {
-                        startActivity(Intent.createChooser(i, "Sdílet"));
+                    sdiletAplikaci.putExtra(Intent.EXTRA_TEXT, obsahZpravy);
+                    if (sdiletAplikaci.resolveActivity(getPackageManager()) != null) {
+                        startActivity(Intent.createChooser(sdiletAplikaci, "Jak chcete sdílet aplikaci?"));
                     } else {
                         Toast.makeText(MainActivity.this, "chyba, aplikace nejde sdílet", Toast.LENGTH_SHORT).show();
                     }
                     return true;
 
-                case R.id.hodnotitaplikaci :
+                case R.id.hodnotitaplikaci:
+                    // getApplicationContext().getPackageName());
+                    // https://play.google.com/store/apps/details?id=cz.ejstn.coinflipmontecarlo
                     // TODO: 6.2.2017 dodělat
-                    return true;
-                case R.id.poslatfeedback :
-                    // TODO: 6.2.2017 dodělat
+                    Uri uri = Uri.parse("market://details?id=" + getApplicationContext().getPackageName());
+                    Intent hodnotitAplikaci = new Intent(Intent.ACTION_VIEW, uri);
+                    // To count with Play market backstack, After pressing back button,
+                    // to taken back to our application, we need to add following flags to intent.
+                    hodnotitAplikaci.addFlags(Intent.FLAG_ACTIVITY_NO_HISTORY |
+                            // Intent.FLAG_ACTIVITY_NEW_DOCUMENT
+                            Intent.FLAG_ACTIVITY_MULTIPLE_TASK);
+                     /*int flags = Intent.FLAG_ACTIVITY_NO_HISTORY | Intent.FLAG_ACTIVITY_MULTIPLE_TASK;
+                    if (Build.VERSION.SDK_INT >= 21) {
+                        flags |= Intent.FLAG_ACTIVITY_NEW_DOCUMENT;
+                    } else {
+                        //noinspection deprecation
+                        flags |= Intent.FLAG_ACTIVITY_CLEAR_WHEN_TASK_RESET;
+                    }
+                    hodnotitAplikaci.addFlags(flags); */
+                    try {
+                        startActivity(hodnotitAplikaci);
+                    } catch (ActivityNotFoundException e) {
+                        startActivity(new Intent(Intent.ACTION_VIEW,
+                                Uri.parse("https://play.google.com/store/apps/details?id=" + getApplicationContext().getPackageName())));
+                    }
                     return true;
 
+                case R.id.poslatfeedback:
+                    Intent poslatFeedback = new Intent(Intent.ACTION_SENDTO);
+                    poslatFeedback.setData(Uri.parse("mailto:"));
+                    poslatFeedback.putExtra(Intent.EXTRA_EMAIL, new String[]{"ejstnn@gmail.com"});
+                    poslatFeedback.putExtra(Intent.EXTRA_SUBJECT, "Anglická slovíčka - připomínka");
+                    //poslatFeedback.putExtra(Intent.EXTRA_TEXT, "Write your stuff here:");
+                    if (poslatFeedback.resolveActivity(getPackageManager()) != null) {
+                        startActivity(Intent.createChooser(poslatFeedback, "Jak chcete poslat e-mail?"));
+                    } else {
+                        Toast.makeText(MainActivity.this, "Nemáte nainstalován žádný e-mailový klient", Toast.LENGTH_SHORT).show();
+                    }
+                    return true;
+
+
                 case R.id.zobrazitinfo:
-                    Intent in = new Intent(MainActivity.this, InfoActivity.class);
-                    startActivity(in);
+                    Intent zobrazitInfo = new Intent(MainActivity.this, InfoActivity.class);
+                    startActivity(zobrazitInfo);
                     return true;
 
                 default:
@@ -66,11 +102,12 @@ public class MainActivity extends AppCompatActivity {
 
     // TODO: 5.2.2017 znovu přegenerovat přidané obrázky v kat. Příroda - filtr v průzkumníku podle data
 
-    // TODO: 4.2.2017 zkusit vymyslet ještě nějaký testíky, co by ulehčili život :D
+    // TODO: 4.2.2017 testík na ověření, že všechny obrázky mají ty různý verze
 
 
     // TODO: 5.2.2017 udělat tu změnu ikony novým vláknem a délkou songu ???
 
+    // TODO: 7.2.2017 přegenerovat ikony - jsou 8 bitů - tak je taky generovat do 8bitů
 
     // TODO: 4.2.2017 přidat funkci sdílení aplikace
     // TODO: 4.2.2017 přidat funkci hodnocení aplikace
@@ -85,7 +122,6 @@ public class MainActivity extends AppCompatActivity {
 
     // TODO: 3.2.2017 přidat vnuka a vnučku - obrázky - zase ty velikosti atd
 
-    // TODO: 3.2.2017 menší velikost obrázků - myšleno jako kilobajty, ne rozlišení?
 
     // TODO: 4.2.2017 přidat takový to velký menu, který se rozvine z tlačítka vlevo nahoře - navigation drawer
 
