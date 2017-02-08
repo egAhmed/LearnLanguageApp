@@ -54,6 +54,7 @@ public class Kategorie3Fragment extends Fragment {
             }
         }
     };
+
     private MediaPlayer.OnCompletionListener listenerKonecZvuku = new MediaPlayer.OnCompletionListener() {
         @Override
         public void onCompletion(MediaPlayer mp) {

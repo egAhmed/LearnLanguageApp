@@ -9,7 +9,7 @@ import cz.ejstn.learnlanguageapp.model.Slovicko;
  * Created by Martin Soukup on 27.1.2017.
  */
 
-public class Kategorie2Rodina {
+public final class Kategorie2Rodina {
 
 
     private Kategorie2Rodina() {

@@ -98,5 +98,4 @@ public class KategorieFragmentAdapter extends FragmentPagerAdapter {
         return 10;
     }
 
-
 }

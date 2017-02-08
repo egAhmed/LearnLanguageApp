@@ -9,7 +9,7 @@ import cz.ejstn.learnlanguageapp.model.Slovicko;
  * Created by Martin Soukup on 28.1.2017.
  */
 
-public class Kategorie8Priroda {
+public final class Kategorie8Priroda {
 
     private Kategorie8Priroda() {
     }

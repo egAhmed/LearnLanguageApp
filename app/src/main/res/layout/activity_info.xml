@@ -9,7 +9,7 @@
     tools:context="cz.ejstn.learnlanguageapp.aktivity.InfoActivity"
     android:background="@color/colorPrimary">
 
-    <!-- todo responzivita , zatím je to nastavené jan na portrét -->
+    <!-- todo responzivita , zatím je to natvrdo nastavené jan na portrét -->
 
     <ImageView
         android:id="@+id/info_obrazek"
@@ -33,14 +33,15 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/info_text1"
-        android:text="@string/textInfo2" />
+        tools:text="@string/textInfo3" />
 
     <TextView
         style="@style/StylTextuInfoActivity"
+        android:id="@+id/info_text3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/info_text2"
-        android:text="@string/textInfo3" />
+        tools:text="@string/textInfo2" />
 
     <ImageView
         android:layout_width="80dp"

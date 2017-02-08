@@ -13,11 +13,16 @@ import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import cz.ejstn.learnlanguageapp.R;
 import cz.ejstn.learnlanguageapp.adaptery.KategorieFragmentAdapter;
 import cz.ejstn.learnlanguageapp.aktivity.InfoActivity;
+import cz.ejstn.learnlanguageapp.helper.NavigationFunFactHelper;
+import cz.ejstn.learnlanguageapp.model.FunFact;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -96,25 +101,14 @@ public class MainActivity extends AppCompatActivity {
         }
     };
 
-    // TODO: 6.2.2017 nezavírat úplně aplikaci, když je otevřenej drawer
 
     // TODO: 5.2.2017 bug s tou play ikonkou - asi to způsobuje ten listview, nevím proč
 
-    // TODO: 5.2.2017 znovu přegenerovat přidané obrázky v kat. Příroda - filtr v průzkumníku podle data
-
-    // TODO: 4.2.2017 testík na ověření, že všechny obrázky mají ty různý verze
-
-
     // TODO: 5.2.2017 udělat tu změnu ikony novým vláknem a délkou songu ???
-
-    // TODO: 7.2.2017 přegenerovat ikony - jsou 8 bitů - tak je taky generovat do 8bitů
-
 
     // TODO: 4.2.2017 trošku si uspořádat ty poznámky - word, ať to není takovej šit
 
     // TODO: 4.2.2017 rychleji vypnout zvuk při přesvajpnutí fragmentu - asi to bude nějaký onCallback ve fragmentu
-
-    // TODO: 4.2.2017 feature - že ty fragmenty budou po každém spustění aplikace v různém pořadí
 
     // TODO: 3.2.2017 přidat vnuka a vnučku - obrázky - zase ty velikosti atd
 
@@ -124,13 +118,7 @@ public class MainActivity extends AppCompatActivity {
 
     // TODO: 31.1.2017 předělat všechno v kategorii barvy na materiální barvy a dodat jich tam pár navíc
 
-    // TODO: 30.1.2017 emoji art chtějí na ně odkaz viz http://emojione.com/licensing/
-    // TODO: 31.1.2017 udělat právě nějakou info aktivitu, kde bude ten emoji odkaz a třeba
-    // TODO: 31.1.2017 třeba tlačítko na poslání feedbacku
-
     // TODO: 31.1.2017 layout a úpravy pro tablety - tam je to hlavně malý, takže udělat verzi layoutů pro tablety
-
-    // TODO: 1.2.2017 upravit si nějak vnitřne ty slovíčka - rozdělit jídlo třeba na jídlo a pití, sladké slané atd
 
     // TODO: 4.2.2017 nějakej rozsáhlejší refaktoring celý aplikace - styly, barvy, layouty, názvy, metody, uhlazení, komentáře
 
@@ -147,6 +135,27 @@ public class MainActivity extends AppCompatActivity {
 
         pripravTabLayout();
 
+        pripravNavigationHeader();
+
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        if(mActonBarDrawerToggle.onOptionsItemSelected(item)) {
+            return true;
+        }
+
+        return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public void onBackPressed() {
+        assert mDrawerLayout != null;
+        if (mDrawerLayout.isDrawerOpen(GravityCompat.START)) {
+            mDrawerLayout.closeDrawer(GravityCompat.START);
+        } else {
+            super.onBackPressed();
+        }
     }
 
     private void pripravTabLayout() {
@@ -171,23 +180,20 @@ public class MainActivity extends AppCompatActivity {
         navigationView.setNavigationItemSelectedListener(listenerNavigationItemSelected);
     }
 
+    private void pripravNavigationHeader() {
+        NavigationView navigationView = (NavigationView) findViewById(R.id.navigationView);
+        View header = navigationView.getHeaderView(0);
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        if(mActonBarDrawerToggle.onOptionsItemSelected(item)) {
-            return true;
-        }
+        ImageView obrazek = (ImageView) header.findViewById(R.id.obrazek_navigation_header);
+        TextView funFactAnglicky = (TextView) header.findViewById(R.id.text_fun_fact_anglicky);
+        TextView funFactCesky = (TextView) header.findViewById(R.id.text_fun_fact_cesky);
 
-        return super.onOptionsItemSelected(item);
+        FunFact fakt = NavigationFunFactHelper.vygenerujFunFact();
+
+        obrazek.setImageResource(fakt.getObrazekFunFact());
+        funFactAnglicky.setText(fakt.getTextFunFactAnglicky());
+        funFactCesky.setText(fakt.getTextFunFactCesky());
     }
 
-    @Override
-    public void onBackPressed() {
-        assert mDrawerLayout != null;
-        if (mDrawerLayout.isDrawerOpen(GravityCompat.START)) {
-            mDrawerLayout.closeDrawer(GravityCompat.START);
-        } else {
-            super.onBackPressed();
-        }
-    }
+
 }

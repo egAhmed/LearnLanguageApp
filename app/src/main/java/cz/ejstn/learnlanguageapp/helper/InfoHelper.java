@@ -1,6 +1,8 @@
-package cz.ejstn.learnlanguageapp;
+package cz.ejstn.learnlanguageapp.helper;
 
-import org.junit.Test;
+import android.content.Context;
+import android.content.pm.PackageInfo;
+import android.content.pm.PackageManager;
 
 import java.util.ArrayList;
 
@@ -17,17 +19,18 @@ import cz.ejstn.learnlanguageapp.slovicka.Kategorie9Osobnost;
 import cz.ejstn.learnlanguageapp.slovicka.slovickaNepouzivana.Kategorie11Bydleni;
 import cz.ejstn.learnlanguageapp.slovicka.slovickaNepouzivana.Kategorie12Staty;
 
-import static junit.framework.Assert.assertTrue;
-
 /**
- * Created by Martin Soukup on 7.2.2017.
+ * Created by Martin Soukup on 8.2.2017.
  */
 
-public class PocitadloSlovicekTest {
+public final class InfoHelper {
 
-    @Test
-    public void spocitejVsechnySlovicka () {
-        ArrayList pole [] = new ArrayList[] {
+    private InfoHelper() {
+    }
+
+    public static int spocitejVsechnaSlovickaVAplikaci() {
+        // stejný kód jako v testu pro zjistění celkových slovíček
+        ArrayList pole[] = new ArrayList[]{
                 Kategorie1Zvirata.pripravKategorii(), Kategorie2Rodina.pripravKategorii(),
                 Kategorie3JidloAPiti.pripravKategorii(), Kategorie4Cisla.pripravKategorii(),
                 Kategorie5Barvy.pripravKategorii(), Kategorie6VolnyCas.pripravKategorii(),
@@ -41,11 +44,21 @@ public class PocitadloSlovicekTest {
             pocetSlovicek += list.size();
         }
 
-        System.out.println(pocetSlovicek);
+        return pocetSlovicek;
+    }
 
+    public static String zjistiJmenoVerze(Context kontext) {
+        String jmenoVerze;
 
-        assertTrue(true);
+        try {
+            PackageInfo packageInfo = kontext.getPackageManager().getPackageInfo(kontext.getPackageName(), 0);
+            return packageInfo.versionName;
+        } catch (PackageManager.NameNotFoundException e) {
+            e.printStackTrace();
+            return "Chyba";
+        }
 
 
     }
+
 }
