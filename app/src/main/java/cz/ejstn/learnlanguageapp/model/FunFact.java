@@ -27,4 +27,18 @@ public class FunFact {
     public String getTextFunFactCesky() {
         return textFunFactCesky;
     }
+
+    @Override
+    public String toString() {
+        return "FunFact{" +
+                "obrazekFunFact=" + obrazekFunFact +
+                ", textFunFactAnglicky='" + textFunFactAnglicky + '\'' +
+                ", textFunFactCesky='" + textFunFactCesky + '\'' +
+                '}';
+    }
+
+    public boolean equalsPodleObrazku (FunFact porovnavny) {
+        return this.getObrazekFunFact() == porovnavny.getObrazekFunFact()
+                && this.getTextFunFactAnglicky().equals(porovnavny.getTextFunFactAnglicky());
+    }
 }

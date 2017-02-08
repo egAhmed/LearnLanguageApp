@@ -48,7 +48,6 @@ public final class InfoHelper {
     }
 
     public static String zjistiJmenoVerze(Context kontext) {
-        String jmenoVerze;
 
         try {
             PackageInfo packageInfo = kontext.getPackageManager().getPackageInfo(kontext.getPackageName(), 0);

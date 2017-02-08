@@ -11,7 +11,7 @@ import cz.ejstn.learnlanguageapp.model.FunFact;
 
 public final class NavigationFunFactHelper {
 
-    private static final ArrayList<FunFact> seznamFunFaktu1 = new ArrayList<FunFact>() {{
+    private static final ArrayList<FunFact> seznamFunFaktu = new ArrayList<FunFact>() {{
 
         add(new FunFact(R.drawable.zvirata_koala, "Koala spends up to 18 to 20 hours a day sleeping", "Koala naspí až 18-20 hodin denně"));
 
@@ -31,7 +31,15 @@ public final class NavigationFunFactHelper {
 
         add(new FunFact(R.drawable.jidlo_pizza, "Many people believe pineapple should not be put on pizza", "Mnoho lidí věří, že na pizzu by se neměl dávat ananas"));
 
+        add(new FunFact(R.drawable.jidlo_parek_v_rohliku, "National Hot Dog Day has been celebrated since the 1950's", "Národní den hotdogů se slaví od 50. let 20. století"));
 
+        add(new FunFact(R.drawable.jidlo_banan, "Bannanas contain a lot of potassium", "Banány obsahují spoustu draslíku"));
+
+        add(new FunFact(R.drawable.volnycas_spani, "Humans spend 1/3 if their life sleeping", "Lidé stráví jednu třetinu života spaním"));
+
+        add(new FunFact(R.drawable.jidlo_caj, "After water, tea is the most consumed drink in the world", "Čaj je po vodě nejkonzumovanější nápoj na světě"));
+
+        add(new FunFact(R.drawable.jidlo_kava, "in 1683, one pound of coffee in New York was worth as much as 4 acres of land", "V roce 1683 měla v New Yorku jedna libra kávy hodnotu 4 akrů půdy"));
     }};
 
 
@@ -41,11 +49,13 @@ public final class NavigationFunFactHelper {
 
     public static FunFact vygenerujFunFact() {
 
-        int nahodne = (int) (Math.random() * seznamFunFaktu1.size());
+        int nahodne = (int) (Math.random() * seznamFunFaktu.size());
 
-        return seznamFunFaktu1.get(nahodne);
+        return seznamFunFaktu.get(nahodne);
 
     }
 
-
+    public static ArrayList<FunFact> getSeznamFunFaktu() {
+        return seznamFunFaktu;
+    }
 }

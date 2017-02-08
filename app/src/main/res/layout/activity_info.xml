@@ -11,6 +11,17 @@
 
     <!-- todo responzivita , zatím je to natvrdo nastavené jan na portrét -->
 
+    <!-- to co je v relative layoutu v xml níž, bude nahoře
+         teda opačně než např vrstvy ve fotošopu -->
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/zvirata_panda"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:rotation="-45"/>
+
     <ImageView
         android:id="@+id/info_obrazek"
         android:layout_width="200dp"
@@ -43,14 +54,6 @@
         android:layout_below="@id/info_text2"
         tools:text="@string/textInfo2" />
 
-    <ImageView
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:src="@drawable/zvirata_panda"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:rotation="-45"/>
 
 
 </RelativeLayout>
