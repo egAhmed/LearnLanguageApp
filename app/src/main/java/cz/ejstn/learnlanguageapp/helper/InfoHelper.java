@@ -25,6 +25,13 @@ import cz.ejstn.learnlanguageapp.slovicka.slovickaNepouzivana.Kategorie12Staty;
 
 public final class InfoHelper {
 
+    private static final String[] SEZNAM_KECU = new String[] {
+            "Je tady celkem dost slovíček a tak no.", "Napište mi co si tom myslíte vy.",
+            "Aplikace má ještě nějaké chyby, Sorry jako.", "Je to moje druhá aplikace na Google Play, ta první je fakt super",
+            "Pokud chcete zkusit také vytvářet aplikace, doporučuji kurzy zdarma na www.udacity.com",
+            " - Tady bude nějaký chytrý text -", "Použité obrázky jsou z www.emojione.com"
+    };
+
     private InfoHelper() {
     }
 
@@ -58,6 +65,11 @@ public final class InfoHelper {
         }
 
 
+    }
+
+    public static String vygenerujKecyDoInfoAktivity() {
+        int nahodny = (int) (Math.random() * SEZNAM_KECU.length);
+        return SEZNAM_KECU[nahodny];
     }
 
 }

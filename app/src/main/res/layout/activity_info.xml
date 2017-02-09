@@ -14,9 +14,10 @@
     <!-- to co je v relative layoutu v xml níž, bude nahoře
          teda opačně než např vrstvy ve fotošopu -->
     <ImageView
+        android:id="@+id/obrazek_zvirete_info_aktivita"
         android:layout_width="80dp"
         android:layout_height="80dp"
-        android:src="@drawable/zvirata_panda"
+        tools:src="@drawable/zvirata_panda"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
@@ -36,7 +37,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/info_obrazek"
-        android:text="@string/textInfo1" />
+        tools:text="@string/textInfo1" />
 
     <TextView
         style="@style/StylTextuInfoActivity"

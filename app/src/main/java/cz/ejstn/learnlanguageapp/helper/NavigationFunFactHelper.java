@@ -11,7 +11,7 @@ import cz.ejstn.learnlanguageapp.model.FunFact;
 
 public final class NavigationFunFactHelper {
 
-    private static final ArrayList<FunFact> seznamFunFaktu = new ArrayList<FunFact>() {{
+    private static final ArrayList<FunFact> SEZNAM_FUN_FAKTU = new ArrayList<FunFact>() {{
 
         add(new FunFact(R.drawable.zvirata_koala, "Koala spends up to 18 to 20 hours a day sleeping", "Koala naspí až 18-20 hodin denně"));
 
@@ -49,13 +49,13 @@ public final class NavigationFunFactHelper {
 
     public static FunFact vygenerujFunFact() {
 
-        int nahodne = (int) (Math.random() * seznamFunFaktu.size());
+        int nahodne = (int) (Math.random() * SEZNAM_FUN_FAKTU.size());
 
-        return seznamFunFaktu.get(nahodne);
+        return SEZNAM_FUN_FAKTU.get(nahodne);
 
     }
 
     public static ArrayList<FunFact> getSeznamFunFaktu() {
-        return seznamFunFaktu;
+        return SEZNAM_FUN_FAKTU;
     }
 }

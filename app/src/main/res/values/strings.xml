@@ -19,8 +19,7 @@
 
     <!-- text pro aktivitu info o aplikaci -->
     <string name="textInfo1">Pokud jste se dostali až sem, znamená to,
-        že vás asi zajímá něco o této aplikaci.
-        Aplikaci jsem vytvořil, abych se naučil aplikace vytvářet.</string>
+        že vás asi zajímá něco o této aplikaci.</string>
     <string name="textInfo2">Verze aplikace:</string>
     <string name="textInfo3">Aplikace obsahuje celkem</string>
 
