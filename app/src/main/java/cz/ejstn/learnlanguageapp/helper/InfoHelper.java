@@ -27,9 +27,11 @@ public final class InfoHelper {
 
     private static final String[] SEZNAM_KECU = new String[] {
             "Je tady celkem dost slovíček a tak no.", "Napište mi co si tom myslíte vy.",
-            "Aplikace má ještě nějaké chyby, Sorry jako.", "Je to moje druhá aplikace na Google Play, ta první je fakt super",
-            "Pokud chcete zkusit také vytvářet aplikace, doporučuji kurzy zdarma na www.udacity.com",
-            " - Tady bude nějaký chytrý text -", "Použité obrázky jsou z www.emojione.com"
+            "Aplikace má ještě nějaké chyby, Sorry jako.", "Je to moje druhá aplikace na Google Play, zkuste i tu první, ta se fakt povedla.",
+            "Pokud chcete zkusit také vytvářet aplikace, doporučuji kurzy zdarma na www.udacity.com.",
+            "- Tady bude nějaký chytrý text -", "Použité obrázky jsou z www.emojione.com.",
+            "Ty čísla verze jsou vám stejně k ničemu, nevím proč to tady vůbec píšu.",
+            "Věděli jste, že pokaždé co zavřete a otevřete aplikaci, se v nahoře menu ukáže zajímavý fakt?"
     };
 
     private InfoHelper() {
