@@ -50,24 +50,12 @@ public class MainActivity extends AppCompatActivity {
                     return true;
 
                 case R.id.hodnotitaplikaci:
-                    // getApplicationContext().getPackageName());
-                    // https://play.google.com/store/apps/details?id=cz.ejstn.coinflipmontecarlo
-                    // TODO: 6.2.2017 dodělat
                     Uri uri = Uri.parse("market://details?id=" + getApplicationContext().getPackageName());
                     Intent hodnotitAplikaci = new Intent(Intent.ACTION_VIEW, uri);
-                    // To count with Play market backstack, After pressing back button,
-                    // to taken back to our application, we need to add following flags to intent.
+                    // ty flagy tam mají být, aby po se člověk po back buttonu v google play vrátil do aplikace, ale je to takový sketchy
                     hodnotitAplikaci.addFlags(Intent.FLAG_ACTIVITY_NO_HISTORY |
                             // Intent.FLAG_ACTIVITY_NEW_DOCUMENT
                             Intent.FLAG_ACTIVITY_MULTIPLE_TASK);
-                     /*int flags = Intent.FLAG_ACTIVITY_NO_HISTORY | Intent.FLAG_ACTIVITY_MULTIPLE_TASK;
-                    if (Build.VERSION.SDK_INT >= 21) {
-                        flags |= Intent.FLAG_ACTIVITY_NEW_DOCUMENT;
-                    } else {
-                        //noinspection deprecation
-                        flags |= Intent.FLAG_ACTIVITY_CLEAR_WHEN_TASK_RESET;
-                    }
-                    hodnotitAplikaci.addFlags(flags); */
                     try {
                         startActivity(hodnotitAplikaci);
                     } catch (ActivityNotFoundException e) {
@@ -101,10 +89,7 @@ public class MainActivity extends AppCompatActivity {
         }
     };
 
-
-    // TODO: 5.2.2017 bug s tou play ikonkou - asi to způsobuje ten listview, nevím proč
-
-    // TODO: 5.2.2017 udělat tu změnu ikony novým vláknem a délkou songu ???
+    // TODO: 9.2.2017 dodělat poznámky k Navigation drawer - pageviewer, navigation view, to celý prostě
 
     // TODO: 4.2.2017 trošku si uspořádat ty poznámky - word, ať to není takovej šit
 
@@ -137,11 +122,13 @@ public class MainActivity extends AppCompatActivity {
 
         pripravNavigationHeader();
 
+        Log.i("ac_lifecycle" , "on create");
+
     }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        if(mActonBarDrawerToggle.onOptionsItemSelected(item)) {
+        if (mActonBarDrawerToggle.onOptionsItemSelected(item)) {
             return true;
         }
 

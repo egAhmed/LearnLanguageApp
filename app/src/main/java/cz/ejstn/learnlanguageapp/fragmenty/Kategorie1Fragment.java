@@ -59,7 +59,7 @@ public class Kategorie1Fragment extends Fragment {
     private MediaPlayer.OnCompletionListener listenerKonecZvuku = new MediaPlayer.OnCompletionListener() {
         @Override
         public void onCompletion(MediaPlayer mp) {
-            playIkonka.setImageResource(R.drawable.ic_play_arrow_white_36dp);
+            // playIkonka.setImageResource(R.drawable.ic_play_arrow_white_36dp);
             releasniPrehravac();
         }
     };
@@ -114,11 +114,8 @@ public class Kategorie1Fragment extends Fragment {
 
         listSlovicek.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+            public void onItemClick(AdapterView<?> parent, final View view, int position, long id) {
                 releasniPrehravac();
-
-                playIkonka = (ImageView) view.findViewById(R.id.play_ikonka);
-                playIkonka.setImageResource(R.drawable.ic_pause_white_36dp);
 
 
                 int vysledekAudioRequestu = am.requestAudioFocus
@@ -133,6 +130,35 @@ public class Kategorie1Fragment extends Fragment {
                     prehravac.start();
 
                     prehravac.setOnCompletionListener(listenerKonecZvuku);
+
+                    playIkonka = (ImageView) view.findViewById(R.id.play_ikonka);
+                    playIkonka.setImageResource(R.drawable.ic_pause_white_36dp);
+
+                    Thread vlakno = new Thread() {
+                        @Override
+                        public void run() {
+                            synchronized (this) {
+                                try {
+                                    wait(prehravac.getDuration());
+                                   // Log.i("thread", String.valueOf(prehravac.getDuration()));
+
+                                    getActivity().runOnUiThread(new Runnable() {
+                                        @Override
+                                        public void run() {
+                                            ImageView playIkona = (ImageView) view.findViewById(R.id.play_ikonka);
+                                            playIkona.setImageResource(R.drawable.ic_play_arrow_white_36dp);
+
+                                        }
+                                    });
+                                } catch (InterruptedException e) {
+                                    e.printStackTrace();
+                                }
+                            }
+
+                        }
+                    };
+
+                    vlakno.start();
 
                 }
 
