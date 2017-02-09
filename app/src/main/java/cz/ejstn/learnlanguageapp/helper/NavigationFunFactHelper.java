@@ -35,7 +35,7 @@ public final class NavigationFunFactHelper {
 
         add(new FunFact(R.drawable.jidlo_banan, "Bannanas contain a lot of potassium", "Banány obsahují spoustu draslíku"));
 
-        add(new FunFact(R.drawable.volnycas_spani, "Humans spend 1/3 if their life sleeping", "Lidé stráví jednu třetinu života spaním"));
+        add(new FunFact(R.drawable.volnycas_spani, "Humans spend 1/3 of their life sleeping", "Lidé stráví jednu třetinu života spaním"));
 
         add(new FunFact(R.drawable.jidlo_caj, "After water, tea is the most consumed drink in the world", "Čaj je po vodě nejkonzumovanější nápoj na světě"));
 
