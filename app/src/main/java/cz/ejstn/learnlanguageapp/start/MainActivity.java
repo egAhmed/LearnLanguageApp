@@ -78,7 +78,7 @@ public class MainActivity extends AppCompatActivity {
                     return true;
 
 
-                case R.id.zobrazitinfo:
+                case R.id.zobrazitInfo:
                     Intent zobrazitInfo = new Intent(MainActivity.this, InfoActivity.class);
                     startActivity(zobrazitInfo);
                     return true;
@@ -89,9 +89,7 @@ public class MainActivity extends AppCompatActivity {
         }
     };
 
-    // TODO: 9.2.2017 dodělat poznámky k Navigation drawer - pageviewer, navigation view, to celý prostě
-
-    // TODO: 4.2.2017 trošku si uspořádat ty poznámky - word, ať to není takovej šit
+    // TODO: 9.2.2017 zkusit optimalizovat výkon ? projít Java třídy a promyslet, jestli někde nedělám zbytečně objekty apod
 
     // TODO: 4.2.2017 rychleji vypnout zvuk při přesvajpnutí fragmentu - asi to bude nějaký onCallback ve fragmentu
 

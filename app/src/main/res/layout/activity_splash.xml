@@ -8,6 +8,8 @@
     tools:context="cz.ejstn.learnlanguageapp.aktivity.SplashActivity"
     android:background="@color/colorPrimary">
 
+    <!-- todo responzivita? -->
+
     <ImageView
         android:id="@+id/splash_obrazek"
         android:layout_centerInParent="true"
