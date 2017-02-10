@@ -15,21 +15,35 @@ import android.widget.ImageView;
 import android.widget.ListView;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 import cz.ejstn.learnlanguageapp.R;
 import cz.ejstn.learnlanguageapp.adaptery.SlovickaArrayAdapter;
 import cz.ejstn.learnlanguageapp.model.Slovicko;
+import cz.ejstn.learnlanguageapp.slovicka.Kategorie10Doprava;
+import cz.ejstn.learnlanguageapp.slovicka.Kategorie1Zvirata;
 import cz.ejstn.learnlanguageapp.slovicka.Kategorie2Rodina;
+import cz.ejstn.learnlanguageapp.slovicka.Kategorie3JidloAPiti;
+import cz.ejstn.learnlanguageapp.slovicka.Kategorie4Cisla;
+import cz.ejstn.learnlanguageapp.slovicka.Kategorie5Barvy;
+import cz.ejstn.learnlanguageapp.slovicka.Kategorie6VolnyCas;
+import cz.ejstn.learnlanguageapp.slovicka.Kategorie7Sport;
+import cz.ejstn.learnlanguageapp.slovicka.Kategorie8Priroda;
+import cz.ejstn.learnlanguageapp.slovicka.Kategorie9Osobnost;
 
 /**
  * A simple {@link Fragment} subclass.
  */
-public class Kategorie2Fragment extends Fragment {
+public class KategorieUniverzalniFragment extends Fragment {
+
+    private String jmenoKategorie;
 
     private AudioManager am;
 
     private MediaPlayer prehravac;
+
     private ImageView playIkonka;
+
     private AudioManager.OnAudioFocusChangeListener listenerZmenaAudioFocusu = new AudioManager.OnAudioFocusChangeListener() {
         @Override
         public void onAudioFocusChange(int focusChange) {
@@ -56,20 +70,27 @@ public class Kategorie2Fragment extends Fragment {
     private MediaPlayer.OnCompletionListener listenerKonecZvuku = new MediaPlayer.OnCompletionListener() {
         @Override
         public void onCompletion(MediaPlayer mp) {
-           // playIkonka.setImageResource(R.drawable.ic_play_arrow_white_36dp);
+            // playIkonka.setImageResource(R.drawable.ic_play_arrow_white_36dp);
             releasniPrehravac();
         }
     };
 
 
-    public Kategorie2Fragment() {
+    public KategorieUniverzalniFragment() {
         // Required empty public constructor
     }
 
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+
+        jmenoKategorie = getArguments().getString("jmenoKategorie");
+    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+
         View rootView = inflater.inflate(R.layout.kategorie, container, false);
 
 
@@ -78,7 +99,9 @@ public class Kategorie2Fragment extends Fragment {
         vsechnoPriprav(rootView);
 
         return rootView;
+
     }
+
 
     @Override
     public void onPause() {
@@ -94,10 +117,10 @@ public class Kategorie2Fragment extends Fragment {
         releasniPrehravac();
     }
 
+
     private void vsechnoPriprav(View rootView) {
 
-        final ArrayList<Slovicko> slovicka = Kategorie2Rodina.pripravKategorii();
-        // Collections.shuffle(slovicka);
+        final ArrayList<Slovicko> slovicka = pripravSpravnySlovicka();
 
 
         SlovickaArrayAdapter adapter = new SlovickaArrayAdapter(getActivity(), slovicka, R.color.model_radek_pozadi_textu);
@@ -133,6 +156,7 @@ public class Kategorie2Fragment extends Fragment {
                             synchronized (this) {
                                 try {
                                     wait(prehravac.getDuration());
+                                    // Log.i("thread", String.valueOf(prehravac.getDuration()));
 
                                     getActivity().runOnUiThread(new Runnable() {
                                         @Override
@@ -160,6 +184,64 @@ public class Kategorie2Fragment extends Fragment {
 
     }
 
+    private ArrayList<Slovicko> pripravSpravnySlovicka() {
+        ArrayList<Slovicko> spravnySlovicka = null;
+
+        switch (jmenoKategorie) {
+            case "Zvirata":
+                spravnySlovicka = Kategorie1Zvirata.pripravKategorii();
+                Collections.shuffle(spravnySlovicka);
+                break;
+
+            case "Rodina":
+                spravnySlovicka = Kategorie2Rodina.pripravKategorii();
+                // Collections.shuffle(spravnySlovicka);
+                break;
+
+            case "JidloAPiti":
+                spravnySlovicka = Kategorie3JidloAPiti.pripravKategorii();
+                Collections.shuffle(spravnySlovicka);
+                break;
+
+            case "OsobnostANalada":
+                spravnySlovicka = Kategorie9Osobnost.pripravKategorii();
+                Collections.shuffle(spravnySlovicka);
+                break;
+
+            case "Barvy":
+                spravnySlovicka = Kategorie5Barvy.pripravKategorii();
+                Collections.shuffle(spravnySlovicka);
+                break;
+
+            case "VolnyCas":
+                spravnySlovicka = Kategorie6VolnyCas.pripravKategorii();
+                Collections.shuffle(spravnySlovicka);
+                break;
+
+            case "Sport":
+                spravnySlovicka = Kategorie7Sport.pripravKategorii();
+                Collections.shuffle(spravnySlovicka);
+                break;
+
+            case "PrirodaAPocasi":
+                spravnySlovicka = Kategorie8Priroda.pripravKategorii();
+                Collections.shuffle(spravnySlovicka);
+                break;
+
+            case "Cisla":
+                spravnySlovicka = Kategorie4Cisla.pripravKategorii();
+                //Collections.shuffle(spravnySlovicka);
+                break;
+
+            case "Doprava":
+                spravnySlovicka = Kategorie10Doprava.pripravKategorii();
+                Collections.shuffle(spravnySlovicka);
+                break;
+        }
+        return spravnySlovicka;
+    }
+
+
     private void releasniPrehravac() {
         if (prehravac != null) {
             prehravac.release();
@@ -169,4 +251,5 @@ public class Kategorie2Fragment extends Fragment {
             Log.i("am", "AUDIOFOCUS_ABANDONED");
         }
     }
+
 }

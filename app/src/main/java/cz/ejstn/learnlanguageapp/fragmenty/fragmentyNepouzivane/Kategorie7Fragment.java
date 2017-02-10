@@ -1,4 +1,4 @@
-package cz.ejstn.learnlanguageapp.fragmenty;
+package cz.ejstn.learnlanguageapp.fragmenty.fragmentyNepouzivane;
 
 
 import android.content.Context;
@@ -15,16 +15,17 @@ import android.widget.ImageView;
 import android.widget.ListView;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 import cz.ejstn.learnlanguageapp.R;
 import cz.ejstn.learnlanguageapp.adaptery.SlovickaArrayAdapter;
 import cz.ejstn.learnlanguageapp.model.Slovicko;
-import cz.ejstn.learnlanguageapp.slovicka.Kategorie4Cisla;
+import cz.ejstn.learnlanguageapp.slovicka.Kategorie7Sport;
 
 /**
  * A simple {@link Fragment} subclass.
  */
-public class Kategorie9Fragment extends Fragment {
+public class Kategorie7Fragment extends Fragment {
 
     private AudioManager am;
 
@@ -62,7 +63,7 @@ public class Kategorie9Fragment extends Fragment {
     };
 
 
-    public Kategorie9Fragment() {
+    public Kategorie7Fragment() {
         // Required empty public constructor
     }
 
@@ -96,8 +97,8 @@ public class Kategorie9Fragment extends Fragment {
 
     private void vsechnoPriprav(View rootView) {
 
-        final ArrayList<Slovicko> slovicka = Kategorie4Cisla.pripravKategorii();
-        // Collections.shuffle(slovicka);
+        final ArrayList<Slovicko> slovicka = Kategorie7Sport.pripravKategorii();
+        Collections.shuffle(slovicka);
 
 
         SlovickaArrayAdapter adapter = new SlovickaArrayAdapter(getActivity(), slovicka, R.color.model_radek_pozadi_textu);

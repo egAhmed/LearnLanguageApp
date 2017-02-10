@@ -1,4 +1,4 @@
-package cz.ejstn.learnlanguageapp.fragmenty;
+package cz.ejstn.learnlanguageapp.fragmenty.fragmentyNepouzivane;
 
 
 import android.content.Context;

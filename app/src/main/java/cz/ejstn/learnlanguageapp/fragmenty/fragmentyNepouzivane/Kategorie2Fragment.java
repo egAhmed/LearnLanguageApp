@@ -1,4 +1,4 @@
-package cz.ejstn.learnlanguageapp.fragmenty;
+package cz.ejstn.learnlanguageapp.fragmenty.fragmentyNepouzivane;
 
 
 import android.content.Context;
@@ -15,17 +15,16 @@ import android.widget.ImageView;
 import android.widget.ListView;
 
 import java.util.ArrayList;
-import java.util.Collections;
 
 import cz.ejstn.learnlanguageapp.R;
 import cz.ejstn.learnlanguageapp.adaptery.SlovickaArrayAdapter;
 import cz.ejstn.learnlanguageapp.model.Slovicko;
-import cz.ejstn.learnlanguageapp.slovicka.Kategorie6VolnyCas;
+import cz.ejstn.learnlanguageapp.slovicka.Kategorie2Rodina;
 
 /**
  * A simple {@link Fragment} subclass.
  */
-public class Kategorie6Fragment extends Fragment {
+public class Kategorie2Fragment extends Fragment {
 
     private AudioManager am;
 
@@ -57,13 +56,13 @@ public class Kategorie6Fragment extends Fragment {
     private MediaPlayer.OnCompletionListener listenerKonecZvuku = new MediaPlayer.OnCompletionListener() {
         @Override
         public void onCompletion(MediaPlayer mp) {
-          //   playIkonka.setImageResource(R.drawable.ic_play_arrow_white_36dp);
+           // playIkonka.setImageResource(R.drawable.ic_play_arrow_white_36dp);
             releasniPrehravac();
         }
     };
 
 
-    public Kategorie6Fragment() {
+    public Kategorie2Fragment() {
         // Required empty public constructor
     }
 
@@ -97,8 +96,8 @@ public class Kategorie6Fragment extends Fragment {
 
     private void vsechnoPriprav(View rootView) {
 
-        final ArrayList<Slovicko> slovicka = Kategorie6VolnyCas.pripravKategorii();
-        Collections.shuffle(slovicka);
+        final ArrayList<Slovicko> slovicka = Kategorie2Rodina.pripravKategorii();
+        // Collections.shuffle(slovicka);
 
 
         SlovickaArrayAdapter adapter = new SlovickaArrayAdapter(getActivity(), slovicka, R.color.model_radek_pozadi_textu);
@@ -170,5 +169,4 @@ public class Kategorie6Fragment extends Fragment {
             Log.i("am", "AUDIOFOCUS_ABANDONED");
         }
     }
-
 }

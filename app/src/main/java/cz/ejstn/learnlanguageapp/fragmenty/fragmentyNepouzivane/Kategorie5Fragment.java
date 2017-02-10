@@ -1,4 +1,4 @@
-package cz.ejstn.learnlanguageapp.fragmenty;
+package cz.ejstn.learnlanguageapp.fragmenty.fragmentyNepouzivane;
 
 
 import android.content.Context;
@@ -20,12 +20,12 @@ import java.util.Collections;
 import cz.ejstn.learnlanguageapp.R;
 import cz.ejstn.learnlanguageapp.adaptery.SlovickaArrayAdapter;
 import cz.ejstn.learnlanguageapp.model.Slovicko;
-import cz.ejstn.learnlanguageapp.slovicka.Kategorie3JidloAPiti;
+import cz.ejstn.learnlanguageapp.slovicka.Kategorie5Barvy;
 
 /**
  * A simple {@link Fragment} subclass.
  */
-public class Kategorie3Fragment extends Fragment {
+public class Kategorie5Fragment extends Fragment {
 
     private AudioManager am;
 
@@ -54,7 +54,6 @@ public class Kategorie3Fragment extends Fragment {
             }
         }
     };
-
     private MediaPlayer.OnCompletionListener listenerKonecZvuku = new MediaPlayer.OnCompletionListener() {
         @Override
         public void onCompletion(MediaPlayer mp) {
@@ -64,7 +63,7 @@ public class Kategorie3Fragment extends Fragment {
     };
 
 
-    public Kategorie3Fragment() {
+    public Kategorie5Fragment() {
         // Required empty public constructor
     }
 
@@ -98,7 +97,7 @@ public class Kategorie3Fragment extends Fragment {
 
     private void vsechnoPriprav(View rootView) {
 
-        final ArrayList<Slovicko> slovicka = Kategorie3JidloAPiti.pripravKategorii();
+        final ArrayList<Slovicko> slovicka = Kategorie5Barvy.pripravKategorii();
         Collections.shuffle(slovicka);
 
 

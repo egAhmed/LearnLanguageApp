@@ -1,4 +1,4 @@
-package cz.ejstn.learnlanguageapp.fragmenty;
+package cz.ejstn.learnlanguageapp.fragmenty.fragmentyNepouzivane;
 
 
 import android.content.Context;
@@ -20,17 +20,19 @@ import java.util.Collections;
 import cz.ejstn.learnlanguageapp.R;
 import cz.ejstn.learnlanguageapp.adaptery.SlovickaArrayAdapter;
 import cz.ejstn.learnlanguageapp.model.Slovicko;
-import cz.ejstn.learnlanguageapp.slovicka.Kategorie10Doprava;
+import cz.ejstn.learnlanguageapp.slovicka.Kategorie1Zvirata;
 
 /**
  * A simple {@link Fragment} subclass.
  */
-public class Kategorie10Fragment extends Fragment {
+public class Kategorie1Fragment extends Fragment {
 
     private AudioManager am;
 
     private MediaPlayer prehravac;
+
     private ImageView playIkonka;
+
     private AudioManager.OnAudioFocusChangeListener listenerZmenaAudioFocusu = new AudioManager.OnAudioFocusChangeListener() {
         @Override
         public void onAudioFocusChange(int focusChange) {
@@ -57,13 +59,13 @@ public class Kategorie10Fragment extends Fragment {
     private MediaPlayer.OnCompletionListener listenerKonecZvuku = new MediaPlayer.OnCompletionListener() {
         @Override
         public void onCompletion(MediaPlayer mp) {
-           // playIkonka.setImageResource(R.drawable.ic_play_arrow_white_36dp);
+            // playIkonka.setImageResource(R.drawable.ic_play_arrow_white_36dp);
             releasniPrehravac();
         }
     };
 
 
-    public Kategorie10Fragment() {
+    public Kategorie1Fragment() {
         // Required empty public constructor
     }
 
@@ -71,6 +73,7 @@ public class Kategorie10Fragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+
         View rootView = inflater.inflate(R.layout.kategorie, container, false);
 
 
@@ -79,7 +82,9 @@ public class Kategorie10Fragment extends Fragment {
         vsechnoPriprav(rootView);
 
         return rootView;
+
     }
+
 
     @Override
     public void onPause() {
@@ -95,9 +100,10 @@ public class Kategorie10Fragment extends Fragment {
         releasniPrehravac();
     }
 
+
     private void vsechnoPriprav(View rootView) {
 
-        final ArrayList<Slovicko> slovicka = Kategorie10Doprava.pripravKategorii();
+        final ArrayList<Slovicko> slovicka = Kategorie1Zvirata.pripravKategorii();
         Collections.shuffle(slovicka);
 
 
@@ -134,6 +140,7 @@ public class Kategorie10Fragment extends Fragment {
                             synchronized (this) {
                                 try {
                                     wait(prehravac.getDuration());
+                                   // Log.i("thread", String.valueOf(prehravac.getDuration()));
 
                                     getActivity().runOnUiThread(new Runnable() {
                                         @Override
@@ -160,6 +167,7 @@ public class Kategorie10Fragment extends Fragment {
 
 
     }
+
 
     private void releasniPrehravac() {
         if (prehravac != null) {
