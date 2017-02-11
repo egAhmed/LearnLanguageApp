@@ -96,7 +96,8 @@ public class MainActivity extends AppCompatActivity {
     // TODO: 9.2.2017 zkusit optimalizovat výkon ? projít Java třídy a promyslet, jestli někde nedělám zbytečně objekty apod
 
     // odložím na později, na neurčito
-
+    // TODO: 11.2.2017 zjistit jak to funguje s těmy dimnen pro různý velikosti apod
+    // TODO: 11.2.2017 poladit ty dimen podle předchozího to do
     // TODO: 11.2.2017 až se mi bude chtít dodat tam ty chybějící výslovnosti - tak v audacity - MME -> WIN WASAPI -> a vybrat repráčky/sluchátka
     // TODO: 31.1.2017 layout a úpravy pro tablety - tam je to hlavně malý, takže udělat verzi layoutů pro tablety
     // TODO: 10.2.2017 schování actionbaru v závislosti na skrolování

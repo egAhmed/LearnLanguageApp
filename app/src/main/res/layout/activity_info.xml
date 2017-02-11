@@ -6,56 +6,71 @@
     android:id="@+id/activity_info"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="cz.ejstn.learnlanguageapp.aktivity.InfoActivity"
-    android:background="@color/colorPrimary">
+    android:background="@color/colorPrimary"
+    tools:context="cz.ejstn.learnlanguageapp.aktivity.InfoActivity">
 
-    <!-- todo responzivita , zatím je to natvrdo nastavené jan na portrét ,
-    asi by tam měl spíš být linear layout? a obaleno do scrollview, nevím -->
+
 
     <!-- to co je v relative layoutu v xml níž, bude nahoře
          teda opačně než např vrstvy ve fotošopu -->
+
+
+
     <ImageView
         android:id="@+id/obrazek_zvirete_info_aktivita"
         android:layout_width="80dp"
         android:layout_height="80dp"
-        tools:src="@drawable/zvirata_panda"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:rotation="-45"/>
+        android:layout_alignParentRight="true"
+        android:rotation="-45"
+        tools:src="@drawable/zvirata_panda" />
 
-    <ImageView
-        android:id="@+id/info_obrazek"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:src="@drawable/info_obrazek"
-        android:layout_centerHorizontal="true"
-        />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-    <TextView
-        style="@style/StylTextuInfoActivity"
-        android:id="@+id/info_text1"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/info_obrazek"
-        tools:text="@string/textInfo1" />
+        android:orientation="vertical"
+        android:paddingBottom="16dp">
 
-    <TextView
-        style="@style/StylTextuInfoActivity"
-        android:id="@+id/info_text2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/info_text1"
-        tools:text="@string/textInfo3" />
 
-    <TextView
-        style="@style/StylTextuInfoActivity"
-        android:id="@+id/info_text3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/info_text2"
-        tools:text="@string/textInfo2" />
+        <ImageView
+            android:id="@+id/info_obrazek"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:src="@drawable/info_obrazek" />
 
+        <TextView
+            android:id="@+id/info_text1"
+            style="@style/StylTextuInfoActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            tools:text="@string/textInfo1" />
+
+        <TextView
+            android:id="@+id/info_text2"
+            style="@style/StylTextuInfoActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            tools:text="@string/textInfo3" />
+
+        <TextView
+            android:id="@+id/info_text3"
+            style="@style/StylTextuInfoActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            tools:text="@string/textInfo2" />
+
+    </LinearLayout>
+
+    </ScrollView>
 
 
 </RelativeLayout>
