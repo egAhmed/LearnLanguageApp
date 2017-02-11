@@ -9,7 +9,8 @@
     tools:context="cz.ejstn.learnlanguageapp.aktivity.InfoActivity"
     android:background="@color/colorPrimary">
 
-    <!-- todo responzivita , zatím je to natvrdo nastavené jan na portrét -->
+    <!-- todo responzivita , zatím je to natvrdo nastavené jan na portrét ,
+    asi by tam měl spíš být linear layout? a obaleno do scrollview, nevím -->
 
     <!-- to co je v relative layoutu v xml níž, bude nahoře
          teda opačně než např vrstvy ve fotošopu -->

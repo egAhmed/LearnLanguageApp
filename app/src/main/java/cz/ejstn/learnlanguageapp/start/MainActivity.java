@@ -89,6 +89,14 @@ public class MainActivity extends AppCompatActivity {
         }
     };
 
+    // TODO: 10.2.2017 mini aplikace s Toolbarem a tou funkcí skrolování toolbaru - zkusit jak to bude s menu a s back buttonem, mělo by to prý být automaticky
+
+    // TODO: 10.2.2017 je problém targetSdkVersion 24 ? říká to že už je novější 25
+
+    // TODO: 10.2.2017 očekovat cardview
+
+    // TODO: 10.2.2017 schování actionbaru v závislosti na skrolování
+
     // TODO: 9.2.2017 zkusit optimalizovat výkon ? projít Java třídy a promyslet, jestli někde nedělám zbytečně objekty apod
 
     // TODO: 4.2.2017 rychleji vypnout zvuk při přesvajpnutí fragmentu - asi to bude nějaký onCallback ve fragmentu
