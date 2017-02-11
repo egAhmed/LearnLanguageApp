@@ -91,8 +91,6 @@ public class MainActivity extends AppCompatActivity {
 
     // udělat dneska odpoledne
 
-    // TODO: 4.2.2017 nějakej rozsáhlejší refaktoring celý aplikace - styly, barvy, layouty, názvy, metody, uhlazení, komentáře
-
     // TODO: 9.2.2017 zkusit optimalizovat výkon ? projít Java třídy a promyslet, jestli někde nedělám zbytečně objekty apod
 
     // odložím na později, na neurčito

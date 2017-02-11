@@ -18,6 +18,7 @@ public class KategorieFragmentAdapter extends FragmentPagerAdapter {
     private Context mContext;
 
 
+    // navíc tam je kontext, kvůli braní jmen tabů z R.string
     public KategorieFragmentAdapter(FragmentManager fm, Context mContext) {
         super(fm);
         this.mContext = mContext;
@@ -30,6 +31,7 @@ public class KategorieFragmentAdapter extends FragmentPagerAdapter {
         return 10;
     }
 
+    // název tabů
     @Override
     public CharSequence getPageTitle(int position) {
 
@@ -60,7 +62,7 @@ public class KategorieFragmentAdapter extends FragmentPagerAdapter {
 
     }
 
-    // který tab bude na kterém místě
+    // který tab bude na kterém místě, přidává se bundle pro předání názvu Kategorie
     @Override
     public Fragment getItem(int position) {
         switch (position) {

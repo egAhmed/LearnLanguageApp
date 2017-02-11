@@ -48,7 +48,7 @@ public class Slovicko {
     }
 
 
-    public boolean equals(Slovicko porovnavaneSlovicko) {
+    public boolean equalsPodleAnglictiny(Slovicko porovnavaneSlovicko) {
         if (this.getAnglictina().equals(porovnavaneSlovicko.getAnglictina())) {
             return true;
         } else {
@@ -58,7 +58,7 @@ public class Slovicko {
 
     }
 
-    public boolean equalsPrisnejsi(Slovicko porovnavaneSlovicko) {
+    public boolean equalsPodleAnglictinyACestiny(Slovicko porovnavaneSlovicko) {
         if (this.getAnglictina().equals(porovnavaneSlovicko.getAnglictina())
                 && this.getCestina().equals(porovnavaneSlovicko.getCestina())) {
             return true;
@@ -67,7 +67,7 @@ public class Slovicko {
         }
     }
 
-    public boolean equalsJestePrisnejsi(Slovicko porovnavaneSlovicko) {
+    public boolean equalsPodleAnglictinyCestinyAZvuku(Slovicko porovnavaneSlovicko) {
         if (this.getAnglictina().equals(porovnavaneSlovicko.getCestina())
                 && this.getCestina().equals(porovnavaneSlovicko.getCestina())
                 && this.getIdZvuku() == porovnavaneSlovicko.getIdZvuku()) {

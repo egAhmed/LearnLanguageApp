@@ -19,7 +19,7 @@ public class SlovickoTest {
         Slovicko slovo1 = new Slovicko("dog", "swag", R.drawable.zvirata_pes, R.raw.song);
         Slovicko slovo2 = new Slovicko("dog", "hahaha", R.drawable.zvirata_beran, R.raw.song);
 
-        boolean shodnost = slovo1.equals(slovo2);
+        boolean shodnost = slovo1.equalsPodleAnglictiny(slovo2);
 
         assertTrue(shodnost);
 
@@ -31,7 +31,7 @@ public class SlovickoTest {
         Slovicko slovo1 = new Slovicko("dog", "rozdrcená moula", R.drawable.zvirata_kocka, R.raw.song);
         Slovicko slovo2 = new Slovicko("dog", "pes ty vole", R.drawable.zvirata_kun, R.raw.song);
 
-        boolean shodnost = slovo1.equalsPrisnejsi(slovo2);
+        boolean shodnost = slovo1.equalsPodleAnglictinyACestiny(slovo2);
 
         assertFalse(shodnost);
 

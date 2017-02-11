@@ -2,7 +2,7 @@
 <resources>
 
 
-    <!-- hlavní barvy Tématu aplikace -->
+    <!-- hlavní barvy Šablony aplikace -->
     <color name="colorPrimary">#379237</color>
     <color name="colorPrimaryDark">#2e7d32</color>
     <!-- nešahat na tenhle šit-->

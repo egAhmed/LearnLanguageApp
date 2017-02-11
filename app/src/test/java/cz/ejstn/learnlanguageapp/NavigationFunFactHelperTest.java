@@ -27,7 +27,7 @@ public class NavigationFunFactHelperTest {
                     continue;
                 }
 
-                if (listFunFactu.get(i).equalsPodleObrazku(listFunFactu.get(j))) {
+                if (listFunFactu.get(i).equalsPodleObrazkuAAnglictiny(listFunFactu.get(j))) {
                     obsahujeDuplicitu = true;
                     System.out.println(listFunFactu.get(i));
                 }

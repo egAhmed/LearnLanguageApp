@@ -21,13 +21,14 @@ import cz.ejstn.learnlanguageapp.model.Slovicko;
 
 public class SlovickaArrayAdapter extends ArrayAdapter<Slovicko> {
 
-    private int barvaPozadi;
+    // starý systém, kdy každý kategrie měla jinou barvu pozadí
+    // private int barvaPozadi;
 
 
-    public SlovickaArrayAdapter(Context context, ArrayList<Slovicko> slovicka, int barvaPozadi) {
+    public SlovickaArrayAdapter(Context context, ArrayList<Slovicko> slovicka) {
         super(context, 0, slovicka);
 
-        this.barvaPozadi = barvaPozadi;
+        // this.barvaPozadi = barvaPozadi;
 
     }
 
@@ -50,7 +51,7 @@ public class SlovickaArrayAdapter extends ArrayAdapter<Slovicko> {
         playIkonka.setImageResource(R.drawable.ic_play_arrow_white_36dp);
 
         LinearLayout layoutObouPrekladu = (LinearLayout) jednaPolozka.findViewById(R.id.linear_layout_obou_prekladu);
-        layoutObouPrekladu.setBackgroundResource(barvaPozadi);
+        layoutObouPrekladu.setBackgroundResource(R.color.model_radek_pozadi_textu);
 
 
         TextView horniText = (TextView) jednaPolozka.findViewById(R.id.horni_text_polozky);
@@ -59,12 +60,13 @@ public class SlovickaArrayAdapter extends ArrayAdapter<Slovicko> {
         TextView spodniText = (TextView) jednaPolozka.findViewById(R.id.dolni_text_polozky);
         spodniText.setText(slovicko.getCestina());
 
-        ImageView obrazek = (ImageView) jednaPolozka.findViewById(R.id.obrazek_polozky);
+
+         ImageView obrazek = (ImageView) jednaPolozka.findViewById(R.id.obrazek_polozky);
 
         if (slovicko.maObrazek()) {
             obrazek.setImageResource(slovicko.getIdObrazku());
-            obrazek.setVisibility(View.VISIBLE);
         } else {
+            // pokud není obrázek, ten view tam nebude a navíc nebude jakoby blokovat tu plochu
             obrazek.setVisibility(View.GONE);
         }
 

@@ -45,6 +45,7 @@ public class SplashActivity extends AppCompatActivity {
             @Override
             public void run() {
                 try {
+                    // čekat po délku animace
                     sleep(splashAnimace.getDuration());
                 } catch (InterruptedException e) {
                     e.printStackTrace();
@@ -60,7 +61,6 @@ public class SplashActivity extends AppCompatActivity {
 
         // pouštím vlákno
         vlakno.start();
-
 
     }
 }

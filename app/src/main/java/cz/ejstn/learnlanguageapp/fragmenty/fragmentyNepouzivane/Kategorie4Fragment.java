@@ -101,7 +101,7 @@ public class Kategorie4Fragment extends Fragment {
         Collections.shuffle(slovicka);
 
 
-        SlovickaArrayAdapter adapter = new SlovickaArrayAdapter(getActivity(), slovicka, R.color.model_radek_pozadi_textu);
+        SlovickaArrayAdapter adapter = new SlovickaArrayAdapter(getActivity(), slovicka);
         final ListView listSlovicek = (ListView) rootView.findViewById(R.id.listView_kategorie);
         listSlovicek.setAdapter(adapter);
 

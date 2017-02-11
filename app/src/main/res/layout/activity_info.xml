@@ -10,10 +10,8 @@
     tools:context="cz.ejstn.learnlanguageapp.aktivity.InfoActivity">
 
 
-
     <!-- to co je v relative layoutu v xml níž, bude nahoře
          teda opačně než např vrstvy ve fotošopu -->
-
 
 
     <ImageView
@@ -30,45 +28,45 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:paddingBottom="16dp">
-
-
-        <ImageView
-            android:id="@+id/info_obrazek"
-            android:layout_width="200dp"
-            android:layout_height="200dp"
-            android:layout_gravity="center"
-            android:src="@drawable/info_obrazek" />
-
-        <TextView
-            android:id="@+id/info_text1"
-            style="@style/StylTextuInfoActivity"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            tools:text="@string/textInfo1" />
+            android:orientation="vertical"
+            android:paddingBottom="16dp">
 
-        <TextView
-            android:id="@+id/info_text2"
-            style="@style/StylTextuInfoActivity"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            tools:text="@string/textInfo3" />
 
-        <TextView
-            android:id="@+id/info_text3"
-            style="@style/StylTextuInfoActivity"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            tools:text="@string/textInfo2" />
+            <ImageView
+                android:id="@+id/info_obrazek"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:src="@drawable/info_obrazek" />
 
-    </LinearLayout>
+            <TextView
+                android:id="@+id/info_text1"
+                style="@style/StylTextuInfoActivity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                tools:text="@string/textInfo1" />
+
+            <TextView
+                android:id="@+id/info_text2"
+                style="@style/StylTextuInfoActivity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                tools:text="@string/textInfo3" />
+
+            <TextView
+                android:id="@+id/info_text3"
+                style="@style/StylTextuInfoActivity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                tools:text="@string/textInfo2" />
+
+        </LinearLayout>
 
     </ScrollView>
 

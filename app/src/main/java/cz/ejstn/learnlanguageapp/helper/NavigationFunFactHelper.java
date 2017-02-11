@@ -17,7 +17,7 @@ public final class NavigationFunFactHelper {
 
         add(new FunFact(R.drawable.zvirata_panda, "Panda spends 14 to 16 hours a day eating bamboo", "Panda denně stráví 14-16 hodin jezením bambusu"));
 
-        add(new FunFact(R.drawable.zvirata_lev, "Lion in the wild spends around 20 hours a day resting", "Lev v divočině opočívá okolo 2O hodin denně"));
+        add(new FunFact(R.drawable.zvirata_lev, "Lion in the wild spends around 20 hours a day resting", "Lev v divočině opočívá okolo 20 hodin denně"));
 
         add(new FunFact(R.drawable.zvirata_kocka, "Cats are said to have 9 lives", "Říká se, že kočky mají 9 životů"));
 

@@ -67,23 +67,24 @@ public class KategorieUniverzalniFragment extends Fragment {
             }
         }
     };
+
     private MediaPlayer.OnCompletionListener listenerKonecZvuku = new MediaPlayer.OnCompletionListener() {
         @Override
         public void onCompletion(MediaPlayer mp) {
-            // playIkonka.setImageResource(R.drawable.ic_play_arrow_white_36dp);
             releasniPrehravac();
         }
     };
 
 
     public KategorieUniverzalniFragment() {
-        // Required empty public constructor
+        // Required empty public constructor - nelze měnit
     }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        // vyzvednu argumenty z bundle - připojeno ve FragmentAdapteru
         jmenoKategorie = getArguments().getString("jmenoKategorie");
     }
 
@@ -123,12 +124,12 @@ public class KategorieUniverzalniFragment extends Fragment {
         final ArrayList<Slovicko> slovicka = pripravSpravnySlovicka();
 
 
-        SlovickaArrayAdapter adapter = new SlovickaArrayAdapter(getActivity(), slovicka, R.color.model_radek_pozadi_textu);
-        final ListView listSlovicek = (ListView) rootView.findViewById(R.id.listView_kategorie);
-        listSlovicek.setAdapter(adapter);
+        SlovickaArrayAdapter adapter = new SlovickaArrayAdapter(getActivity(), slovicka);
+        final ListView listViewSlovicek = (ListView) rootView.findViewById(R.id.listView_kategorie);
+        listViewSlovicek.setAdapter(adapter);
 
 
-        listSlovicek.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        listViewSlovicek.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, final View view, int position, long id) {
                 releasniPrehravac();
@@ -156,7 +157,6 @@ public class KategorieUniverzalniFragment extends Fragment {
                             synchronized (this) {
                                 try {
                                     wait(prehravac.getDuration());
-                                    // Log.i("thread", String.valueOf(prehravac.getDuration()));
 
                                     getActivity().runOnUiThread(new Runnable() {
                                         @Override

@@ -52,7 +52,7 @@ public class KategorieSlovickaTest {
                     continue;
                 }
 
-                if (slovicka.get(i).equals(slovicka.get(j))) {
+                if (slovicka.get(i).equalsPodleAnglictiny(slovicka.get(j))) {
                     obsahujeDuplicitu = true;
                     System.out.println(DUPLICITA_ZVIRATA);
                     System.out.println(slovicka.get(i).toString());
@@ -77,7 +77,7 @@ public class KategorieSlovickaTest {
                 if (i == j) {
                     continue;
                 }
-                if (slovicka.get(i).equalsPrisnejsi(slovicka.get(j))) {
+                if (slovicka.get(i).equalsPodleAnglictinyACestiny(slovicka.get(j))) {
                     obsahujeDuplicitu = true;
                     System.out.println(DUPLICITA_RODINA);
                     System.out.println(slovicka.get(i).toString());
@@ -102,7 +102,7 @@ public class KategorieSlovickaTest {
                 if (i == j) {
                     continue;
                 }
-                if (slovicka.get(i).equals(slovicka.get(j))) {
+                if (slovicka.get(i).equalsPodleAnglictiny(slovicka.get(j))) {
                     obsahujeDuplicitu = true;
                     System.out.println(DUPLICITA_JIDLO_A_PITI);
                     System.out.println(slovicka.get(i).toString());
@@ -127,7 +127,7 @@ public class KategorieSlovickaTest {
                 if (i == j) {
                     continue;
                 }
-                if (slovicka.get(i).equals(slovicka.get(j))) {
+                if (slovicka.get(i).equalsPodleAnglictiny(slovicka.get(j))) {
                     obsahujeDuplicitu = true;
                     System.out.println(DUPLICITA_CISLA);
                     System.out.println(slovicka.get(i).toString());
@@ -152,7 +152,7 @@ public class KategorieSlovickaTest {
                 if (i == j) {
                     continue;
                 }
-                if (slovicka.get(i).equals(slovicka.get(j))) {
+                if (slovicka.get(i).equalsPodleAnglictiny(slovicka.get(j))) {
                     obsahujeDuplicitu = true;
 
                     System.out.println(DUPLICITA_BARVY);
@@ -178,7 +178,7 @@ public class KategorieSlovickaTest {
                 if (i == j) {
                     continue;
                 }
-                if (slovicka.get(i).equals(slovicka.get(j))) {
+                if (slovicka.get(i).equalsPodleAnglictiny(slovicka.get(j))) {
                     obsahujeDuplicitu = true;
 
                     System.out.println(DUPLICITA_VOLNY_CAS);
@@ -204,7 +204,7 @@ public class KategorieSlovickaTest {
                 if (i == j) {
                     continue;
                 }
-                if (slovicka.get(i).equals(slovicka.get(j))) {
+                if (slovicka.get(i).equalsPodleAnglictiny(slovicka.get(j))) {
                     obsahujeDuplicitu = true;
 
                     System.out.println(DUPLICITA_SPORT);
@@ -230,7 +230,7 @@ public class KategorieSlovickaTest {
                 if (i == j) {
                     continue;
                 }
-                if (slovicka.get(i).equals(slovicka.get(j))) {
+                if (slovicka.get(i).equalsPodleAnglictiny(slovicka.get(j))) {
                     obsahujeDuplicitu = true;
 
                     System.out.println(DUPLICITA_PRIRODA);
@@ -256,7 +256,7 @@ public class KategorieSlovickaTest {
                 if (i == j) {
                     continue;
                 }
-                if (slovicka.get(i).equals(slovicka.get(j))) {
+                if (slovicka.get(i).equalsPodleAnglictiny(slovicka.get(j))) {
                     obsahujeDuplicitu = true;
 
                     System.out.println(DUPLICITA_OSOBNOST);
@@ -282,7 +282,7 @@ public class KategorieSlovickaTest {
                 if (i == j) {
                     continue;
                 }
-                if (slovicka.get(i).equals(slovicka.get(j))) {
+                if (slovicka.get(i).equalsPodleAnglictiny(slovicka.get(j))) {
                     obsahujeDuplicitu = true;
 
                     System.out.println(DUPLICITA_DOPRAVA);
@@ -308,7 +308,7 @@ public class KategorieSlovickaTest {
                 if (i == j) {
                     continue;
                 }
-                if (slovicka.get(i).equals(slovicka.get(j))) {
+                if (slovicka.get(i).equalsPodleAnglictiny(slovicka.get(j))) {
                     obsahujeDuplicitu = true;
 
                     System.out.println(DULICITA_BYDLENI);
@@ -334,7 +334,7 @@ public class KategorieSlovickaTest {
                 if (i == j) {
                     continue;
                 }
-                if (slovicka.get(i).equals(slovicka.get(j))) {
+                if (slovicka.get(i).equalsPodleAnglictiny(slovicka.get(j))) {
                     obsahujeDuplicitu = true;
 
                     System.out.println(DUPLICITA_STATY);

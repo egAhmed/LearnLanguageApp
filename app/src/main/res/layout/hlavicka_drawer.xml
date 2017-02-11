@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -25,21 +24,21 @@
     <TextView
         android:id="@+id/text_fun_fact_anglicky"
         style="@style/StylTextuNavigationHeader"
-        android:textAppearance="@android:style/TextAppearance.Small"
-        android:textStyle="bold"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/nadpis_fun_fact_navigation_header"
+        android:textAppearance="@android:style/TextAppearance.Small"
+        android:textStyle="bold"
         tools:text="Koala denně spořádá 10 kilo bambusu a pak 10 hodin spí " />
 
 
     <TextView
         android:id="@+id/text_fun_fact_cesky"
         style="@style/StylTextuNavigationHeader"
-        android:textAppearance="@android:style/TextAppearance.Small"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/text_fun_fact_anglicky"
+        android:textAppearance="@android:style/TextAppearance.Small"
         tools:text="Koala denně spořádá 10 kilo bambusu a pak 10 hodin spí " />
 
 </RelativeLayout>

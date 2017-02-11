@@ -37,7 +37,7 @@ public class FunFact {
                 '}';
     }
 
-    public boolean equalsPodleObrazku (FunFact porovnavny) {
+    public boolean equalsPodleObrazkuAAnglictiny(FunFact porovnavny) {
         return this.getObrazekFunFact() == porovnavny.getObrazekFunFact()
                 && this.getTextFunFactAnglicky().equals(porovnavny.getTextFunFactAnglicky());
     }
