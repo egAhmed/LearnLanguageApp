@@ -36,6 +36,7 @@ public final class Kategorie5Barvy {
         slovicka.add(new Slovicko("white", "bílá", R.drawable.barvy_bila, R.raw.white));
         slovicka.add(new Slovicko("brown", "hnědá", R.drawable.barvy_hneda, R.raw.brown));
         slovicka.add(new Slovicko("black", "černá", R.drawable.barvy_cerna, R.raw.black));
+        slovicka.add(new Slovicko("grey", "šedá", R.drawable.barvy_seda, R.raw.grey));
 
         return slovicka;
     }

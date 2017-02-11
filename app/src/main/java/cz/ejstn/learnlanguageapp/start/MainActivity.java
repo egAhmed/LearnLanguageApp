@@ -89,34 +89,23 @@ public class MainActivity extends AppCompatActivity {
         }
     };
 
-    // TODO: 10.2.2017 mini aplikace s Toolbarem a tou funkcí skrolování toolbaru - zkusit jak to bude s menu a s back buttonem, mělo by to prý být automaticky
-
-    // TODO: 10.2.2017 je problém targetSdkVersion 24 ? říká to že už je novější 25
-
-    // TODO: 10.2.2017 očekovat cardview
-
-    // TODO: 10.2.2017 schování actionbaru v závislosti na skrolování
-
-    // TODO: 9.2.2017 zkusit optimalizovat výkon ? projít Java třídy a promyslet, jestli někde nedělám zbytečně objekty apod
-
-    // TODO: 4.2.2017 rychleji vypnout zvuk při přesvajpnutí fragmentu - asi to bude nějaký onCallback ve fragmentu
-
-    // TODO: 3.2.2017 přidat vnuka a vnučku - obrázky - zase ty velikosti atd
-
-    // TODO: 4.2.2017 slovíčka se šuflujou vždycky když dojde pamět - možná by se měli šuflovat jen jednou při spuštění aplikace
-
-    // TODO: 5.2.2017 šli by udělat ty scrollbary bílý místo černý?
-
-    // TODO: 31.1.2017 předělat všechno v kategorii barvy na materiální barvy a dodat jich tam pár navíc
-
-    // TODO: 31.1.2017 layout a úpravy pro tablety - tam je to hlavně malý, takže udělat verzi layoutů pro tablety
+    // udělat dneska odpoledne
 
     // TODO: 4.2.2017 nějakej rozsáhlejší refaktoring celý aplikace - styly, barvy, layouty, názvy, metody, uhlazení, komentáře
 
+    // TODO: 9.2.2017 zkusit optimalizovat výkon ? projít Java třídy a promyslet, jestli někde nedělám zbytečně objekty apod
+
+    // odložím na později, na neurčito
+
+    // TODO: 11.2.2017 až se mi bude chtít dodat tam ty chybějící výslovnosti - tak v audacity - MME -> WIN WASAPI -> a vybrat repráčky/sluchátka
+    // TODO: 31.1.2017 layout a úpravy pro tablety - tam je to hlavně malý, takže udělat verzi layoutů pro tablety
+    // TODO: 10.2.2017 schování actionbaru v závislosti na skrolování
+    // TODO: 5.2.2017 šli by udělat ty scrollbary bílý místo černý?
+    // TODO: 10.2.2017 očekovat cardview
+    // TODO: 4.2.2017 slovíčka se šuflujou vždycky když dojde pamět - možná by se měli šuflovat jen jednou při spuštění aplikace
+    // TODO: 4.2.2017 rychleji vypnout zvuk při přesvajpnutí fragmentu - asi to bude nějaký onCallback ve fragmentu
     // TODO: 4.2.2017 přidat funkci testování - kvíz slovíček
-
     // TODO: 4.2.2017 přidat fuknci změna barevného tématu aplikace
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
