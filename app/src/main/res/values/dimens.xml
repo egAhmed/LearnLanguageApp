@@ -8,6 +8,7 @@
     <dimen name="vyska_model_radek_listview">88dp</dimen>
     <!-- padding obrázku v řádku -->
     <dimen name="model_radek_padding_obrazku">6dp</dimen>
+    <dimen name="velikost_scrollbaru">4dp</dimen>
 
 
 </resources>

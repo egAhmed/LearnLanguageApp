@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:drawSelectorOnTop="true"
-    android:scrollbarSize="4dp"
+    android:scrollbarSize="@dimen/velikost_scrollbaru"
     tools:scrollbarThumbVertical="@android:color/black"
     android:scrollbarThumbVertical="@color/barva_scrollbaru">
     <!-- aby fungovala ta klikací animace, je tam ten drawSelectorOnTop -->

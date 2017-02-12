@@ -26,7 +26,9 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:scrollbarSize="@dimen/velikost_scrollbaru"
+        android:scrollbarThumbVertical="@color/barva_scrollbaru">
 
         <LinearLayout
             android:layout_width="match_parent"
