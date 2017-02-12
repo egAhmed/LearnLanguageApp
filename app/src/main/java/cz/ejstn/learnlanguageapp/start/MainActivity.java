@@ -97,7 +97,6 @@ public class MainActivity extends AppCompatActivity {
     // TODO: 11.2.2017 až se mi bude chtít dodat tam ty chybějící výslovnosti - tak v audacity - MME -> WIN WASAPI -> a vybrat repráčky/sluchátka
     // TODO: 31.1.2017 layout a úpravy pro tablety - tam je to hlavně malý, takže udělat verzi layoutů pro tablety
     // TODO: 10.2.2017 schování actionbaru v závislosti na skrolování
-    // TODO: 5.2.2017 šli by udělat ty scrollbary bílý místo černý?
     // TODO: 10.2.2017 očekovat cardview
     // TODO: 4.2.2017 slovíčka se šuflujou vždycky když dojde pamět - možná by se měli šuflovat jen jednou při spuštění aplikace
     // TODO: 4.2.2017 rychleji vypnout zvuk při přesvajpnutí fragmentu - asi to bude nějaký onCallback ve fragmentu

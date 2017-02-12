@@ -22,6 +22,8 @@
     <color name="barva_textu_neaktivniho_tabu">#dedede</color>
     <color name="barva_pozadi_tab_layoutu">#379237</color>
 
+    <!-- barva scrollbaru -->
+    <color name="barva_scrollbaru">#6affffff</color>
 
     <!-- starý barvy kategorií -->
     <color name="category_item_1">#fd8e09</color>
