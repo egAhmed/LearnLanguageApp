@@ -91,8 +91,6 @@ public class MainActivity extends AppCompatActivity {
 
     // udělat dneska odpoledne
 
-    // TODO: 9.2.2017 zkusit optimalizovat výkon ? projít Java třídy a promyslet, jestli někde nedělám zbytečně objekty apod
-
     // odložím na později, na neurčito
     // TODO: 11.2.2017 zjistit jak to funguje s těmy dimnen pro různý velikosti apod
     // TODO: 11.2.2017 poladit ty dimen podle předchozího to do
