@@ -33,7 +33,7 @@ public final class Kategorie2Rodina {
         slovicka.add(new Slovicko("brother", "bratr", R.drawable.rodina_bratr, R.raw.brother));
         slovicka.add(new Slovicko("grandma", "babička", R.drawable.rodina_babicka, R.raw.grandma));
         slovicka.add(new Slovicko("grandad", "dědeček", R.drawable.rodina_deda, R.raw.grandad));
-        slovicka.add(new Slovicko("nephew", "vnuk", R.drawable.rodina_vnuk, R.raw.nephew));
+        slovicka.add(new Slovicko("grandson", "vnuk", R.drawable.rodina_vnuk, R.raw.grandson));
         slovicka.add(new Slovicko("granddaughter", "vnučka", R.drawable.rodina_vnucka, R.raw.granddaughter));
         slovicka.add(new Slovicko("uncle", "strýc", R.drawable.rodina_stryc, R.raw.uncle));
         slovicka.add(new Slovicko("aunt", "teta", R.drawable.rodina_teta, R.raw.aunt));
