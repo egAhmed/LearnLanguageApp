@@ -44,6 +44,9 @@ public class KategorieUniverzalniFragment extends Fragment {
 
     private ImageView playIkonka;
 
+    public static final String TAG = KategorieUniverzalniFragment.class.getName();
+
+
     private AudioManager.OnAudioFocusChangeListener listenerZmenaAudioFocusu = new AudioManager.OnAudioFocusChangeListener() {
         @Override
         public void onAudioFocusChange(int focusChange) {
@@ -166,8 +169,19 @@ public class KategorieUniverzalniFragment extends Fragment {
 
                                         }
                                     });
-                                } catch (InterruptedException e) {
+
+                                } catch (InterruptedException | IllegalStateException | NullPointerException e) {
+                                    Log.i(TAG, "run: zachycen Interrupted nebo IllegalState a nebo NullPointer");
                                     e.printStackTrace();
+                                    getActivity().runOnUiThread(new Runnable() {
+                                        @Override
+                                        public void run() {
+                                            ImageView playIkona = (ImageView) view.findViewById(R.id.play_ikonka);
+                                            playIkona.setImageResource(R.drawable.ic_play_arrow_white_36dp);
+
+                                        }
+                                    });
+
                                 }
                             }
 

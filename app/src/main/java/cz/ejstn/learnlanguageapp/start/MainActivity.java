@@ -92,6 +92,8 @@ public class MainActivity extends AppCompatActivity {
     // udělat dneska odpoledne
 
     // odložím na později, na neurčito
+    // TODO: 3.3.2017 bug s tím, že když je puštěná hudba a začnu to tam klikat zběsile, tak to padne - IllegalStateException
+
     // TODO: 11.2.2017 zjistit jak to funguje s těmy dimnen pro různý velikosti apod
     // TODO: 11.2.2017 poladit ty dimen podle předchozího to do
     // TODO: 11.2.2017 až se mi bude chtít dodat tam ty chybějící výslovnosti - tak v audacity - MME -> WIN WASAPI -> a vybrat repráčky/sluchátka
