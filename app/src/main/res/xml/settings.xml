@@ -5,13 +5,14 @@
         android:defaultValue="@string/nastaveni_promichat_slovicka_defaultni"
         android:key="@string/nastaveni_promichat_slovicka_klic"
         android:title="@string/nastaveni_promichat_slovicka_label"
-        android:selectAllOnFocus="true" />
+        android:selectAllOnFocus="true"
+        android:summary="@string/nastaveni_promichat_slovicka_description"/>
 
     <ListPreference
         android:title="@string/nastaveni_barva_aplikace_label"
         android:key="@string/nastaveni_barva_aplikace_klic"
         android:entries="@array/seznamNazvuBarevAplikace"
         android:entryValues="@array/seznamHodnotBarevAplikace"
-        />
+        android:summary="@string/nastaveni_barva_aplikace_desctiption"/>
 
 </PreferenceScreen>

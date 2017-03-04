@@ -30,10 +30,12 @@
     <string name="nastaveni_promichat_slovicka_label">Zamíchávat náhodně slovíčka</string>
     <string name="nastaveni_promichat_slovicka_klic" translatable="false">zamichavat_slovicka</string>
     <string name="nastaveni_promichat_slovicka_defaultni" translatable="false">true</string>
+    <string name="nastaveni_promichat_slovicka_description">Při každém spuštění aplikace se slovíčka v každé kategorii promíchají</string>
 
     <string name="nastaveni_barva_aplikace_label">Barva aplikace</string>
     <string name="nastaveni_barva_aplikace_klic" translatable="false">barva_aplikace</string>
     <string name="nastaveni_barva_aplikace_defaultni" translatable="false">zelena</string>
+    <string name="nastaveni_barva_aplikace_desctiption">Umožňuje změnit barvu aplikace, aplikace se po změně restartuje</string>
 
 
 
