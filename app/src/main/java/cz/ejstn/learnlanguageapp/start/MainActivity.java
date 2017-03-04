@@ -21,6 +21,7 @@ import android.widget.Toast;
 import cz.ejstn.learnlanguageapp.R;
 import cz.ejstn.learnlanguageapp.adaptery.KategorieFragmentAdapter;
 import cz.ejstn.learnlanguageapp.aktivity.InfoActivity;
+import cz.ejstn.learnlanguageapp.aktivity.SettingsActivity;
 import cz.ejstn.learnlanguageapp.helper.NavigationFunFactHelper;
 import cz.ejstn.learnlanguageapp.model.FunFact;
 
@@ -83,6 +84,11 @@ public class MainActivity extends AppCompatActivity {
                     startActivity(zobrazitInfo);
                     return true;
 
+                case R.id.nastaveniAplikace:
+                    Intent nastaveniAplikace = new Intent(MainActivity.this, SettingsActivity.class);
+                    startActivity(nastaveniAplikace);
+                    return true;
+
                 default:
                     return true;
             }
@@ -90,9 +96,11 @@ public class MainActivity extends AppCompatActivity {
     };
 
     // udělat dneska odpoledne
+    // TODO: 4.3.2017 shared preferences - shufflování slovíček , barevné téma aplikace ????
 
     // odložím na později, na neurčito
-    // TODO: 3.3.2017 bug s tím, že když je puštěná hudba a začnu to tam klikat zběsile, tak to padne - IllegalStateException
+
+    // TODO: 4.3.2017 přidat státy a předměty ?
 
     // TODO: 11.2.2017 zjistit jak to funguje s těmy dimnen pro různý velikosti apod
     // TODO: 11.2.2017 poladit ty dimen podle předchozího to do

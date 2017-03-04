@@ -2,9 +2,11 @@ package cz.ejstn.learnlanguageapp.fragmenty;
 
 
 import android.content.Context;
+import android.content.SharedPreferences;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.support.v4.app.Fragment;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -126,6 +128,11 @@ public class KategorieUniverzalniFragment extends Fragment {
 
         final ArrayList<Slovicko> slovicka = pripravSpravnySlovicka();
 
+        if (zjistiZdaSeMajiShufflovatSlovicka()) {
+            Collections.shuffle(slovicka);
+        }
+
+
 
         SlovickaArrayAdapter adapter = new SlovickaArrayAdapter(getActivity(), slovicka);
         final ListView listViewSlovicek = (ListView) rootView.findViewById(R.id.listView_kategorie);
@@ -204,54 +211,45 @@ public class KategorieUniverzalniFragment extends Fragment {
         switch (jmenoKategorie) {
             case "Zvirata":
                 spravnySlovicka = Kategorie1Zvirata.pripravKategorii();
-                Collections.shuffle(spravnySlovicka);
                 break;
 
             case "Rodina":
                 spravnySlovicka = Kategorie2Rodina.pripravKategorii();
-                // Collections.shuffle(spravnySlovicka);
                 break;
 
             case "JidloAPiti":
                 spravnySlovicka = Kategorie3JidloAPiti.pripravKategorii();
-                Collections.shuffle(spravnySlovicka);
                 break;
 
             case "OsobnostANalada":
                 spravnySlovicka = Kategorie9Osobnost.pripravKategorii();
-                Collections.shuffle(spravnySlovicka);
                 break;
 
             case "Barvy":
                 spravnySlovicka = Kategorie5Barvy.pripravKategorii();
-                Collections.shuffle(spravnySlovicka);
                 break;
 
             case "VolnyCas":
                 spravnySlovicka = Kategorie6VolnyCas.pripravKategorii();
-                Collections.shuffle(spravnySlovicka);
                 break;
 
             case "Sport":
                 spravnySlovicka = Kategorie7Sport.pripravKategorii();
-                Collections.shuffle(spravnySlovicka);
                 break;
 
             case "PrirodaAPocasi":
                 spravnySlovicka = Kategorie8Priroda.pripravKategorii();
-                Collections.shuffle(spravnySlovicka);
                 break;
 
             case "Cisla":
                 spravnySlovicka = Kategorie4Cisla.pripravKategorii();
-                //Collections.shuffle(spravnySlovicka);
                 break;
 
             case "Doprava":
                 spravnySlovicka = Kategorie10Doprava.pripravKategorii();
-                Collections.shuffle(spravnySlovicka);
                 break;
         }
+
         return spravnySlovicka;
     }
 
@@ -264,6 +262,16 @@ public class KategorieUniverzalniFragment extends Fragment {
             am.abandonAudioFocus(listenerZmenaAudioFocusu);
             Log.i("am", "AUDIOFOCUS_ABANDONED");
         }
+    }
+
+    private boolean zjistiZdaSeMajiShufflovatSlovicka() {
+        SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(getContext());
+        boolean majiSeShufflovat = sharedPreferences
+                .getBoolean(getString(R.string.nastaveni_promichat_slovicka_klic)
+                , Boolean.parseBoolean(getString(R.string.nastaveni_promichat_slovicka_defaultni)));
+
+        Log.i(TAG, "slovíčka shufflují " + majiSeShufflovat);
+        return majiSeShufflovat;
     }
 
 }

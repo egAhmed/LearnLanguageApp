@@ -8,6 +8,7 @@
     <string name="hodnotitAplikaci">Hodnotit aplikaci</string>
     <string name="poslatFeedback">Poslat připomínku</string>
     <string name="zobrazitInfo">Informace o aplikaci</string>
+    <string name="nastaveni">Nastavení aplikace</string>
 
     <!-- string pro ActionBarDrawerToggle, nevím proč to potřebuje -->
     <string name="otevrit">Otevřít</string>
@@ -15,6 +16,7 @@
 
     <!-- labely pro aktivity -->
     <string name="infoAktivitaLabel">Informace o aplikaci</string>
+    <string name="settingsAktivitaLabel">Nastavení aplikace</string>
 
 
     <!-- text pro aktivitu info o aplikaci -->
@@ -22,6 +24,17 @@
         že vás asi zajímá něco o této aplikaci.</string>
     <string name="textInfo2">Verze aplikace:</string>
     <string name="textInfo3">Aplikace obsahuje celkem</string>
+
+    <!-- text pro aktivitu nastavení aplikace -->
+
+    <string name="nastaveni_promichat_slovicka_label">Zamíchávat náhodně slovíčka</string>
+    <string name="nastaveni_promichat_slovicka_klic" translatable="false">zamichavat_slovicka</string>
+    <string name="nastaveni_promichat_slovicka_defaultni" translatable="false">true</string>
+
+
+
+
+
 
     <!-- stringy pro menu, nazvy kategorii, taby -->
     <string name="menu_item_1">Zvířata</string>

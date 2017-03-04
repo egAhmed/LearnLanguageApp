@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <CheckBoxPreference
+        android:defaultValue="@string/nastaveni_promichat_slovicka_defaultni"
+        android:key="@string/nastaveni_promichat_slovicka_klic"
+        android:title="@string/nastaveni_promichat_slovicka_label"
+        android:selectAllOnFocus="true" />
+
+</PreferenceScreen>
