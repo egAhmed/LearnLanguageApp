@@ -8,6 +8,11 @@
     <!-- nešahat na tenhle šit-->
     <color name="colorAccent">#379237</color>
 
+    <!-- modre tema aplikace -->
+    <color name="modra">#1e88e5</color>
+    <color name="tmaveModra">#01579b</color>
+
+
 
     <!-- barvy pro jednu položku slovíčka - ten jeden řádek -->
     <color name="model_radek_pozadi_textu">#379237</color>

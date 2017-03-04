@@ -18,7 +18,15 @@ public class SplashActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_splash);
+
+     //   getTheme().applyStyle(BarvaAplikaceHelper.zjistiStylAplikace(this), true);
+
+
+
+       setContentView(R.layout.activity_splash);
+       /* RelativeLayout relativeLayout = (RelativeLayout) findViewById(R.id.activity_splash);
+        relativeLayout.setBackgroundResource(R.color.modra); */
+
 
         //schovat actionbar
         ActionBar actionBar = getSupportActionBar();

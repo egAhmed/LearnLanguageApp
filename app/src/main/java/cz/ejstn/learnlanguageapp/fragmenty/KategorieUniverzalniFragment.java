@@ -89,6 +89,7 @@ public class KategorieUniverzalniFragment extends Fragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+
         // vyzvednu argumenty z bundle - připojeno ve FragmentAdapteru
         jmenoKategorie = getArguments().getString("jmenoKategorie");
     }

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <array name="seznamNazvuBarevAplikace">
+        <item>zelená</item>
+        <item>modrá</item>
+        <item>červená</item>
+    </array>
+
+    <array name="seznamHodnotBarevAplikace">
+        <item>zelena</item>
+        <item>modra</item>
+        <item>cervena</item>
+    </array>
+
+
+</resources>

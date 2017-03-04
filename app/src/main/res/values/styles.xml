@@ -9,6 +9,14 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="ModreTema" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/modra</item>
+        <item name="colorPrimaryDark">@color/tmaveModra</item>
+        <item name="actionBarStyle">@style/AppBarStyle</item>
+        <item name="colorAccent">@color/modra</item>
+    </style>
+
 
     <!-- styl AppBaru - to je ten velkej šit nahoře s názvem aplikace, jak mi nešel dát pryč -->
     <style name="AppBarStyle" parent="style/Widget.AppCompat.Light.ActionBar.Solid.Inverse">

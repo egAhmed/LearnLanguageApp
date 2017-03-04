@@ -31,6 +31,9 @@
     <string name="nastaveni_promichat_slovicka_klic" translatable="false">zamichavat_slovicka</string>
     <string name="nastaveni_promichat_slovicka_defaultni" translatable="false">true</string>
 
+    <string name="nastaveni_barva_aplikace_label">Barva aplikace</string>
+    <string name="nastaveni_barva_aplikace_klic" translatable="false">barva_aplikace</string>
+    <string name="nastaveni_barva_aplikace_defaultni" translatable="false">zelena</string>
 
 
 

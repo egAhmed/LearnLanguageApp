@@ -7,4 +7,11 @@
         android:title="@string/nastaveni_promichat_slovicka_label"
         android:selectAllOnFocus="true" />
 
+    <ListPreference
+        android:title="@string/nastaveni_barva_aplikace_label"
+        android:key="@string/nastaveni_barva_aplikace_klic"
+        android:entries="@array/seznamNazvuBarevAplikace"
+        android:entryValues="@array/seznamHodnotBarevAplikace"
+        />
+
 </PreferenceScreen>

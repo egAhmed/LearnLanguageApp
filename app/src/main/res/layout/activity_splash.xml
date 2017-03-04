@@ -4,8 +4,8 @@
     android:id="@+id/activity_splash"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimary"
-    tools:context="cz.ejstn.learnlanguageapp.aktivity.SplashActivity">
+    tools:context="cz.ejstn.learnlanguageapp.aktivity.SplashActivity"
+    android:background="@color/colorPrimary">
 
     <ImageView
         android:id="@+id/splash_obrazek"

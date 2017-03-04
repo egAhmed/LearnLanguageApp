@@ -15,6 +15,7 @@ public class InfoActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+     //   getTheme().applyStyle(BarvaAplikaceHelper.zjistiStylAplikace(this), true);
         setContentView(R.layout.activity_info);
 
 

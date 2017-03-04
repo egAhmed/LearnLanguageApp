@@ -96,7 +96,7 @@ public class MainActivity extends AppCompatActivity {
     };
 
     // udělat dneska odpoledne
-    // TODO: 4.3.2017 shared preferences - shufflování slovíček , barevné téma aplikace ????
+    // TODO: 4.3.2017  barevné téma aplikace ????
 
     // odložím na později, na neurčito
 
@@ -115,6 +115,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+      //  getTheme().applyStyle(BarvaAplikaceHelper.zjistiStylAplikace(this), true);
         setContentView(R.layout.activity_main);
 
         pripravNavigationDrawer();

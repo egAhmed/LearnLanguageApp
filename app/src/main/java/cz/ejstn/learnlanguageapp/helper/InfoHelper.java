@@ -25,6 +25,7 @@ import cz.ejstn.learnlanguageapp.slovicka.slovickaNepouzivana.Kategorie12Staty;
 
 public final class InfoHelper {
 
+
     private static final String[] SEZNAM_KECU = new String[] {
             "Je tady celkem dost slovíček a tak no.", "Napište mi co si tom myslíte vy.",
             "Aplikace má ještě nějaké chyby, Sorry jako.", "Je to moje druhá aplikace na Google Play, zkuste i tu první, ta se fakt povedla.",
