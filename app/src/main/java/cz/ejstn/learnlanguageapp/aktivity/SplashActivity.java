@@ -7,9 +7,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import cz.ejstn.learnlanguageapp.R;
+import cz.ejstn.learnlanguageapp.helper.BarvaAplikaceHelper;
 import cz.ejstn.learnlanguageapp.helper.InfoHelper;
 import cz.ejstn.learnlanguageapp.start.MainActivity;
 
@@ -19,14 +21,9 @@ public class SplashActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-     //   getTheme().applyStyle(BarvaAplikaceHelper.zjistiStylAplikace(this), true);
-
-
-
-       setContentView(R.layout.activity_splash);
-       /* RelativeLayout relativeLayout = (RelativeLayout) findViewById(R.id.activity_splash);
-        relativeLayout.setBackgroundResource(R.color.modra); */
-
+        vyresBarvuAppAStatusBaru();
+        setContentView(R.layout.activity_splash);
+        vyresBarvuContentuAktivity();
 
         //schovat actionbar
         ActionBar actionBar = getSupportActionBar();
@@ -69,6 +66,16 @@ public class SplashActivity extends AppCompatActivity {
 
         // pouštím vlákno
         vlakno.start();
+
+    }
+
+    private void vyresBarvuAppAStatusBaru() {
+        getTheme().applyStyle(BarvaAplikaceHelper.zjistiStylAplikace(this), true);
+    }
+
+    private void vyresBarvuContentuAktivity() {
+        RelativeLayout relativeLayout = (RelativeLayout) findViewById(R.id.activity_splash);
+        relativeLayout.setBackgroundResource(BarvaAplikaceHelper.zjistiPrimarniBarvu(this));
 
     }
 }

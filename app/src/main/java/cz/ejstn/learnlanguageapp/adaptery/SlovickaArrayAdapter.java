@@ -13,6 +13,7 @@ import android.widget.TextView;
 import java.util.ArrayList;
 
 import cz.ejstn.learnlanguageapp.R;
+import cz.ejstn.learnlanguageapp.helper.BarvaAplikaceHelper;
 import cz.ejstn.learnlanguageapp.model.Slovicko;
 
 /**
@@ -51,7 +52,7 @@ public class SlovickaArrayAdapter extends ArrayAdapter<Slovicko> {
         playIkonka.setImageResource(R.drawable.ic_play_arrow_white_36dp);
 
         LinearLayout layoutObouPrekladu = (LinearLayout) jednaPolozka.findViewById(R.id.linear_layout_obou_prekladu);
-        layoutObouPrekladu.setBackgroundResource(R.color.model_radek_pozadi_textu);
+        layoutObouPrekladu.setBackgroundResource(BarvaAplikaceHelper.zjistiPrimarniBarvu(getContext()));
 
 
         TextView horniText = (TextView) jednaPolozka.findViewById(R.id.horni_text_polozky);

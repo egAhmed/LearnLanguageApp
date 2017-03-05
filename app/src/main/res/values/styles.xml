@@ -1,7 +1,7 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="ZeleneTema" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
@@ -16,6 +16,32 @@
         <item name="actionBarStyle">@style/AppBarStyle</item>
         <item name="colorAccent">@color/modra</item>
     </style>
+
+    <style name="CerveneTema" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/cervena</item>
+        <item name="colorPrimaryDark">@color/tmaveCervena</item>
+        <item name="actionBarStyle">@style/AppBarStyle</item>
+        <item name="colorAccent">@color/cervena</item>
+    </style>
+
+    <style name="OranzoveTema" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/oranzova</item>
+        <item name="colorPrimaryDark">@color/tmaveOranzova</item>
+        <item name="actionBarStyle">@style/AppBarStyle</item>
+        <item name="colorAccent">@color/oranzova</item>
+    </style>
+
+    <style name="FialoveTema" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/fialova</item>
+        <item name="colorPrimaryDark">@color/tmaveFialova</item>
+        <item name="actionBarStyle">@style/AppBarStyle</item>
+        <item name="colorAccent">@color/fialova</item>
+    </style>
+
+
 
 
     <!-- styl AppBaru - to je ten velkej šit nahoře s názvem aplikace, jak mi nešel dát pryč -->

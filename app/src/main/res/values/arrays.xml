@@ -6,12 +6,16 @@
         <item>zelená</item>
         <item>modrá</item>
         <item>červená</item>
+        <item>oranžová</item>
+        <item>fialová</item>
     </array>
 
     <array name="seznamHodnotBarevAplikace">
         <item>zelena</item>
         <item>modra</item>
         <item>cervena</item>
+        <item>oranzova</item>
+        <item>fialova</item>
     </array>
 
 

@@ -2,10 +2,12 @@ package cz.ejstn.learnlanguageapp.start;
 
 import android.content.ActivityNotFoundException;
 import android.content.Intent;
+import android.content.res.ColorStateList;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.design.widget.TabLayout;
+import android.support.v4.content.ContextCompat;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.view.ViewPager;
 import android.support.v4.widget.DrawerLayout;
@@ -22,6 +24,7 @@ import cz.ejstn.learnlanguageapp.R;
 import cz.ejstn.learnlanguageapp.adaptery.KategorieFragmentAdapter;
 import cz.ejstn.learnlanguageapp.aktivity.InfoActivity;
 import cz.ejstn.learnlanguageapp.aktivity.SettingsActivity;
+import cz.ejstn.learnlanguageapp.helper.BarvaAplikaceHelper;
 import cz.ejstn.learnlanguageapp.helper.NavigationFunFactHelper;
 import cz.ejstn.learnlanguageapp.model.FunFact;
 
@@ -115,8 +118,10 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-      //  getTheme().applyStyle(BarvaAplikaceHelper.zjistiStylAplikace(this), true);
+
+        vyresBarvuAppAStatusBaru();
         setContentView(R.layout.activity_main);
+        vyresBarvuContentuAktivity();
 
         pripravNavigationDrawer();
 
@@ -128,6 +133,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         if (mActonBarDrawerToggle.onOptionsItemSelected(item)) {
@@ -135,6 +141,11 @@ public class MainActivity extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
     }
 
     @Override
@@ -146,6 +157,10 @@ public class MainActivity extends AppCompatActivity {
             super.onBackPressed();
         }
     }
+
+
+
+
 
     private void pripravTabLayout() {
         ViewPager viewPager = (ViewPager) findViewById(R.id.viewPager);
@@ -173,6 +188,25 @@ public class MainActivity extends AppCompatActivity {
         NavigationView navigationView = (NavigationView) findViewById(R.id.navigationView);
         View header = navigationView.getHeaderView(0);
 
+        // lepší tu barvu měnit tady, než to hledat dvakrát
+        header.setBackgroundResource(BarvaAplikaceHelper.zjistiPrimarniBarvu(this));
+
+        int[][] states = new int[][] {
+                new int[] { android.R.attr.state_enabled}, // enabled
+        };
+
+        int[] barvaIkon = new int[]{
+                ContextCompat.getColor(this, BarvaAplikaceHelper.zjistiPrimarniBarvu(this))};
+        int[] barvaTextu = new int[]{
+                ContextCompat.getColor(this, BarvaAplikaceHelper.zjistiSekundarniBarvu(this))};
+
+
+        ColorStateList barvickyIkony = new ColorStateList(states, barvaIkon);
+        ColorStateList barvickyText = new ColorStateList(states, barvaTextu);
+
+        navigationView.setItemTextColor(barvickyText);
+        navigationView.setItemIconTintList(barvickyIkony);
+
         ImageView obrazek = (ImageView) header.findViewById(R.id.obrazek_navigation_header);
         TextView funFactAnglicky = (TextView) header.findViewById(R.id.text_fun_fact_anglicky);
         TextView funFactCesky = (TextView) header.findViewById(R.id.text_fun_fact_cesky);
@@ -182,6 +216,21 @@ public class MainActivity extends AppCompatActivity {
         obrazek.setImageResource(fakt.getObrazekFunFact());
         funFactAnglicky.setText(fakt.getTextFunFactAnglicky());
         funFactCesky.setText(fakt.getTextFunFactCesky());
+
+
+    }
+
+    private void vyresBarvuAppAStatusBaru() {
+        getTheme().applyStyle(BarvaAplikaceHelper.zjistiStylAplikace(this), true);
+    }
+
+    private void vyresBarvuContentuAktivity() {
+        TabLayout tabLayout = (TabLayout) findViewById(R.id.tabLayout);
+        tabLayout.setBackgroundResource(BarvaAplikaceHelper.zjistiPrimarniBarvu(this));
+
+
+
+
     }
 
 

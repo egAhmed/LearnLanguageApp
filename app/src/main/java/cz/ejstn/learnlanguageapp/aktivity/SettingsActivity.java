@@ -11,6 +11,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 
 import cz.ejstn.learnlanguageapp.R;
+import cz.ejstn.learnlanguageapp.helper.BarvaAplikaceHelper;
 
 public class SettingsActivity extends AppCompatActivity {
 
@@ -20,11 +21,11 @@ public class SettingsActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
-        //  getTheme().applyStyle(BarvaAplikaceHelper.zjistiStylAplikace(this), true);
+        vyresBarvuAppAStatusBaru();
         setContentView(R.layout.activity_settings);
     }
 
-    public static class EarthquakePreferenceFragment extends PreferenceFragment implements Preference.OnPreferenceChangeListener {
+    public static class MujPreferenceFragment extends PreferenceFragment implements Preference.OnPreferenceChangeListener {
 
         @Override
         public void onCreate(@Nullable Bundle savedInstanceState) {
@@ -53,11 +54,16 @@ public class SettingsActivity extends AppCompatActivity {
                             .getLaunchIntentForPackage(getActivity().getPackageName());
                     i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                     startActivity(i);
+                    getActivity().finish();
                 }
 
 
             }
             return true;
         }
+    }
+
+    private void vyresBarvuAppAStatusBaru() {
+        getTheme().applyStyle(BarvaAplikaceHelper.zjistiStylAplikace(this), true);
     }
 }
