@@ -54,6 +54,7 @@ public class SettingsActivity extends AppCompatActivity {
                             .getLaunchIntentForPackage(getActivity().getPackageName());
                     i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                     startActivity(i);
+                    getActivity().setResult(0);
                     getActivity().finish();
                 }
 

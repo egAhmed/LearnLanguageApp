@@ -89,7 +89,7 @@ public class MainActivity extends AppCompatActivity {
 
                 case R.id.nastaveniAplikace:
                     Intent nastaveniAplikace = new Intent(MainActivity.this, SettingsActivity.class);
-                    startActivity(nastaveniAplikace);
+                    startActivityForResult(nastaveniAplikace, 0);
                     return true;
 
                 default:
@@ -145,7 +145,9 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        super.onActivityResult(requestCode, resultCode, data);
+        if (resultCode == 0) {
+            finish();
+        }
     }
 
     @Override
